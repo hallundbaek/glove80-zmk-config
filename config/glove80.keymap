@@ -281,6 +281,18 @@
             timeout-ms = <50>;
             slow-release;
         };
+
+        downshift_l {
+            bindings = <&mo 2>;
+            key-positions = <24 25>;
+            slow-release;
+        };
+
+        downshift_r {
+            bindings = <&mo 2>;
+            key-positions = <30 31>;
+            slow-release;
+        };
     };
 
     keymap {
