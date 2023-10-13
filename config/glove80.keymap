@@ -333,12 +333,12 @@
 
         layer_downshift {
             bindings = <
-&kp  &kp  &kp  &kp  &kp                                                       &kp                &kp                   &kp                    &kp          &kp
-&kp  &kp  &kp  &kp  &kp  &kp                                &kp               &kp                &kp                   &kp                    &kp          &kp
-&kp  &kp  &kp  &kp  &kp  &kp                                &kp               &kp                &kp                   &kp                    &kp          &kp
-&kp  &kp  &kp  &kp  &kp  &kp                                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RS(LEFT_BRACKET)  &kp RS(RIGHT_BRACKET)  &kp RS(SQT)  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp RS(N9)        &kp RS(N0)         &kp LS(COMMA)         &kp RS(PERIOD)         &kp SQT      &kp
-&kp  &kp  &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp  &kp                    &kp                &kp                   &kp                    &kp          &kp
+&kp  &kp            &kp        &kp                &kp                                                                       &kp                    &kp             &kp               &kp            &kp
+&kp  &kp            &kp        &kp                &kp        &kp                                      &kp                   &kp                    &kp             &kp               &kp            &kp
+&kp  &kp            &kp        &kp                &kp        &kp                                      &kp                   &kp                    &kp             &kp               &kp            &kp
+&kp  &kp GRAVE      &kp SQT    &kp DOUBLE_QUOTES  &kp MINUS  &kp UNDER                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp BACKSLASH  &kp
+&kp  &kp SEMICOLON  &kp COLON  &kp PIPE           &kp PLUS   &kp EQUAL  &kp  &kp  &kp  &kp  &kp  &kp  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN   &kp GREATER_THAN  &kp SLASH      &kp
+&kp  &kp            &kp        &kp                &kp                   &kp  &kp  &kp  &kp  &kp  &kp                        &kp                    &kp             &kp               &kp            &kp
             >;
         };
 
