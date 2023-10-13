@@ -190,6 +190,13 @@
             slow-release;
             timeout-ms = <30>;
         };
+
+        hrc-ctrl-r {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <43 44>;
+            timeout-ms = <30>;
+            slow-release;
+        };
     };
 
     keymap {
