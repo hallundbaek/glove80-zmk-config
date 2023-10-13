@@ -336,19 +336,19 @@
             slow-release;
         };
 
-        downshift_m, {
+        downshift_mcomma {
             bindings = <&mo 3>;
             key-positions = <59 60>;
             slow-release;
         };
 
-        downshift_,. {
+        downshift_commadot {
             bindings = <&mo 3>;
             key-positions = <60 61>;
             slow-release;
         };
 
-        downshift_.semi {
+        downshift_dotsemi {
             bindings = <&mo 3>;
             key-positions = <61 62>;
             slow-release;
@@ -408,7 +408,7 @@
             slow-release;
         };
 
-        downshift_m. {
+        downshift_mdot {
             bindings = <&mo 3>;
             key-positions = <59 61>;
             slow-release;
@@ -420,7 +420,7 @@
             slow-release;
         };
 
-        downshift_,semi {
+        downshift_commasemi {
             bindings = <&mo 3>;
             key-positions = <62 60>;
             slow-release;
