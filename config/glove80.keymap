@@ -353,6 +353,78 @@
             key-positions = <61 62>;
             slow-release;
         };
+
+        upshift_qe {
+            bindings = <&mo 2>;
+            key-positions = <23 25>;
+            slow-release;
+        };
+
+        upshift_qr {
+            bindings = <&mo 2>;
+            key-positions = <23 26>;
+            slow-release;
+        };
+
+        upshift_wr {
+            bindings = <&mo 2>;
+            key-positions = <26 24>;
+            slow-release;
+        };
+
+        upshift_uo {
+            bindings = <&mo 2>;
+            key-positions = <29 31>;
+            slow-release;
+        };
+
+        upshift_up {
+            bindings = <&mo 2>;
+            key-positions = <29 32>;
+            slow-release;
+        };
+
+        upshift_ip {
+            bindings = <&mo 2>;
+            key-positions = <32 30>;
+            slow-release;
+        };
+
+        downshift_zc {
+            bindings = <&mo 3>;
+            key-positions = <47 49>;
+            slow-release;
+        };
+
+        downshift_zv {
+            bindings = <&mo 3>;
+            key-positions = <47 50>;
+            slow-release;
+        };
+
+        downshift_xv {
+            bindings = <&mo 3>;
+            key-positions = <50 48>;
+            slow-release;
+        };
+
+        downshift_m. {
+            bindings = <&mo 3>;
+            key-positions = <59 61>;
+            slow-release;
+        };
+
+        downshift_msemi {
+            bindings = <&mo 3>;
+            key-positions = <62 59>;
+            slow-release;
+        };
+
+        downshift_,semi {
+            bindings = <&mo 3>;
+            key-positions = <62 60>;
+            slow-release;
+        };
     };
 
     keymap {
