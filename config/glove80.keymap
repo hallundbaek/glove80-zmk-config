@@ -225,6 +225,13 @@
             timeout-ms = <30>;
             slow-release;
         };
+
+        hrc-l-shift-alt {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <36 38>;
+            timeout-ms = <30>;
+            slow-release;
+        };
     };
 
     keymap {
