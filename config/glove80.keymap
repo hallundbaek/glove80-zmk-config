@@ -348,9 +348,9 @@
             slow-release;
         };
 
-          sacricial_combo {
+        downshift_kdot_2 {
             bindings = <&stmhl 3 3>;
-            key-positions = <41 42 43 44 45 46 47 48 49>;
+            key-positions = <42 61>;
             slow-release;
         };
     };
