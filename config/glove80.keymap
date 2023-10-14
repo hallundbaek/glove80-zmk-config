@@ -291,39 +291,39 @@
             slow-release;
         };
 
-        upshift_qw {
+        upshift_aw {
             bindings = <&stmh 2 2>;
-            key-positions = <24 23>;
+            key-positions = <24 35>;
             slow-release;
         };
 
-        upshift_we {
+        upshift_se {
             bindings = <&stmh 2 2>;
-            key-positions = <24 25>;
+            key-positions = <25 36>;
             slow-release;
         };
 
-        upshift_er {
+        upshift_dr {
             bindings = <&stmh 2 2>;
-            key-positions = <25 26>;
+            key-positions = <26 37>;
             slow-release;
         };
 
-        upshift_ui {
+        upshift_uk {
             bindings = <&stmh 2 2>;
-            key-positions = <29 30>;
+            key-positions = <29 42>;
             slow-release;
         };
 
-        upshift_io {
+        upshift_il {
             bindings = <&stmh 2 2>;
-            key-positions = <30 31>;
+            key-positions = <30 43>;
             slow-release;
         };
 
-        upshift_op {
+        upshift_osemi {
             bindings = <&stmh 2 2>;
-            key-positions = <31 32>;
+            key-positions = <31 44>;
             slow-release;
         };
 
