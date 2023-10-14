@@ -347,6 +347,12 @@
             key-positions = <42 61>;
             slow-release;
         };
+
+          sacricial_combo {
+            bindings = <&stmhl 3 3>;
+            key-positions = <41 42 43 44 45 46 47 48 49>;
+            slow-release;
+        };
     };
 
     keymap {
