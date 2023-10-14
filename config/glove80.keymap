@@ -34,10 +34,19 @@
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&to 1>;
         };
-        stmh: sticky_tap_momentary_hold {
+        stmhl: sticky_tap_momentary_hold_LAYER {
             compatible = "zmk,behavior-hold-tap";
-            label = "STICKY_TAP_MOMENTARY_HOLD";
+            label = "STICKY_TAP_MOMENTARY_HOLD_LAYER";
             bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";
+        };
+        stmhk: sticky_tap_momentary_hold_key {
+            compatible = "zmk,behavior-hold-tap";
+            label = "STICKY_TAP_MOMENTARY_HOLD_KEY";
+            bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
@@ -292,49 +301,49 @@
         };
 
         upshift_se {
-            bindings = <&stmh 2 2>;
+            bindings = <&stmhl 2 2>;
             key-positions = <25 36>;
             slow-release;
         };
 
         upshift_ef {
-            bindings = <&stmh 2 2>;
+            bindings = <&stmhl 2 2>;
             key-positions = <25 38>;
             slow-release;
         };
 
         upshift_ji {
-            bindings = <&stmh 2 2>;
+            bindings = <&stmhl 2 2>;
             key-positions = <30 41>;
             slow-release;
         };
 
         upshift_il {
-            bindings = <&stmh 2 2>;
+            bindings = <&stmhl 2 2>;
             key-positions = <30 43>;
             slow-release;
         };
 
         downshift_xd {
-            bindings = <&stmh 3 3>;
+            bindings = <&stmhl 3 3>;
             key-positions = <48 37>;
             slow-release;
         };
 
         downshift_dv {
-            bindings = <&stmh 3 3>;
+            bindings = <&stmhl 3 3>;
             key-positions = <37 50>;
             slow-release;
         };
 
         downshift_mk {
-            bindings = <&stmh 3 3>;
+            bindings = <&stmhl 3 3>;
             key-positions = <42 59>;
             slow-release;
         };
 
         downshift_kdot {
-            bindings = <&stmh 3 3>;
+            bindings = <&stmhl 3 3>;
             key-positions = <42 61>;
             slow-release;
         };
