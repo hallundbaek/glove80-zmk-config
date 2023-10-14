@@ -292,7 +292,7 @@
         };
 
         upshift_qw {
-            bindings = <&mo 2>;
+            bindings = <&stmh 2 2>;
             key-positions = <24 23>;
             slow-release;
         };
