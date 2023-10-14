@@ -354,12 +354,12 @@
 
         layer_Base {
             bindings = <
-&kp F1      &kp F2     &kp F3    &kp F4  &kp F5                                                                                                           &kp F6    &kp F7     &kp F8   &kp F9     &kp F10
-&kp GRAVE   &kp N1     &kp N2    &kp N3  &kp N4   &kp N5                                                                                          &kp N6  &kp N7    &kp N8     &kp N9   &kp N0     &kp EQUAL
-&kp ESC     &kp Q      &kp W     &kp E   &kp R    &kp T                                                                                           &kp Y   &kp U     &kp I      &kp O    &kp P      &kp LEFT_BRACKET
-&kp TAB     &kp A      &kp S     &kp D   &kp F    &kp G                                                                                           &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&caps_word  &kp Z      &kp X     &kp C   &kp V    &kp B   &kp LEFT_ALT  &kp LEFT_SHIFT  &to 5          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp MINUS
-&magic 4 0  &kp LCTRL  &kp HOME  &mo 1   &kp END          &kp SPACE     &kp ENTER       &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &kp F12
+&kp F1      &kp F2        &kp F3    &kp F4  &kp F5                                                                                                           &kp F6    &kp F7     &kp F8   &kp F9         &kp F10
+&kp GRAVE   &caps_word    &kp N2    &kp N3  &kp N4   &kp N5                                                                                          &kp N6  &kp N7    &kp N8     &kp N9   &kp SLASH      &kp EQUAL
+&kp F11     &kp NUMBER_1  &kp W     &kp E   &kp R    &kp T                                                                                           &kp Y   &kp U     &kp I      &kp O    &kp N0         &kp MINUS
+&kp ESCAPE  &kp Q         &kp S     &kp D   &kp F    &kp G                                                                                           &kp H   &kp J     &kp K      &kp L    &kp P          &kp LEFT_BRACKET
+&kp TAB     &kp A         &kp X     &kp C   &kp V    &kp B   &kp LEFT_ALT  &kp LEFT_SHIFT  &to 5          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
+&magic 4 0  &kp Z         &kp HOME  &mo 1   &kp END          &kp SPACE     &kp ENTER       &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
             >;
         };
 
