@@ -324,27 +324,27 @@
             slow-release;
         };
 
-        downshift_xd {
-            bindings = <&stmhl 3 3>;
-            key-positions = <48 37>;
-            slow-release;
-        };
-
         downshift_dv {
             bindings = <&stmhl 3 3>;
             key-positions = <37 50>;
             slow-release;
         };
 
-        downshift_mk {
+        downshift_xd {
             bindings = <&stmhl 3 3>;
-            key-positions = <42 59>;
+            key-positions = <48 37>;
             slow-release;
         };
 
         downshift_kdot {
             bindings = <&stmhl 3 3>;
             key-positions = <42 61>;
+            slow-release;
+        };
+
+        downshift_mk {
+            bindings = <&stmhl 3 3>;
+            key-positions = <42 59>;
             slow-release;
         };
     };
