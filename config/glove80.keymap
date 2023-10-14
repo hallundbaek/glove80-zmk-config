@@ -320,7 +320,7 @@
 
         downshift_kdot {
             bindings = <&stmhl 3 3>;
-            key-positions = <42 61>;
+            key-positions = <61 42>;
             slow-release;
         };
 
