@@ -184,7 +184,7 @@
 #define POS_RH_C6R5 63
 #define POS_RH_C6R6 79
 
-  /* Automatically generated layer name #define */
+/* Automatically generated layer name #define */
 
 #define LAYER_Base 0
 #define LAYER_Lower 1
@@ -387,12 +387,12 @@
 
         layer_downshift {
             bindings = <
-&trans  &trans         &trans     &trans             &trans                                                                                      &trans                 &trans          &trans            &trans         &trans
-&trans  &trans         &trans     &trans             &trans     &trans                                                     &trans                &trans                 &trans          &trans            &trans         &trans
-&trans  &trans         &trans     &trans             &trans     &trans                                                     &trans                &trans                 &trans          &trans            &trans         &trans
-&trans  &kp GRAVE      &kp SQT    &kp DOUBLE_QUOTES  &kp MINUS  &kp UNDER                                                  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp BACKSLASH  &trans
-&trans  &kp SEMICOLON  &kp COLON  &kp PIPE           &kp PLUS   &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN   &kp GREATER_THAN  &kp SLASH      &trans
-&trans  &trans         &trans     &trans             &trans                &trans  &trans  &trans  &trans  &trans  &trans                        &trans                 &trans          &trans            &trans         &trans
+&trans  &trans         &trans             &trans    &trans                                                                                      &trans                 &trans         &trans            &trans         &trans
+&trans  &trans         &trans             &trans    &trans     &trans                                                     &trans                &trans                 &trans         &trans            &trans         &trans
+&trans  &trans         &kp DOUBLE_QUOTES  &trans    &kp MINUS  &trans                                                     &trans                &kp RIGHT_BRACKET      &trans         &kp RIGHT_BRACE   &trans         &trans
+&trans  &kp GRAVE      &kp SQT            &trans    &kp EQUAL  &kp UNDER                                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &kp LEFT_BRACE    &kp BACKSLASH  &trans
+&trans  &kp SEMICOLON  &kp COLON          &kp PIPE  &kp PLUS   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LEFT_BRACKET       &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH      &trans
+&trans  &trans         &trans             &trans    &trans                &trans  &trans  &trans  &trans  &trans  &trans                        &trans                 &trans         &trans            &trans         &trans
             >;
         };
 
