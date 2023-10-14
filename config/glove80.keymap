@@ -291,27 +291,21 @@
             slow-release;
         };
 
-        upshift_aw {
-            bindings = <&stmh 2 2>;
-            key-positions = <24 35>;
-            slow-release;
-        };
-
         upshift_se {
             bindings = <&stmh 2 2>;
             key-positions = <25 36>;
             slow-release;
         };
 
-        upshift_dr {
+        upshift_ef {
             bindings = <&stmh 2 2>;
-            key-positions = <26 37>;
+            key-positions = <25 38>;
             slow-release;
         };
 
-        upshift_uk {
+        upshift_ji {
             bindings = <&stmh 2 2>;
-            key-positions = <29 42>;
+            key-positions = <30 41>;
             slow-release;
         };
 
@@ -321,117 +315,27 @@
             slow-release;
         };
 
-        upshift_osemi {
-            bindings = <&stmh 2 2>;
-            key-positions = <31 44>;
-            slow-release;
-        };
-
-        downshift_zx {
+        downshift_xd {
             bindings = <&stmh 3 3>;
-            key-positions = <47 48>;
+            key-positions = <48 37>;
             slow-release;
         };
 
-        downshift_xc {
+        downshift_dv {
             bindings = <&stmh 3 3>;
-            key-positions = <48 49>;
+            key-positions = <37 50>;
             slow-release;
         };
 
-        downshift_cv {
+        downshift_mk {
             bindings = <&stmh 3 3>;
-            key-positions = <49 50>;
+            key-positions = <42 59>;
             slow-release;
         };
 
-        downshift_mcomma {
+        downshift_kdot {
             bindings = <&stmh 3 3>;
-            key-positions = <59 60>;
-            slow-release;
-        };
-
-        downshift_commadot {
-            bindings = <&stmh 3 3>;
-            key-positions = <60 61>;
-            slow-release;
-        };
-
-        downshift_dotsemi {
-            bindings = <&stmh 3 3>;
-            key-positions = <61 62>;
-            slow-release;
-        };
-
-        upshift_qe {
-            bindings = <&stmh 2 2>;
-            key-positions = <23 25>;
-            slow-release;
-        };
-
-        upshift_qr {
-            bindings = <&stmh 2 2>;
-            key-positions = <23 26>;
-            slow-release;
-        };
-
-        upshift_wr {
-            bindings = <&stmh 2 2>;
-            key-positions = <26 24>;
-            slow-release;
-        };
-
-        upshift_uo {
-            bindings = <&stmh 2 2>;
-            key-positions = <29 31>;
-            slow-release;
-        };
-
-        upshift_up {
-            bindings = <&stmh 2 2>;
-            key-positions = <29 32>;
-            slow-release;
-        };
-
-        upshift_ip {
-            bindings = <&stmh 2 2>;
-            key-positions = <32 30>;
-            slow-release;
-        };
-
-        downshift_zc {
-            bindings = <&stmh 3 3>;
-            key-positions = <47 49>;
-            slow-release;
-        };
-
-        downshift_zv {
-            bindings = <&stmh 3 3>;
-            key-positions = <47 50>;
-            slow-release;
-        };
-
-        downshift_xv {
-            bindings = <&stmh 3 3>;
-            key-positions = <50 48>;
-            slow-release;
-        };
-
-        downshift_mdot {
-            bindings = <&stmh 3 3>;
-            key-positions = <59 61>;
-            slow-release;
-        };
-
-        downshift_msemi {
-            bindings = <&stmh 3 3>;
-            key-positions = <62 59>;
-            slow-release;
-        };
-
-        downshift_commasemi {
-            bindings = <&stmh 3 3>;
-            key-positions = <62 60>;
+            key-positions = <42 61>;
             slow-release;
         };
     };
