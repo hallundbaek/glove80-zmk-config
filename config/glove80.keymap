@@ -343,7 +343,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                           &trans             &trans                 &trans         &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans           &trans             &trans                 &trans         &trans     &trans
-&trans  &trans  &trans  &trans  &kp N2  &kp N4                                                  &kp QUESTION     &kp EQUAL          &kp QUESTION           &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &kp N2  &kp N4                                                  &trans           &kp EQUAL          &kp QUESTION           &trans         &trans     &trans
 &trans  &trans  &trans  &trans  &kp N1  &kp N3                                                  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp SQT        &trans     &trans
 &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp GT           &kp PLUS           &kp SEMI               &kp BACKSLASH  &kp TILDE  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                   &trans             &kp PAGE_DOWN          &kp PAGE_DOWN  &trans     &trans
