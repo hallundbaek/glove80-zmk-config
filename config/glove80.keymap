@@ -335,7 +335,7 @@
 &kp F11     &kp NUMBER_1  &kp NUMBER_2  &kp E     &kp R    &kp T                                                                                           &kp Y   &kp U     &kp I      &kp O    &kp N0         &kp MINUS
 &kp ESCAPE  &kp Q         &kp W         &kp D     &kp F    &kp G                                                                                           &kp H   &kp J     &kp K      &kp L    &kp P          &kp LEFT_BRACKET
 &kp TAB     &kp A         &kp S         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp LEFT_SHIFT  &to 5          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
-&magic 4 0  &kp Z         &kp X         &kp HOME  &kp END          &kp SPACE     &kp ENTER       &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
+&magic 5 0  &kp Z         &kp X         &kp HOME  &kp END          &kp SPACE     &kp ENTER       &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
             >;
         };
 
