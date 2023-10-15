@@ -214,7 +214,6 @@
             key-positions = <36 37>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
         };
 
         hrc-l-alt {
@@ -348,22 +347,6 @@
             bindings = <&stmhl 2 2>;
             key-positions = <30 43>;
             slow-release;
-        };
-
-        function_left {
-            bindings = <&stmhl 4 4>;
-            key-positions = <36 37>;
-            timeout-ms = <50>;
-            slow-release;
-            layers = <2 3>;
-        };
-
-        function_right {
-            bindings = <&stmhl 4 4>;
-            key-positions = <42 43>;
-            timeout-ms = <50>;
-            slow-release;
-            layers = <2 3>;
         };
     };
 
