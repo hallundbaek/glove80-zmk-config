@@ -447,14 +447,14 @@
             >;
         };
 
-        layer_6 {
+        layer_workspaces {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                &trans                &trans                                                                                                      &trans          &trans          &trans                &trans                &trans
+&trans  &trans                &trans                &trans                &trans                &trans                                                          &trans                &trans          &trans          &trans                &trans                &trans
+&trans  &trans                &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(N5))                                                  &kp RA(RS(NUMBER_6))  &kp RA(RS(N7))  &kp RA(RS(N8))  &kp RS(RA(NUMBER_9))  &trans                &trans
+&trans  &kp LA(LS(NUMBER_1))  &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(N5)                                                      &kp RA(NUMBER_6)      &kp RA(N7)      &kp RA(N8)      &kp RA(N9)            &kp RA(RS(NUMBER_0))  &trans
+&trans  &kp LA(NUMBER_1)      &trans                &trans                &trans                &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans          &trans          &trans                &kp RA(NUMBER_0)      &trans
+&trans  &trans                &trans                &trans                &trans                                &trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans          &trans                &trans                &trans
             >;
         };
     };
