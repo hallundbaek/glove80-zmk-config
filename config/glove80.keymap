@@ -343,7 +343,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                           &trans             &trans                 &trans         &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans           &trans             &trans                 &trans         &trans     &trans
-&trans  &trans  &trans  &trans  &kp N2  &kp N4                                                  &kp QUESTION     &kp EQUAL          &trans                 &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &kp N2  &kp N4                                                  &kp QUESTION     &kp EQUAL          &kp QUESTION           &trans         &trans     &trans
 &trans  &trans  &trans  &trans  &kp N1  &kp N3                                                  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp SQT        &trans     &trans
 &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp GT           &kp PLUS           &kp SEMI               &kp BACKSLASH  &kp TILDE  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                   &trans             &kp PAGE_DOWN          &kp PAGE_DOWN  &trans     &trans
@@ -354,7 +354,7 @@
             bindings = <
 &trans  &trans     &trans             &trans                &trans                                                                                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans             &trans                &trans            &trans                                                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans             &trans                &kp MINUS         &kp PIPE                                                        &kp N9  &kp N7  &trans  &trans  &trans  &trans
+&trans  &trans     &trans             &kp PIPE              &kp MINUS         &trans                                                          &kp N9  &kp N7  &trans  &trans  &trans  &trans
 &trans  &trans     &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE                                                  &kp N8  &kp N6  &trans  &trans  &trans  &trans
 &trans  &kp GRAVE  &kp SLASH          &kp COLON             &kp UNDERSCORE    &kp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &trans  &trans  &trans  &trans
 &trans  &trans     &trans             &trans                &trans                            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
