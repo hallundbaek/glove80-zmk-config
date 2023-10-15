@@ -364,7 +364,18 @@
             >;
         };
 
-        layer_symbols {
+        layer_left {
+            bindings = <
+&trans  &trans     &trans             &trans     &trans                                                                                               &trans                 &trans         &trans        &trans     &trans
+&trans  &trans     &trans             &trans     &trans          &trans                                                            &trans             &trans                 &trans         &trans        &trans     &trans
+&trans  &trans     &trans             &trans     &kp MINUS       &kp LBRC                                                          &kp RBRC           &kp EQUAL              &trans         &trans        &trans     &trans
+&trans  &kp GRAVE  &kp DOUBLE_QUOTES  &trans     &kp LPAR        &kp LEFT_BRACKET                                                  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans         &kp QUESTION  &kp TILDE  &trans
+&trans  &kp COLON  &kp SQT            &kp SLASH  &kp UNDERSCORE  &kp LESS_THAN     &trans  &trans  &trans  &trans  &trans  &trans  &kp GT             &kp PLUS               &kp BACKSLASH  &kp PIPE      &kp SEMI   &trans
+&trans  &trans     &trans             &trans     &trans                            &trans  &trans  &trans  &trans  &trans  &trans                     &trans                 &trans         &trans        &trans     &trans
+            >;
+        };
+
+        layer_right {
             bindings = <
 &trans  &trans     &trans             &trans     &trans                                                                                               &trans                 &trans         &trans        &trans     &trans
 &trans  &trans     &trans             &trans     &trans          &trans                                                            &trans             &trans                 &trans         &trans        &trans     &trans
