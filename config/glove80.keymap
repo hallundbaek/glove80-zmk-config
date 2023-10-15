@@ -301,7 +301,7 @@
         };
 
         workspaces_dv {
-            bindings = <&stmhl 3 3>;
+            bindings = <&stmhl 4 4>;
             key-positions = <37 50>;
             slow-release;
         };
