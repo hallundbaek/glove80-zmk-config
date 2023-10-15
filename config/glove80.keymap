@@ -32,7 +32,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&to 1>;
+            bindings = <&mo 0>, <&to 0>;
         };
         stmhl: sticky_tap_momentary_hold_LAYER {
             compatible = "zmk,behavior-hold-tap";
@@ -302,49 +302,49 @@
         };
 
         workspaces_dv {
-            bindings = <&stmhl 5 5>;
+            bindings = <&stmhl 3 3>;
             key-positions = <37 50>;
             slow-release;
         };
 
         workspaces_mk {
-            bindings = <&stmhl 5 5>;
+            bindings = <&stmhl 3 3>;
             key-positions = <42 59>;
             slow-release;
         };
 
         downshift_xd {
-            bindings = <&stmhl 3 3>;
+            bindings = <&stmhl 1 1>;
             key-positions = <48 37>;
             slow-release;
         };
 
         downshift_kdot {
-            bindings = <&stmhl 3 3>;
+            bindings = <&stmhl 1 1>;
             key-positions = <61 42>;
             slow-release;
         };
 
         upshift_se {
-            bindings = <&stmhl 2 2>;
+            bindings = <&stmhl 0 0>;
             key-positions = <25 36>;
             slow-release;
         };
 
         upshift_ef {
-            bindings = <&stmhl 2 2>;
+            bindings = <&stmhl 0 0>;
             key-positions = <25 38>;
             slow-release;
         };
 
         upshift_ji {
-            bindings = <&stmhl 2 2>;
+            bindings = <&stmhl 0 0>;
             key-positions = <30 41>;
             slow-release;
         };
 
         upshift_il {
-            bindings = <&stmhl 2 2>;
+            bindings = <&stmhl 0 0>;
             key-positions = <30 43>;
             slow-release;
         };
@@ -359,34 +359,12 @@
 &kp GRAVE   &caps_word    &kp N2    &kp N3  &kp N4   &kp N5                                                                                          &kp N6  &kp N7    &kp N8     &kp N9   &kp SLASH      &kp EQUAL
 &kp F11     &kp NUMBER_1  &kp W     &kp E   &kp R    &kp T                                                                                           &kp Y   &kp U     &kp I      &kp O    &kp N0         &kp MINUS
 &kp ESCAPE  &kp Q         &kp S     &kp D   &kp F    &kp G                                                                                           &kp H   &kp J     &kp K      &kp L    &kp P          &kp LEFT_BRACKET
-&kp TAB     &kp A         &kp X     &kp C   &kp V    &kp B   &kp LEFT_ALT  &kp LEFT_SHIFT  &to 7          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
-&magic 6 0  &kp Z         &kp HOME  &mo 1   &kp END          &kp SPACE     &kp ENTER       &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
+&kp TAB     &kp A         &kp X     &kp C   &kp V    &kp B   &kp LEFT_ALT  &kp LEFT_SHIFT  &to 5          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
+&magic 4 0  &kp Z         &kp HOME  &mo 0   &kp END          &kp SPACE     &kp ENTER       &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
             >;
         };
 
-        layer_Lower {
-            bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                          &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none         &kp PAUSE_BREAK
-&trans        &trans        &trans      &trans      &trans     &trans                                                  &kp RET        &kp KP_NUM  &kp LS(N8)    &kp KP_SLASH  &none         &kp PRINTSCREEN
-&trans        &trans        &trans      &trans      &trans     &trans                                                  &kp MINUS      &kp N7      &kp N8        &kp N9        &kp LS(FSLH)  &kp LS(BSLH)
-&trans        &trans        &trans      &trans      &trans     &trans                                                  &kp EQUAL      &kp N4      &kp N5        &kp N6        &kp LS(N9)    &kp LS(N0)
-&trans        &kp LSHFT     &trans      &trans      &trans     &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &kp LS(EQUAL)  &kp N1      &kp N2        &kp N3        &kp FSLH      &kp BSLH
-&magic 6 0    &none         &kp PG_UP   &kp F11     &kp PG_DN          &trans  &trans  &trans  &trans  &trans  &trans                 &kp F11     &kp N0        &kp F12       &kp KP_ENTER  &trans
-            >;
-        };
-
-        layer_upshift {
-            bindings = <
-&trans  &trans            &trans            &trans        &trans                                                                              &trans            &trans      &trans      &trans            &trans
-&trans  &trans            &trans            &trans        &trans        &trans                                                  &trans        &trans            &trans      &trans      &trans            &trans
-&trans  &trans            &kp LS(NUMBER_2)  &kp LS(N3)    &kp LS(N4)    &trans                                                  &trans        &kp RS(N7)        &kp RS(N8)  &kp RS(N9)  &trans            &trans
-&trans  &kp LS(NUMBER_1)  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                  &kp NUMBER_6  &kp N7            &kp N8      &kp N9      &kp RS(NUMBER_0)  &trans
-&trans  &kp NUMBER_1      &trans            &trans        &kp LS(N5)    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &kp RS(NUMBER_6)  &trans      &trans      &kp N0            &trans
-&trans  &trans            &trans            &trans        &trans                &trans  &trans  &trans  &trans  &trans  &trans                &trans            &trans      &trans      &trans            &trans
-            >;
-        };
-
-        layer_downshift {
+        layer_symbols {
             bindings = <
 &trans  &trans     &trans             &trans     &trans                                                                                               &trans                 &trans         &trans        &trans     &trans
 &trans  &trans     &trans             &trans     &trans          &trans                                                            &trans             &trans                 &trans         &trans        &trans     &trans
@@ -410,12 +388,12 @@
 
         layer_workspaces {
             bindings = <
-&trans  &trans                &trans                &trans                &trans                                                                                                      &trans          &trans          &trans                &trans                &trans
-&trans  &trans                &trans                &trans                &trans                &trans                                                          &trans                &trans          &trans          &trans                &trans                &trans
-&trans  &trans                &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(N5))                                                  &kp RA(RS(NUMBER_6))  &kp RA(RS(N7))  &kp RA(RS(N8))  &kp RS(RA(NUMBER_9))  &trans                &trans
-&trans  &kp LA(LS(NUMBER_1))  &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(N5)                                                      &kp RA(NUMBER_6)      &kp RA(N7)      &kp RA(N8)      &kp RA(N9)            &kp RA(RS(NUMBER_0))  &trans
-&trans  &kp LA(NUMBER_1)      &trans                &trans                &trans                &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans          &trans          &trans                &kp RA(NUMBER_0)      &trans
-&trans  &trans                &trans                &trans                &trans                                &trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans          &trans                &trans                &trans
+&trans  &trans                &trans                &trans                &trans                                                                                                      &trans          &trans          &trans          &trans                &trans
+&trans  &trans                &trans                &trans                &trans                &trans                                                          &trans                &trans          &trans          &trans          &trans                &trans
+&trans  &trans                &trans                &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(N5))                                                  &kp RA(RS(NUMBER_6))  &kp RA(RS(N7))  &kp RA(RS(N8))  &trans          &trans                &trans
+&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(N5)                                                      &kp RA(NUMBER_6)      &kp RA(N7)      &kp RA(N8)      &kp RA(RS(N9))  &kp RA(RS(NUMBER_0))  &trans
+&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &trans                &trans                &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans          &trans          &kp RA(N9)      &kp RA(NUMBER_0)      &trans
+&trans  &trans                &trans                &trans                &trans                                &trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans          &trans          &trans                &trans
             >;
         };
 
@@ -446,8 +424,8 @@
         compatible = "zmk,conditional-layers";
 
         function_conditional {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <1 1>;
+            then-layer = <3>;
         };
     };
 };
