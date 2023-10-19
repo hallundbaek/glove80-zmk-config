@@ -92,8 +92,8 @@
             #binding-cells = <1>;
             bindings
               = <&macro_param_1to1>
-              , <&macro_tap &kp MACRO_PLACEHOLDER>
-              , <&macro_tap &sl 9>;
+              , <&kp MACRO_PLACEHOLDER>
+              , <&sl 9>;
             label = "KPSS";
         };
         kpsn: kpsn {
@@ -101,8 +101,8 @@
             #binding-cells = <1>;
             bindings
               = <&macro_param_1to1>
-              , <&macro_tap &kp MACRO_PLACEHOLDER>
-              , <&macro_tap &sl 10>;
+              , <&kp MACRO_PLACEHOLDER>
+              , <&sl 10>;
             label = "KPSN";
         };
     };
