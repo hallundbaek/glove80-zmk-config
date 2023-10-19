@@ -481,11 +481,11 @@
         };
 
         sticky_numbers_left {
-            if-layers = <10 2>;
+            if-layers = <10 1>;
             then-layer = <4>;
         };
 
-        layer_sticker_rigth {
+        sticky_numbers_rigth {
             if-layers = <10 2>;
             then-layer = <4>;
         };
