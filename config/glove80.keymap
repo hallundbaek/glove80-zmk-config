@@ -87,24 +87,6 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
-        kpss: kpss {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings
-              = <&macro_param_1to1>
-              , <&kp MACRO_PLACEHOLDER>
-              , <&sl 9>;
-            label = "KPSS";
-        };
-        kpsn: kpsn {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings
-              = <&macro_param_1to1>
-              , <&kp MACRO_PLACEHOLDER>
-              , <&sl 10>;
-            label = "KPSN";
-        };
     };
 };
 
@@ -361,10 +343,10 @@
             bindings = <
 &trans  &trans        &trans           &trans            &trans                                                                                 &trans               &trans                   &trans               &trans         &trans
 &trans  &trans        &trans           &trans            &trans    &trans                                                    &trans             &trans               &trans                   &trans               &trans         &trans
-&trans  &trans        &kpss AT         &kpss PLUS        &kpsn N2  &kpsn N4                                                  &kpss PIPE         &kpss QUESTION       &kpss EQUAL              &kpss HASH           &trans         &trans
-&trans  &kpss GRAVE   &kpss SQT        &kpss LPAR        &kpsn N1  &kpsn N3                                                  &kpss RIGHT_BRACE  &kpss RIGHT_BRACKET  &kpss RIGHT_PARENTHESIS  &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
-&trans  &kpss DOLLAR  &kpss BACKSLASH  &kpss UNDERSCORE  &kpsn N0  &kpss LT  &trans  &trans  &trans  &trans  &trans  &trans  &kpss GT           &kpss CARET          &kpss MINUS              &kpss SLASH          &kpss PERCENT  &trans
-&trans  &trans        &trans           &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans                     &trans               &kpss PAGE_DOWN          &kpss PAGE_DOWN      &trans         &trans
+&trans  &trans        &kpsskp AT         &kpsskp PLUS        &kpsnkp N2  &kpsnkp N4                                                  &kpsskp PIPE         &kpsskp QUESTION       &kpsskp EQUAL              &kpsskp HASH           &trans         &trans
+&trans  &kpsskp GRAVE   &kpsskp SQT        &kpsskp LPAR        &kpsnkp N1  &kpsnkp N3                                                  &kpsskp RIGHT_BRACE  &kpsskp RIGHT_BRACKET  &kpsskp RIGHT_PARENTHESIS  &kpsskp DOUBLE_QUOTES  &kpsskp TILDE    &trans
+&trans  &kpsskp DOLLAR  &kpsskp BACKSLASH  &kpsskp UNDERSCORE  &kpsnkp N0  &kpsskp LT  &trans  &trans  &trans  &trans  &trans  &trans  &kpsskp GT           &kpsskp CARET          &kpsskp MINUS              &kpsskp SLASH          &kpsskp PERCENT  &trans
+&trans  &trans        &trans           &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans                     &trans               &kpsskp PAGE_DOWN          &kpsskp PAGE_DOWN      &trans         &trans
             >;
         };
 
@@ -372,10 +354,10 @@
             bindings = <
 &trans  &trans        &trans              &trans                  &trans                                                                                          &trans    &trans         &trans               &trans         &trans
 &trans  &trans        &trans              &trans                  &trans              &trans                                                            &trans    &trans    &trans         &trans               &trans         &trans
-&trans  &trans        &kpss AT            &kpss PLUS              &kpss EXCL          &kpss AMPERSAND                                                   &kpsn N9  &kpsn N7  &kpss EQUAL    &kpss HASH           &trans         &trans
-&trans  &kpss GRAVE   &kpss SINGLE_QUOTE  &kpss LEFT_PARENTHESIS  &kpss LEFT_BRACKET  &kpss LEFT_BRACE                                                  &kpsn N8  &kpsn N6  &kpss RPAR     &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
-&trans  &kpss DOLLAR  &kpss BACKSLASH     &kpss UNDERSCORE        &kpss ASTERISK      &kpss LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpss GT  &kpsn N5  &kpss MINUS    &kpss SLASH          &kpss PERCENT  &trans
-&trans  &trans        &trans              &trans                  &trans                                &trans  &trans  &trans  &trans  &trans  &trans            &trans    &kpss PAGE_UP  &kpss PAGE_DOWN      &trans         &trans
+&trans  &trans        &kpsskp AT            &kpsskp PLUS              &kpsskp EXCL          &kpsskp AMPERSAND                                                   &kpsnkp N9  &kpsnkp N7  &kpsskp EQUAL    &kpsskp HASH           &trans         &trans
+&trans  &kpsskp GRAVE   &kpsskp SINGLE_QUOTE  &kpsskp LEFT_PARENTHESIS  &kpsskp LEFT_BRACKET  &kpsskp LEFT_BRACE                                                  &kpsnkp N8  &kpsnkp N6  &kpsskp RPAR     &kpsskp DOUBLE_QUOTES  &kpsskp TILDE    &trans
+&trans  &kpsskp DOLLAR  &kpsskp BACKSLASH     &kpsskp UNDERSCORE        &kpsskp ASTERISK      &kpsskp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpsskp GT  &kpsnkp N5  &kpsskp MINUS    &kpsskp SLASH          &kpsskp PERCENT  &trans
+&trans  &trans        &trans              &trans                  &trans                                &trans  &trans  &trans  &trans  &trans  &trans            &trans    &kpsskp PAGE_UP  &kpsskp PAGE_DOWN      &trans         &trans
             >;
         };
 
@@ -383,10 +365,10 @@
             bindings = <
 &trans  &trans        &trans           &trans            &trans                                                                                                    &trans               &trans           &trans               &trans         &trans
 &trans  &trans        &trans           &trans            &trans              &trans                                                            &trans              &trans               &trans           &trans               &trans         &trans
-&trans  &trans        &kpss AT         &kpss PLUS        &kpss EXCLAMATION   &kpss AMPERSAND                                                   &kpss PIPE          &kpss QUESTION       &kpss EQUAL      &kpss HASH           &trans         &trans
-&trans  &kpss GRAVE   &kpss SQT        &kpss LPAR        &kpss LEFT_BRACKET  &kpss LEFT_BRACE                                                  &kpss RBRC          &kpss RIGHT_BRACKET  &kpss RPAR       &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
-&trans  &kpss DOLLAR  &kpss BACKSLASH  &kpss UNDERSCORE  &kpss ASTERISK      &kpss LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpss GREATER_THAN  &kpss CARET          &kpss MINUS      &kpss SLASH          &kpss PERCENT  &trans
-&trans  &trans        &trans           &trans            &trans                                &trans  &trans  &trans  &trans  &trans  &trans                      &trans               &kpss PAGE_DOWN  &kpss PAGE_UP        &trans         &trans
+&trans  &trans        &kpsskp AT         &kpsskp PLUS        &kpsskp EXCLAMATION   &kpsskp AMPERSAND                                                   &kpsskp PIPE          &kpsskp QUESTION       &kpsskp EQUAL      &kpsskp HASH           &trans         &trans
+&trans  &kpsskp GRAVE   &kpsskp SQT        &kpsskp LPAR        &kpsskp LEFT_BRACKET  &kpsskp LEFT_BRACE                                                  &kpsskp RBRC          &kpsskp RIGHT_BRACKET  &kpsskp RPAR       &kpsskp DOUBLE_QUOTES  &kpsskp TILDE    &trans
+&trans  &kpsskp DOLLAR  &kpsskp BACKSLASH  &kpsskp UNDERSCORE  &kpsskp ASTERISK      &kpsskp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpsskp GREATER_THAN  &kpsskp CARET          &kpsskp MINUS      &kpsskp SLASH          &kpsskp PERCENT  &trans
+&trans  &trans        &trans           &trans            &trans                                &trans  &trans  &trans  &trans  &trans  &trans                      &trans               &kpsskp PAGE_DOWN  &kpsskp PAGE_UP        &trans         &trans
             >;
         };
 
@@ -394,9 +376,9 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                        &trans    &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans                                                    &trans    &trans    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kpsn N2  &kpsn N4                                                  &kpsn N9  &kpsn N7  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kpsn N1  &kpsn N3                                                  &kpsn N8  &kpsn N6  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kpsn N0  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kpsn N5  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kpsnkp N2  &kpsnkp N4                                                  &kpsnkp N9  &kpsnkp N7  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kpsnkp N1  &kpsnkp N3                                                  &kpsnkp N8  &kpsnkp N6  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kpsnkp N0  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kpsnkp N5  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans            &trans    &trans  &trans  &trans  &trans
             >;
         };
