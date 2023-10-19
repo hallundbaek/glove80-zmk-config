@@ -204,7 +204,7 @@
 
         hrc-l-ctrl {
             bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>;
-            key-positions = <35 36>;
+            key-positions = <36 47>;
             slow-release;
             timeout-ms = <50>;
         };
@@ -225,21 +225,21 @@
 
         hrc-l-ctrl-shift {
             bindings = <&stmhk LC(LEFT_SHIFT) LC(LEFT_SHIFT)>;
-            key-positions = <35 37>;
+            key-positions = <37 47>;
             timeout-ms = <50>;
             slow-release;
         };
 
         hrc-l-ctrl-alt {
             bindings = <&stmhk LC(LEFT_ALT) LC(LEFT_ALT)>;
-            key-positions = <35 38>;
+            key-positions = <38 47>;
             timeout-ms = <50>;
             slow-release;
         };
 
         hrc-l-ctrl-shift-alt {
             bindings = <&stmhk LC(LS(LEFT_ALT)) LC(LS(LEFT_ALT))>;
-            key-positions = <35 36 37>;
+            key-positions = <36 37 47>;
             timeout-ms = <50>;
             slow-release;
         };
@@ -253,7 +253,7 @@
 
         hrc-r-ctrl {
             bindings = <&stmhk RIGHT_CONTROL RIGHT_CONTROL>;
-            key-positions = <43 44>;
+            key-positions = <43 62>;
             timeout-ms = <50>;
             slow-release;
         };
@@ -274,21 +274,21 @@
 
         hrc-r-ctrl-shift {
             bindings = <&stmhk RC(RIGHT_SHIFT) RC(RIGHT_SHIFT)>;
-            key-positions = <42 44>;
+            key-positions = <42 62>;
             timeout-ms = <50>;
             slow-release;
         };
 
         hrc-r-ctrl-alt {
             bindings = <&stmhk RC(RIGHT_ALT) RC(RIGHT_ALT)>;
-            key-positions = <41 44>;
+            key-positions = <41 62>;
             timeout-ms = <50>;
             slow-release;
         };
 
         hrc-r-ctrl-shift-alt {
             bindings = <&stmhk RS(RC(RIGHT_ALT)) RS(RC(RIGHT_ALT))>;
-            key-positions = <42 43 44>;
+            key-positions = <42 43 62>;
             timeout-ms = <50>;
             slow-release;
         };
