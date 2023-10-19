@@ -364,12 +364,12 @@
 
         layer_right {
             bindings = <
-&trans  &trans        &trans              &trans                  &trans                                                                                          &trans    &trans       &trans               &trans         &trans
-&trans  &trans        &trans              &trans                  &trans              &trans                                                            &trans    &trans    &trans       &trans               &trans         &trans
-&trans  &trans        &kpss AT            &kpss PLUS              &kpss EXCL          &kpss AMPERSAND                                                   &kpsn N9  &kpsn N7  &kpss EQUAL  &kpss HASH           &trans         &trans
-&trans  &kpss GRAVE   &kpss SINGLE_QUOTE  &kpss LEFT_PARENTHESIS  &kpss LEFT_BRACKET  &kpss LEFT_BRACE                                                  &kpsn N8  &kpsn N6  &kpss RPAR   &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
-&trans  &kpss DOLLAR  &kpss BACKSLASH     &kpss UNDERSCORE        &kpss ASTERISK      &kpss LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpss GT  &kpsn N5  &kpss MINUS  &kpss SLASH          &kpss PERCENT  &trans
-&trans  &trans        &trans              &trans                  &trans                                &trans  &trans  &trans  &trans  &trans  &trans            &trans    &kp PG_UP    &kp PAGE_DOWN        &trans         &trans
+&trans  &trans        &trans              &trans                  &trans                                                                                          &trans    &trans         &trans               &trans         &trans
+&trans  &trans        &trans              &trans                  &trans              &trans                                                            &trans    &trans    &trans         &trans               &trans         &trans
+&trans  &trans        &kpss AT            &kpss PLUS              &kpss EXCL          &kpss AMPERSAND                                                   &kpsn N9  &kpsn N7  &kpss EQUAL    &kpss HASH           &trans         &trans
+&trans  &kpss GRAVE   &kpss SINGLE_QUOTE  &kpss LEFT_PARENTHESIS  &kpss LEFT_BRACKET  &kpss LEFT_BRACE                                                  &kpsn N8  &kpsn N6  &kpss RPAR     &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
+&trans  &kpss DOLLAR  &kpss BACKSLASH     &kpss UNDERSCORE        &kpss ASTERISK      &kpss LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpss GT  &kpsn N5  &kpss MINUS    &kpss SLASH          &kpss PERCENT  &trans
+&trans  &trans        &trans              &trans                  &trans                                &trans  &trans  &trans  &trans  &trans  &trans            &trans    &kpss PAGE_UP  &kpss PAGE_DOWN      &trans         &trans
             >;
         };
 
