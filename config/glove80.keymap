@@ -388,9 +388,9 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp N2  &kp N4                                                  &kp N9  &kp N7  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp N1  &kp N3                                                  &kp N8  &kp N6  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kpsn N2  &kpsn N4                                                  &kpsn N9  &kpsn N7  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kpsn N1  &kpsn N3                                                  &kpsn N8  &kpsn N6  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kpsn N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kpsn N5  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -459,7 +459,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
-        };
+          };
     };
 
     conditional_layers {
