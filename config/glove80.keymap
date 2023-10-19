@@ -355,10 +355,10 @@
             bindings = <
 &trans  &trans      &trans        &trans          &trans                                                                                   &trans             &trans                 &trans             &trans       &trans
 &trans  &trans      &trans        &trans          &trans          &trans                                                  &trans           &trans             &trans                 &trans             &trans       &trans
-&trans  &trans      &kp AT        &kp PLUS        &kpsn NUMBER_2  &kp N4                                                  &kp PIPE         &kp QUESTION       &kp EQUAL              &kp HASH           &trans       &trans
-&trans  &kp GRAVE   &kp SQT       &kp LPAR        &kpsn NUMBER_1  &kp N3                                                  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp TILDE    &trans
-&trans  &kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  &kpsn N0        &kp LT  &trans  &trans  &trans  &trans  &trans  &trans  &kp GT           &kp SLASH          &kp MINUS              &kp CARET          &kp PERCENT  &trans
-&trans  &trans      &trans        &trans          &trans                  &trans  &trans  &trans  &trans  &trans  &trans                   &trans             &kp PAGE_DOWN          &kp PAGE_DOWN      &trans       &trans
+&trans  &trans      &kp AT        &kp PLUS        &kpsn N2  &kpsn N4                                                  &kpss PIPE         &kpss QUESTION       &kpss EQUAL              &kpss HASH           &trans       &trans
+&trans  &kpss GRAVE   &kpss SQT       &kpss LPAR        &kpsn N1  &kpsn N3                                                  &kpss RIGHT_BRACE  &kpss RIGHT_BRACKET  &kpss RIGHT_PARENTHESIS  &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
+&trans  &kpss DOLLAR  &kpss ASTERISK  &kpss UNDERSCORE  &kpsn N0        &kpss LT  &trans  &trans  &trans  &trans  &trans  &trans  &kpss GT           &kpss SLASH          &kpss MINUS              &kpss CARET          &kpss PERCENT  &trans
+&trans  &trans      &trans        &trans          &trans                  &trans  &trans  &trans  &trans  &trans  &trans                   &trans             &kpss PAGE_DOWN          &kpss PAGE_DOWN      &trans       &trans
             >;
         };
 
@@ -366,9 +366,9 @@
             bindings = <
 &trans  &trans      &trans            &trans                &trans                                                                                    &trans  &trans     &trans             &trans       &trans
 &trans  &trans      &trans            &trans                &trans            &trans                                                          &trans  &trans  &trans     &trans             &trans       &trans
-&trans  &trans      &kp AT            &kp PLUS              &kp EXCL          &kp AMPERSAND                                                   &kp N9  &kp N7  &kp EQUAL  &kp HASH           &trans       &trans
-&trans  &kp GRAVE   &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE                                                  &kp N8  &kp N6  &kp RPAR   &kp DOUBLE_QUOTES  &kp TILDE    &trans
-&trans  &kp DOLLAR  &kp BACKSLASH     &kp UNDERSCORE        &kp ASTERISK      &kp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kp GT  &kp N5  &kp MINUS  &kp SLASH          &kp PERCENT  &trans
+&trans  &trans      &kpss AT            &kpss PLUS              &kpss EXCL          &kpss AMPERSAND                                                   &kpsn N9  &kpsn N7  &kpss EQUAL  &kpss HASH           &trans       &trans
+&trans  &kpss GRAVE   &kpss SINGLE_QUOTE  &kpss LEFT_PARENTHESIS  &kpss LEFT_BRACKET  &kpss LEFT_BRACE                                                  &kpsn N8  &kpsn N6  &kpss RPAR   &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
+&trans  &kpss DOLLAR  &kpss BACKSLASH     &kpss UNDERSCORE        &kpss ASTERISK      &kpss LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpss GT  &kpsn N5  &kpss MINUS  &kpss SLASH          &kpss PERCENT  &trans
 &trans  &trans      &trans            &trans                &trans                            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp PG_UP  &kp PAGE_DOWN      &trans       &trans
             >;
         };
