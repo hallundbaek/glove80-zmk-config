@@ -216,7 +216,7 @@
 
         hrc-l-ctrl {
             bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>;
-            key-positions = <36 47>;
+            key-positions = <47 48>;
             slow-release;
             timeout-ms = <50>;
         };
@@ -251,21 +251,21 @@
 
         hrc-l-ctrl-shift-alt {
             bindings = <&stmhk LC(LS(LEFT_ALT)) LC(LS(LEFT_ALT))>;
-            key-positions = <36 37 47>;
+            key-positions = <37 47 48>;
             timeout-ms = <50>;
             slow-release;
         };
 
         hrc-l-shift-alt {
             bindings = <&stmhk LS(LEFT_ALT) LS(LEFT_ALT)>;
-            key-positions = <36 38>;
+            key-positions = <38 48>;
             timeout-ms = <50>;
             slow-release;
         };
 
         hrc-r-ctrl {
             bindings = <&stmhk RIGHT_CONTROL RIGHT_CONTROL>;
-            key-positions = <43 62>;
+            key-positions = <62 61>;
             timeout-ms = <50>;
             slow-release;
         };
@@ -300,27 +300,27 @@
 
         hrc-r-ctrl-shift-alt {
             bindings = <&stmhk RS(RC(RIGHT_ALT)) RS(RC(RIGHT_ALT))>;
-            key-positions = <42 43 62>;
+            key-positions = <42 62 61>;
             timeout-ms = <50>;
             slow-release;
         };
 
         hrc-r-shift-alt {
             bindings = <&stmhk RS(RIGHT_ALT) RS(RIGHT_ALT)>;
-            key-positions = <41 43>;
+            key-positions = <41 61>;
             timeout-ms = <50>;
             slow-release;
         };
 
         workspaces_dv {
             bindings = <&stmhl 6 6>;
-            key-positions = <37 50>;
+            key-positions = <50 49>;
             slow-release;
         };
 
         workspaces_mk {
             bindings = <&stmhl 6 6>;
-            key-positions = <42 59>;
+            key-positions = <59 60>;
             slow-release;
         };
 
@@ -375,23 +375,23 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans      &trans         &trans          &trans                                                                                              &trans             &trans         &trans             &trans       &trans
-&trans  &trans      &trans         &trans          &trans            &trans                                                          &trans            &trans             &trans         &trans             &trans       &trans
-&trans  &trans      &kpss AT         &kpss PLUS        &kpss EXCLAMATION   &kpss AMPERSAND                                                   &kpss PIPE          &kpss QUESTION       &kpss EQUAL      &kpss HASH           &trans       &trans
+&trans  &trans        &trans           &trans            &trans                                                                                                    &trans               &trans           &trans               &trans         &trans
+&trans  &trans        &trans           &trans            &trans              &trans                                                            &trans              &trans               &trans           &trans               &trans         &trans
+&trans  &trans        &kpss AT         &kpss PLUS        &kpss EXCLAMATION   &kpss AMPERSAND                                                   &kpss PIPE          &kpss QUESTION       &kpss EQUAL      &kpss HASH           &trans         &trans
 &trans  &kpss GRAVE   &kpss SQT        &kpss LPAR        &kpss LEFT_BRACKET  &kpss LEFT_BRACE                                                  &kpss RBRC          &kpss RIGHT_BRACKET  &kpss RPAR       &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
 &trans  &kpss DOLLAR  &kpss BACKSLASH  &kpss UNDERSCORE  &kpss ASTERISK      &kpss LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpss GREATER_THAN  &kpss CARET          &kpss MINUS      &kpss SLASH          &kpss PERCENT  &trans
-&trans  &trans      &trans         &trans          &trans                            &trans  &trans  &trans  &trans  &trans  &trans                    &trans             &kpss PAGE_DOWN  &kpss PAGE_UP        &trans       &trans
+&trans  &trans        &trans           &trans            &trans                                &trans  &trans  &trans  &trans  &trans  &trans                      &trans               &kpss PAGE_DOWN  &kpss PAGE_UP        &trans         &trans
             >;
         };
 
         layer_numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                        &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                                                    &trans    &trans    &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &kpsn N2  &kpsn N4                                                  &kpsn N9  &kpsn N7  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &kpsn N1  &kpsn N3                                                  &kpsn N8  &kpsn N6  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kpsn N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kpsn N5  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kpsn N0  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kpsn N5  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans            &trans    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -459,7 +459,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
-          };
+        };
     };
 
     conditional_layers {
