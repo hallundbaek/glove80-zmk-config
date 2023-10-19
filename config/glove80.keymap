@@ -363,12 +363,12 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp  &kp         &kp           &kp             &kp                                                                               &kp                &kp            &kp                &kp          &kp
+&kp  &kp         &kp           &kp             &kp               &kp                                           &kp               &kp                &kp            &kp                &kp          &kp
+&kp  &kp         &kp AT        &kp PLUS        &kp EXCLAMATION   &kp AMPERSAND                                 &kp PIPE          &kp QUESTION       &kp EQUAL      &kp HASH           &kp          &kp
+&kp  &kp GRAVE   &kp SQT       &kp LPAR        &kp LEFT_BRACKET  &kp LEFT_BRACE                                &kp RBRC          &kp RIGHT_BRACKET  &kp RPAR       &kp DOUBLE_QUOTES  &kp TILDE    &kp
+&kp  &kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  &kp BACKSLASH     &kp LESS_THAN   &kp  &kp  &kp  &kp  &kp  &kp  &kp GREATER_THAN  &kp SLASH          &kp MINUS      &kp CARET          &kp PERCENT  &kp
+&kp  &kp         &kp           &kp             &kp                               &kp  &kp  &kp  &kp  &kp  &kp                    &kp                &kp PAGE_DOWN  &kp PAGE_UP        &kp          &kp
             >;
         };
 
