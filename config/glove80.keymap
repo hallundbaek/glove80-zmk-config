@@ -377,10 +377,10 @@
             bindings = <
 &trans  &trans      &trans         &trans          &trans                                                                                              &trans             &trans         &trans             &trans       &trans
 &trans  &trans      &trans         &trans          &trans            &trans                                                          &trans            &trans             &trans         &trans             &trans       &trans
-&trans  &trans      &kp AT         &kp PLUS        &kp EXCLAMATION   &kp AMPERSAND                                                   &kp PIPE          &kp QUESTION       &kp EQUAL      &kp HASH           &trans       &trans
-&trans  &kp GRAVE   &kp SQT        &kp LPAR        &kp LEFT_BRACKET  &kp LEFT_BRACE                                                  &kp RBRC          &kp RIGHT_BRACKET  &kp RPAR       &kp DOUBLE_QUOTES  &kp TILDE    &trans
-&trans  &kp DOLLAR  &kp BACKSLASH  &kp UNDERSCORE  &kp ASTERISK      &kp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kp GREATER_THAN  &kp CARET          &kp MINUS      &kp SLASH          &kp PERCENT  &trans
-&trans  &trans      &trans         &trans          &trans                            &trans  &trans  &trans  &trans  &trans  &trans                    &trans             &kp PAGE_DOWN  &kp PAGE_UP        &trans       &trans
+&trans  &trans      &kpss AT         &kpss PLUS        &kpss EXCLAMATION   &kpss AMPERSAND                                                   &kpss PIPE          &kpss QUESTION       &kpss EQUAL      &kpss HASH           &trans       &trans
+&trans  &kpss GRAVE   &kpss SQT        &kpss LPAR        &kpss LEFT_BRACKET  &kpss LEFT_BRACE                                                  &kpss RBRC          &kpss RIGHT_BRACKET  &kpss RPAR       &kpss DOUBLE_QUOTES  &kpss TILDE    &trans
+&trans  &kpss DOLLAR  &kpss BACKSLASH  &kpss UNDERSCORE  &kpss ASTERISK      &kpss LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kpss GREATER_THAN  &kpss CARET          &kpss MINUS      &kpss SLASH          &kpss PERCENT  &trans
+&trans  &trans      &trans         &trans          &trans                            &trans  &trans  &trans  &trans  &trans  &trans                    &trans             &kpss PAGE_DOWN  &kpss PAGE_UP        &trans       &trans
             >;
         };
 
