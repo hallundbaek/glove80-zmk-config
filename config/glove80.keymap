@@ -87,11 +87,17 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
-        key_sticky_symbol: key_sticky_symbol {
+        keypress_sticky_symbol: keypress_sticky_symbol {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&sl 9 &macro_param_1to1 &kp>;
-            label = "KEY_STICKY_SYMBOL";
+            bindings = <&macro_param_1to1 &kp &sl 9>;
+            label = "KEYPRESS_STICKY_SYMBOL";
+        };
+        keypress_stickey_numbers: keypress_stickey_numbers {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &sl 10>;
+            label = "KEYPRESS_STICKEY_NUMBERS";
         };
     };
 };
