@@ -87,6 +87,24 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
+        kpss: kpss {
+            label = "KPSS";
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
+              = <&macro_param_1to1>
+              , <&kp MACRO_PLACEHOLDER>
+              , <&sl 9>;
+        };
+        kpsn: kpsn {
+            label = "KPSN";
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
+              = <&macro_param_1to1>
+              , <&kp MACRO_PLACEHOLDER>
+              , <&sl 10>;
+        };
     };
 };
 
