@@ -216,7 +216,7 @@
 
         hrc-l-ctrl {
             bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>;
-            key-positions = <48 36>;
+            key-positions = <36 24>;
             slow-release;
             timeout-ms = <50>;
         };
@@ -237,7 +237,7 @@
 
         hrc-r-ctrl {
             bindings = <&stmhk RIGHT_CONTROL RIGHT_CONTROL>;
-            key-positions = <61 43>;
+            key-positions = <43 31>;
             timeout-ms = <50>;
             slow-release;
         };
@@ -258,25 +258,25 @@
 
         workspaces_dv {
             bindings = <&stmhl 6 6>;
-            key-positions = <49 67>;
+            key-positions = <49 37>;
             slow-release;
         };
 
         workspaces_mk {
             bindings = <&stmhl 6 6>;
-            key-positions = <60 76>;
+            key-positions = <60 42>;
             slow-release;
         };
 
         downshift_xd {
             bindings = <&stmhl 1 1>;
-            key-positions = <48 66>;
+            key-positions = <48 36>;
             slow-release;
         };
 
         downshift_kdot {
             bindings = <&stmhl 2 2>;
-            key-positions = <61 77>;
+            key-positions = <61 43>;
             slow-release;
         };
     };
