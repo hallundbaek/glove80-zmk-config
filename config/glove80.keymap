@@ -244,15 +244,39 @@
             slow-release;
         };
 
-        downshift_xd {
+        symbols_left {
             bindings = <&stmhl 1 1>;
             key-positions = <47 35>;
             slow-release;
         };
 
-        downshift_kdot {
+        symbols_right {
             bindings = <&stmhl 1 1>;
             key-positions = <62 44>;
+            slow-release;
+        };
+
+        numbers_left {
+            bindings = <&stmhl 5 5>;
+            key-positions = <36 24>;
+            slow-release;
+        };
+
+        number_right {
+            bindings = <&stmhl 6 6>;
+            key-positions = <31 43>;
+            slow-release;
+        };
+
+        function_left {
+            bindings = <&stmhl 8 8>;
+            key-positions = <23 35>;
+            slow-release;
+        };
+
+        function_right {
+            bindings = <&stmhl 7 7>;
+            key-positions = <44 32>;
             slow-release;
         };
     };
