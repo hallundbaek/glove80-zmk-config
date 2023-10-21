@@ -34,24 +34,6 @@
             tapping-term-ms = <200>;
             bindings = <&mo 0>, <&to 0>;
         };
-        stmhl: sticky_tap_momentary_hold_LAYER {
-            compatible = "zmk,behavior-hold-tap";
-            label = "STICKY_TAP_MOMENTARY_HOLD_LAYER";
-            bindings = <&mo>, <&sl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            flavor = "tap-preferred";
-        };
-        stmhk: sticky_tap_momentary_hold_key {
-            compatible = "zmk,behavior-hold-tap";
-            label = "STICKY_TAP_MOMENTARY_HOLD_KEY";
-            bindings = <&kp>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            flavor = "tap-preferred";
-        };
     };
 };
 
@@ -245,56 +227,56 @@
         };
 
         symbols_left {
-            bindings = <&stmhl 1 1>;
+            bindings = <&mo 1>;
             key-positions = <47 35>;
             slow-release;
             timeout-ms = <80>;
         };
 
         symbols_right {
-            bindings = <&stmhl 1 1>;
+            bindings = <&mo 1>;
             key-positions = <62 44>;
             slow-release;
             timeout-ms = <80>;
         };
 
         numbers_left {
-            bindings = <&stmhl 6 6>;
+            bindings = <&mo 6>;
             key-positions = <67 49>;
             slow-release;
             timeout-ms = <80>;
         };
 
         number_right {
-            bindings = <&stmhl 6 6>;
+            bindings = <&mo 6>;
             key-positions = <76 60>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_left {
-            bindings = <&stmhl 5 5>;
+            bindings = <&mo 5>;
             key-positions = <23 35>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_right {
-            bindings = <&stmhl 4 4>;
+            bindings = <&mo 4>;
             key-positions = <44 32>;
             slow-release;
             timeout-ms = <80>;
         };
 
         symbols_left_mid {
-            bindings = <&stmhl 1 1>;
+            bindings = <&mo 1>;
             key-positions = <49 37>;
             timeout-ms = <80>;
             slow-release;
         };
 
         symbols_right_mid {
-            bindings = <&stmhl 1 1>;
+            bindings = <&mo 1>;
             key-positions = <60 42>;
             timeout-ms = <80>;
             slow-release;
