@@ -285,6 +285,20 @@
             slow-release;
             timeout-ms = <80>;
         };
+
+        symbols_left_mid {
+            bindings = <&stmhl 1 1>;
+            key-positions = <49 37>;
+            timeout-ms = <80>;
+            slow-release;
+        };
+
+        symbols_right_mid {
+            bindings = <&stmhl 1 1>;
+            key-positions = <60 42>;
+            timeout-ms = <80>;
+            slow-release;
+        };
     };
 
     keymap {
@@ -303,12 +317,12 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans      &trans         &trans          &trans                                                                                              &trans             &trans         &trans             &trans       &trans
-&trans  &trans      &trans         &trans          &trans            &trans                                                          &trans            &trans             &trans         &trans             &trans       &trans
-&trans  &trans      &kp AT         &kp PLUS        &kp EXCLAMATION   &kp AMPERSAND                                                   &kp PIPE          &kp QUESTION       &kp EQUAL      &kp HASH           &trans       &trans
-&trans  &kp GRAVE   &kp SQT        &kp LPAR        &kp LEFT_BRACKET  &kp LEFT_BRACE                                                  &kp RBRC          &kp RIGHT_BRACKET  &kp RPAR       &kp DOUBLE_QUOTES  &kp TILDE    &trans
-&trans  &kp DOLLAR  &kp BACKSLASH  &kp UNDERSCORE  &kp ASTERISK      &kp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kp GREATER_THAN  &kp CARET          &kp MINUS      &kp SLASH          &kp PERCENT  &trans
-&trans  &trans      &trans         &trans          &trans                            &trans  &trans  &trans  &trans  &trans  &trans                    &trans             &kp PAGE_DOWN  &kp PAGE_UP        &trans       &trans
+&trans  &trans      &trans         &trans        &trans                                                                                              &trans             &trans         &trans             &trans       &trans
+&trans  &trans      &trans         &trans        &trans            &trans                                                          &trans            &trans             &trans         &trans             &trans       &trans
+&trans  &trans      &kp AT         &kp PLUS      &kp EXCLAMATION   &kp AMPERSAND                                                   &kp PIPE          &kp QUESTION       &kp EQUAL      &kp HASH           &trans       &trans
+&trans  &kp GRAVE   &kp SQT        &kp LPAR      &kp LEFT_BRACKET  &kp LEFT_BRACE                                                  &kp RBRC          &kp RIGHT_BRACKET  &kp RPAR       &kp DOUBLE_QUOTES  &kp TILDE    &trans
+&trans  &kp DOLLAR  &kp BACKSLASH  &kp ASTERISK  &kp UNDERSCORE    &kp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kp GREATER_THAN  &kp MINUS          &kp CARET      &kp SLASH          &kp PERCENT  &trans
+&trans  &trans      &trans         &trans        &trans                            &trans  &trans  &trans  &trans  &trans  &trans                    &trans             &kp PAGE_DOWN  &kp PAGE_UP        &trans       &trans
             >;
         };
 
