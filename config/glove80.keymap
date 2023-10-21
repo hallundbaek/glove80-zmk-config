@@ -206,78 +206,84 @@
             bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>;
             key-positions = <36 48>;
             slow-release;
-            timeout-ms = <50>;
+            timeout-ms = <80>;
         };
 
         hrc-l-shift {
             bindings = <&stmhk LEFT_SHIFT LEFT_SHIFT>;
             key-positions = <37 25>;
-            timeout-ms = <50>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         hrc-l-alt {
             bindings = <&stmhk LEFT_ALT LEFT_ALT>;
             key-positions = <38 26>;
-            timeout-ms = <50>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         hrc-r-ctrl {
             bindings = <&stmhk RIGHT_CONTROL RIGHT_CONTROL>;
             key-positions = <43 61>;
-            timeout-ms = <50>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         hrc-r-shift {
             bindings = <&stmhk RIGHT_SHIFT RIGHT_SHIFT>;
             key-positions = <42 30>;
-            timeout-ms = <50>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         hrc-r-alt {
             bindings = <&stmhk RIGHT_ALT RIGHT_ALT>;
             key-positions = <41 29>;
-            timeout-ms = <50>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         symbols_left {
             bindings = <&stmhl 1 1>;
             key-positions = <47 35>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         symbols_right {
             bindings = <&stmhl 1 1>;
             key-positions = <62 44>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         numbers_left {
             bindings = <&stmhl 5 5>;
             key-positions = <36 24>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         number_right {
             bindings = <&stmhl 6 6>;
             key-positions = <31 43>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         function_left {
             bindings = <&stmhl 8 8>;
             key-positions = <23 35>;
             slow-release;
+            timeout-ms = <80>;
         };
 
         function_right {
             bindings = <&stmhl 7 7>;
             key-positions = <44 32>;
             slow-release;
+            timeout-ms = <80>;
         };
     };
 
