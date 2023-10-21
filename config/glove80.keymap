@@ -301,7 +301,7 @@
             bindings = <
 &trans  &trans    &trans         &trans        &trans                                                                                                 &trans                 &trans       &trans             &trans       &trans
 &trans  &trans    &trans         &trans        &trans                &trans                                                            &trans         &trans                 &trans       &trans             &trans       &trans
-&trans  &trans    &trans         &kp GRAVE     &kp LBRC              &kp AMPERSAND                                                     &kp PIPE       &kp HASH               &kp RBRC     &trans             &trans       &trans
+&trans  &trans    &trans         &kp GRAVE     &kp LBRC              &kp AMPERSAND                                                     &kp PIPE       &kp RBRC               &kp TILDE    &trans             &trans       &trans
 &trans  &kp PLUS  &kp SQT        &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                  &kp RBKT       &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp DOUBLE_QUOTES  &kp EQUAL    &trans
 &trans  &kp AT    &kp BACKSLASH  &kp ASTERISK  &kp UNDERSCORE        &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN  &kp MINUS              &kp CARET    &kp SLASH          &kp TILDE    &trans
 &trans  &trans    &trans         &trans        &kp EXCLAMATION                         &trans  &trans  &trans  &trans  &trans  &trans                 &kp QUESTION           &trans       &kp PAGE_DOWN      &kp PAGE_UP  &trans
