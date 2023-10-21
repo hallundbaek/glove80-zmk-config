@@ -349,9 +349,9 @@
             bindings = <
 &trans  &trans              &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans              &trans  &kp N7  &kp N8  &kp N9                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &kp N4  &kp N5  &kp N6                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LEFT_SHIFT)  &trans  &kp N4  &kp N5  &kp N6                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ALT        &trans  &kp N1  &kp N2  &kp N3                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LEFT_SHIFT)  &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans              &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -360,9 +360,9 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans               &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N7  &kp N8  &kp N9  &trans  &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N4  &kp N5  &kp N6  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N4  &kp N5  &kp N6  &trans  &kp RA(RIGHT_SHIFT)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N1  &kp N2  &kp N3  &trans  &kp RIGHT_ALT        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &kp RA(RIGHT_SHIFT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans               &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans               &trans
             >;
         };
