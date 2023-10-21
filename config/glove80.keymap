@@ -204,7 +204,7 @@
 
         hrc-l-ctrl {
             bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>;
-            key-positions = <36 24>;
+            key-positions = <36 48>;
             slow-release;
             timeout-ms = <50>;
         };
@@ -225,7 +225,7 @@
 
         hrc-r-ctrl {
             bindings = <&stmhk RIGHT_CONTROL RIGHT_CONTROL>;
-            key-positions = <43 31>;
+            key-positions = <43 61>;
             timeout-ms = <50>;
             slow-release;
         };
@@ -244,27 +244,15 @@
             slow-release;
         };
 
-        workspaces_dv {
-            bindings = <&stmhl 6 6>;
-            key-positions = <49 37>;
-            slow-release;
-        };
-
-        workspaces_mk {
-            bindings = <&stmhl 6 6>;
-            key-positions = <60 42>;
-            slow-release;
-        };
-
         downshift_xd {
             bindings = <&stmhl 1 1>;
-            key-positions = <48 36>;
+            key-positions = <47 35>;
             slow-release;
         };
 
         downshift_kdot {
-            bindings = <&stmhl 2 2>;
-            key-positions = <61 43>;
+            bindings = <&stmhl 1 1>;
+            key-positions = <62 44>;
             slow-release;
         };
     };
@@ -274,67 +262,23 @@
 
         layer_Base {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4    &kp F5                                                                                                           &kp F6    &kp F7     &kp F8   &kp F9         &kp F10
-&kp GRAVE   &caps_word    &kp NUMBER_2  &kp N3    &kp N4   &kp N5                                                                                          &kp N6  &kp N7    &kp N8     &kp N9   &kp SLASH      &kp EQUAL
-&kp F11     &kp NUMBER_1  &kp W         &kp E     &kp R    &kp T                                                                                           &kp Y   &kp U     &kp I      &kp O    &kp N0         &kp MINUS
-&kp ESCAPE  &kp Q         &kp S         &kp D     &kp F    &kp G                                                                                           &kp H   &kp J     &kp K      &kp L    &kp P          &kp LEFT_BRACKET
-&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp LEFT_SHIFT  &to 8          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
-&magic 7 0  &kp Z         &kp COLON     &kp HOME  &kp END          &kp SPACE     &kp ENTER       &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
-            >;
-        };
-
-        layer_left {
-            bindings = <
-&trans  &trans        &trans           &trans            &trans                                                                                 &trans               &trans                   &trans               &trans         &trans
-&trans  &trans        &trans           &trans            &trans    &trans                                                    &trans             &trans               &trans                   &trans               &trans         &trans
-&trans  &trans        &kp AT         &kp PLUS        &kp N2  &kp N4                                                  &kp PIPE         &kp QUESTION       &kp EQUAL              &kp HASH           &trans         &trans
-&trans  &kp GRAVE   &kp SQT        &kp LPAR        &kp N1  &kp N3                                                  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp TILDE    &trans
-&trans  &kp DOLLAR  &kp BACKSLASH  &kp UNDERSCORE  &kp N0  &kp LT  &trans  &trans  &trans  &trans  &trans  &trans  &kp GT           &kp CARET          &kp MINUS              &kp SLASH          &kp PERCENT  &trans
-&trans  &trans        &trans           &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans                     &trans               &kp PAGE_DOWN          &kp PAGE_DOWN      &trans         &trans
-            >;
-        };
-
-        layer_right {
-            bindings = <
-&trans  &trans        &trans              &trans                  &trans                                                                                          &trans    &trans         &trans               &trans         &trans
-&trans  &trans        &trans              &trans                  &trans              &trans                                                            &trans    &trans    &trans         &trans               &trans         &trans
-&trans  &trans        &kp AT            &kp PLUS              &kp EXCL          &kp AMPERSAND                                                   &kp N9  &kp N7  &kp EQUAL    &kp HASH           &trans         &trans
-&trans  &kp GRAVE   &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE                                                  &kp N8  &kp N6  &kp RPAR     &kp DOUBLE_QUOTES  &kp TILDE    &trans
-&trans  &kp DOLLAR  &kp BACKSLASH     &kp UNDERSCORE        &kp ASTERISK      &kp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kp GT  &kp N5  &kp MINUS    &kp SLASH          &kp PERCENT  &trans
-&trans  &trans        &trans              &trans                  &trans                                &trans  &trans  &trans  &trans  &trans  &trans            &trans    &kp PAGE_UP  &kp PAGE_DOWN      &trans         &trans
+&kp F1      &kp F2        &kp F3        &kp F4    &kp F5                                                                                                       &kp F6    &kp F7     &kp F8   &kp F9         &kp F10
+&kp GRAVE   &caps_word    &kp NUMBER_2  &kp N3    &kp N4   &kp N5                                                                                      &kp N6  &kp N7    &kp N8     &kp N9   &kp SLASH      &kp EQUAL
+&kp F11     &kp NUMBER_1  &kp W         &kp E     &kp R    &kp T                                                                                       &kp Y   &kp U     &kp I      &kp O    &kp N0         &kp MINUS
+&kp ESCAPE  &kp Q         &kp S         &kp D     &kp F    &kp G                                                                                       &kp H   &kp J     &kp K      &kp L    &kp P          &kp LEFT_BRACKET
+&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
+&magic 3 0  &kp Z         &kp COLON     &kp HOME  &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
             >;
         };
 
         layer_symbols {
             bindings = <
-&trans  &trans        &trans           &trans            &trans                                                                                                    &trans               &trans           &trans               &trans         &trans
-&trans  &trans        &trans           &trans            &trans              &trans                                                            &trans              &trans               &trans           &trans               &trans         &trans
-&trans  &trans        &kp AT         &kp PLUS        &kp EXCLAMATION   &kp AMPERSAND                                                   &kp PIPE          &kp QUESTION       &kp EQUAL      &kp HASH           &trans         &trans
+&trans  &trans      &trans         &trans          &trans                                                                                              &trans             &trans         &trans             &trans       &trans
+&trans  &trans      &trans         &trans          &trans            &trans                                                          &trans            &trans             &trans         &trans             &trans       &trans
+&trans  &trans      &kp AT         &kp PLUS        &kp EXCLAMATION   &kp AMPERSAND                                                   &kp PIPE          &kp QUESTION       &kp EQUAL      &kp HASH           &trans       &trans
 &trans  &kp GRAVE   &kp SQT        &kp LPAR        &kp LEFT_BRACKET  &kp LEFT_BRACE                                                  &kp RBRC          &kp RIGHT_BRACKET  &kp RPAR       &kp DOUBLE_QUOTES  &kp TILDE    &trans
 &trans  &kp DOLLAR  &kp BACKSLASH  &kp UNDERSCORE  &kp ASTERISK      &kp LESS_THAN   &trans  &trans  &trans  &trans  &trans  &trans  &kp GREATER_THAN  &kp CARET          &kp MINUS      &kp SLASH          &kp PERCENT  &trans
-&trans  &trans        &trans           &trans            &trans                                &trans  &trans  &trans  &trans  &trans  &trans                      &trans               &kp PAGE_DOWN  &kp PAGE_UP        &trans         &trans
-            >;
-        };
-
-        layer_numbers {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                        &trans    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans                                                    &trans    &trans    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp N2  &kp N4                                                  &kp N9  &kp N7  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp N1  &kp N3                                                  &kp N8  &kp N6  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp N0  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp N5  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans            &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_function {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                   &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp F3  &kp F5                                                   &kp F10  &kp F8  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp F2  &kp F4                                                   &kp F9   &kp F7  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp F1  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F6  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans         &trans          &trans                            &trans  &trans  &trans  &trans  &trans  &trans                    &trans             &kp PAGE_DOWN  &kp PAGE_UP        &trans       &trans
             >;
         };
 
@@ -371,55 +315,52 @@
             >;
         };
 
-        layer_sticky_symbol {
+        layer_numbers_left {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &kp N7  &kp N8  &kp N9                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ALT        &trans  &kp N4  &kp N5  &kp N6                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LEFT_SHIFT)  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &kp N0          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_sticky_numbers {
+        layer_numbers_right {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N7  &kp N8  &kp N9  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N4  &kp N5  &kp N6  &trans  &kp RIGHT_ALT        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &kp RA(RIGHT_SHIFT)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp N0  &trans  &trans  &trans               &trans
+            >;
+        };
+
+        layer_function_right {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans   &trans   &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans   &trans   &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans   &trans   &trans   &trans  &trans
+            >;
+        };
+
+        layer_function_left {
+            bindings = <
+&trans  &trans  &trans  &trans   &trans                                                                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8                                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans   &trans            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        function_conditional {
-            if-layers = <1 2>;
-            then-layer = <5>;
-        };
-
-        sticky_symbols_left {
-            if-layers = <9 1>;
-            then-layer = <3>;
-        };
-
-        sticky_symbols_right {
-            if-layers = <9 2>;
-            then-layer = <3>;
-        };
-
-        sticky_numbers_left {
-            if-layers = <10 1>;
-            then-layer = <4>;
-        };
-
-        sticky_numbers_rigth {
-            if-layers = <10 2>;
-            then-layer = <4>;
-        };
     };
 };
