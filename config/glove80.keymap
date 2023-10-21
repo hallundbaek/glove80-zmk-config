@@ -259,28 +259,28 @@
         };
 
         numbers_left {
-            bindings = <&stmhl 5 5>;
+            bindings = <&stmhl 4 4>;
             key-positions = <36 24>;
             slow-release;
             timeout-ms = <80>;
         };
 
         number_right {
-            bindings = <&stmhl 6 6>;
+            bindings = <&stmhl 5 5>;
             key-positions = <31 43>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_left {
-            bindings = <&stmhl 8 8>;
+            bindings = <&stmhl 7 7>;
             key-positions = <23 35>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_right {
-            bindings = <&stmhl 7 7>;
+            bindings = <&stmhl 6 6>;
             key-positions = <44 32>;
             slow-release;
             timeout-ms = <80>;
@@ -310,30 +310,19 @@
 &kp GRAVE   &caps_word    &kp NUMBER_2  &kp N3    &kp N4   &kp N5                                                                                      &kp N6  &kp N7    &kp N8     &kp N9   &kp SLASH      &kp EQUAL
 &kp F11     &kp NUMBER_1  &kp W         &kp E     &kp R    &kp T                                                                                       &kp Y   &kp U     &kp I      &kp O    &kp N0         &kp MINUS
 &kp ESCAPE  &kp Q         &kp S         &kp D     &kp F    &kp G                                                                                       &kp H   &kp J     &kp K      &kp L    &kp P          &kp LEFT_BRACKET
-&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
-&magic 3 0  &kp Z         &kp COLON     &kp HOME  &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
+&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 3          &kp LEFT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
+&magic 2 0  &kp Z         &kp COLON     &kp HOME  &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI      &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT      &kp F12
             >;
         };
 
         layer_symbols {
             bindings = <
-&trans  &trans          &trans         &trans        &trans                                                                                                 &trans                 &trans       &trans             &trans           &trans
-&trans  &trans          &trans         &trans        &trans                &trans                                                            &trans         &trans                 &trans       &trans             &trans           &trans
-&trans  &trans          &trans         &kp GRAVE     &kp AT                &kp AMPERSAND                                                     &kp PIPE       &kp HASH               &kp TILDE    &trans             &trans           &trans
-&trans  &kp PLUS        &kp SQT        &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                  &kp RBKT       &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp DOUBLE_QUOTES  &kp EQUAL        &trans
-&trans  &kp LEFT_BRACE  &kp BACKSLASH  &kp ASTERISK  &kp UNDERSCORE        &kp GREATER_THAN  &trans  &trans  &trans  &trans  &trans  &trans  &kp LESS_THAN  &kp MINUS              &kp CARET    &kp SLASH          &kp RIGHT_BRACE  &trans
-&trans  &trans          &trans         &trans        &kp EXCLAMATION                         &trans  &trans  &trans  &trans  &trans  &trans                 &kp QUESTION           &trans       &kp PAGE_DOWN      &kp PAGE_UP      &trans
-            >;
-        };
-
-        layer_workspaces {
-            bindings = <
-&trans  &trans                &trans                &trans                &trans                                                                                                      &trans          &trans          &trans          &trans                &trans
-&trans  &trans                &trans                &trans                &trans                &trans                                                          &trans                &trans          &trans          &trans          &trans                &trans
-&trans  &trans                &trans                &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(N5))                                                  &kp RA(RS(NUMBER_6))  &kp RA(RS(N7))  &kp RA(RS(N8))  &trans          &trans                &trans
-&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(N5)                                                      &kp RA(NUMBER_6)      &kp RA(N7)      &kp RA(N8)      &kp RA(RS(N9))  &kp RA(RS(NUMBER_0))  &trans
-&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &trans                &trans                &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans          &trans          &kp RA(N9)      &kp RA(NUMBER_0)      &trans
-&trans  &trans                &trans                &trans                &trans                                &trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans          &trans          &trans                &trans
+&trans  &trans          &trans         &trans        &trans                                                                                                         &trans                 &trans       &trans             &trans           &trans
+&trans  &trans          &trans         &trans        &trans                &trans                                                                    &trans         &trans                 &trans       &trans             &trans           &trans
+&trans  &trans          &trans         &kp GRAVE     &kp AT                &kp AMPERSAND                                                             &kp PIPE       &kp HASH               &kp TILDE    &trans             &trans           &trans
+&trans  &kp PLUS        &kp SQT        &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                          &kp RBKT       &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp DOUBLE_QUOTES  &kp EQUAL        &trans
+&trans  &kp LEFT_BRACE  &kp BACKSLASH  &kp ASTERISK  &kp UNDERSCORE        &kp GREATER_THAN  &stmhl 1 1  &trans  &trans  &trans  &trans  &stmhl 1 1  &kp LESS_THAN  &kp MINUS              &kp CARET    &kp SLASH          &kp RIGHT_BRACE  &trans
+&trans  &trans          &trans         &trans        &kp EXCLAMATION                         &trans      &trans  &trans  &trans  &trans  &trans                     &kp QUESTION           &trans       &kp PAGE_DOWN      &kp PAGE_UP      &trans
             >;
         };
 
@@ -361,23 +350,23 @@
 
         layer_numbers_left {
             bindings = <
-&trans  &trans              &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &kp N7  &kp N8  &kp N9                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LEFT_SHIFT)  &trans  &kp N4  &kp N5  &kp N6                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ALT        &trans  &kp N1  &kp N2  &kp N3                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &trans                                                                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &kp N7  &kp N8  &kp N9                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LEFT_SHIFT)  &trans  &kp N4  &kp N5  &kp N6                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ALT        &trans  &kp N1  &kp N2  &kp N3                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &kp N0  &trans  &stmhl 4 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_numbers_right {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N7  &kp N8  &kp N9  &trans  &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N4  &kp N5  &kp N6  &trans  &kp RA(RIGHT_SHIFT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N1  &kp N2  &kp N3  &trans  &kp RIGHT_ALT        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans               &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans                                                                      &trans  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp N7  &kp N8  &kp N9  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp N4  &kp N5  &kp N6  &trans  &kp RA(RIGHT_SHIFT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp N1  &kp N2  &kp N3  &trans  &kp RIGHT_ALT        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &stmhl 5 5  &trans  &kp N0  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans               &trans
             >;
         };
 
