@@ -259,28 +259,28 @@
         };
 
         numbers_left {
-            bindings = <&stmhl 4 4>;
-            key-positions = <36 24>;
+            bindings = <&stmhl 6 6>;
+            key-positions = <67 49>;
             slow-release;
             timeout-ms = <80>;
         };
 
         number_right {
-            bindings = <&stmhl 5 5>;
-            key-positions = <31 43>;
+            bindings = <&stmhl 6 6>;
+            key-positions = <76 60>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_left {
-            bindings = <&stmhl 7 7>;
+            bindings = <&stmhl 5 5>;
             key-positions = <23 35>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_right {
-            bindings = <&stmhl 6 6>;
+            bindings = <&stmhl 4 4>;
             key-positions = <44 32>;
             slow-release;
             timeout-ms = <80>;
@@ -348,28 +348,6 @@
             >;
         };
 
-        layer_numbers_left {
-            bindings = <
-&trans  &trans              &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &kp N7  &kp N8  &kp N9                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LEFT_SHIFT)  &trans  &kp N4  &kp N5  &kp N6                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ALT        &trans  &kp N1  &kp N2  &kp N3                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &trans  &kp N0  &trans  &mo 4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_numbers_right {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N7  &kp N8  &kp N9  &trans  &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N4  &kp N5  &kp N6  &trans  &kp RA(RIGHT_SHIFT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp N1  &kp N2  &kp N3  &trans  &kp RIGHT_ALT        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 5   &trans  &kp N0  &trans  &trans  &trans               &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans               &trans
-            >;
-        };
-
         layer_function_right {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans   &trans   &trans   &trans  &trans
@@ -389,6 +367,17 @@
 &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4                                                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans   &trans            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_numbers {
+            bindings = <
+&trans  &trans  &trans        &trans  &trans                                                                  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans        &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans        &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans        &trans  &kp N2  &kp N4                                                  &kp N9  &kp N7  &trans  &trans        &trans  &trans
+&trans  &trans  &kp LS(LALT)  &trans  &kp N1  &kp N3  &trans  &trans  &trans  &trans  &trans  &trans  &kp N8  &kp N6  &trans  &kp RS(RALT)  &trans  &trans
+&trans  &trans  &kp LALT      &trans  &kp N0          &trans  &trans  &trans  &trans  &trans  &trans          &kp N5  &trans  &kp RALT      &trans  &trans
             >;
         };
     };
