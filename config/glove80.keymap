@@ -203,42 +203,42 @@
         compatible = "zmk,combos";
 
         hrc-l-ctrl {
-            bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>;
+            bindings = <&kp LEFT_CONTROL>;
             key-positions = <36 48>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-l-shift {
-            bindings = <&stmhk LEFT_SHIFT LEFT_SHIFT>;
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <37 25>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-l-alt {
-            bindings = <&stmhk LEFT_ALT LEFT_ALT>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <38 26>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-r-ctrl {
-            bindings = <&stmhk RIGHT_CONTROL RIGHT_CONTROL>;
+            bindings = <&kp RCTRL>;
             key-positions = <43 61>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-r-shift {
-            bindings = <&stmhk RIGHT_SHIFT RIGHT_SHIFT>;
+            bindings = <&kp RSHFT>;
             key-positions = <42 30>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-r-alt {
-            bindings = <&stmhk RIGHT_ALT RIGHT_ALT>;
+            bindings = <&kp RALT>;
             key-positions = <41 29>;
             slow-release;
             timeout-ms = <80>;
