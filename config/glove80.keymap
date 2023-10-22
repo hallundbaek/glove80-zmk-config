@@ -354,12 +354,12 @@
 
         layer_numbers {
             bindings = <
-&trans  &trans          &trans     &trans  &trans                                                                                    &trans  &trans  &trans         &trans           &trans
-&trans  &trans          &trans     &trans  &trans        &trans                                                        &trans        &trans  &trans  &trans         &trans           &trans
-&trans  &trans          &trans     &trans  &trans        &trans                                                        &trans        &trans  &trans  &trans         &trans           &trans
-&trans  &trans          &kp ASTRK  &trans  &kp NUMBER_3  &kp N4                                                        &kp N8        &kp N9  &trans  &kp KP_DIVIDE  &trans           &trans
-&trans  &kp KP_PLUS     &kp EQUAL  &trans  &kp N1        &kp NUMBER_2  &trans  &trans  &trans  &to 0   &trans  &trans  &kp NUMBER_6  &kp N7  &trans  &trans         &kp MINUS        &trans
-&trans  &kp LEFT_SHIFT  &kp LALT   &trans  &kp N0                      &trans  &trans  &trans  &trans  &trans  &trans                &kp N5  &trans  &kp RALT       &kp RIGHT_SHIFT  &trans
+&trans  &trans          &trans     &trans  &trans                                                                              &trans  &trans  &trans         &trans           &trans
+&trans  &trans          &trans     &trans  &trans        &trans                                                        &trans  &trans  &trans  &trans         &trans           &trans
+&trans  &trans          &trans     &trans  &trans        &trans                                                        &trans  &trans  &trans  &trans         &trans           &trans
+&trans  &trans          &kp ASTRK  &trans  &kp NUMBER_3  &kp N4                                                        &kp N9  &kp N8  &trans  &kp KP_DIVIDE  &trans           &trans
+&trans  &kp KP_PLUS     &kp EQUAL  &trans  &kp N1        &kp NUMBER_2  &trans  &trans  &trans  &to 0   &trans  &trans  &kp N7  &kp N6  &trans  &trans         &kp MINUS        &trans
+&trans  &kp LEFT_SHIFT  &kp LALT   &trans  &kp N0                      &trans  &trans  &trans  &trans  &trans  &trans          &kp N5  &trans  &kp RALT       &kp RIGHT_SHIFT  &trans
             >;
         };
     };
