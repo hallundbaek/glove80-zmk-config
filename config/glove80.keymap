@@ -34,6 +34,23 @@
             tapping-term-ms = <200>;
             bindings = <&mo 0>, <&to 0>;
         };
+        ctrlacolon: ctrl_a_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_A_COLON";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp A>;
+            mods = <(MOD_LCTL)>;
+            keep-mods= <(MOD_LCTL)>;
+        };
+        ctrlzhome: ctrl_z_home {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_Z_HOME";
+            #binding-cells = <0>;
+            bindings = <&kp HOME>, <&kp Z>;
+            mods = <(MOD_LCTL)>;
+            keep-mods= <(MOD_LCTL)>;
+        };
+
     };
 };
 
