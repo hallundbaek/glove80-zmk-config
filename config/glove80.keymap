@@ -69,6 +69,12 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
+        left_control: left_control {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &mo 7>;
+            label = "LEFT_CONTROL";
+        };
     };
 };
 
@@ -185,8 +191,8 @@
         compatible = "zmk,combos";
 
         hrc-l-ctrl {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <36 48>;
+            bindings = <&left_control>;
+            key-positions = <35 47>;
             slow-release;
             timeout-ms = <80>;
         };
@@ -207,7 +213,7 @@
 
         hrc-r-ctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <43 61>;
+            key-positions = <62 44>;
             slow-release;
             timeout-ms = <80>;
         };
@@ -270,14 +276,14 @@
 
         symbols_left_mid {
             bindings = <&mo 1>;
-            key-positions = <49 37>;
+            key-positions = <48 36>;
             timeout-ms = <80>;
             slow-release;
         };
 
         symbols_right_mid {
             bindings = <&mo 1>;
-            key-positions = <60 42>;
+            key-positions = <61 43>;
             timeout-ms = <80>;
             slow-release;
         };
@@ -309,12 +315,12 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans    &trans         &trans        &trans                                                                                                 &trans                 &trans       &trans             &trans       &trans
-&trans  &trans    &trans         &trans        &trans                &trans                                                            &trans         &trans                 &trans       &trans             &trans       &trans
-&trans  &trans    &trans         &kp GRAVE     &kp LBRC              &kp AMPERSAND                                                     &kp PIPE       &kp RBRC               &kp TILDE    &trans             &trans       &trans
-&trans  &kp PLUS  &kp SQT        &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                  &kp RBKT       &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp DOUBLE_QUOTES  &kp EQUAL    &trans
-&trans  &kp AT    &kp BACKSLASH  &kp ASTERISK  &kp UNDERSCORE        &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN  &kp MINUS              &kp CARET    &kp SLASH          &kp HASH     &trans
-&trans  &trans    &trans         &trans        &kp EXCLAMATION                         &trans  &trans  &trans  &trans  &trans  &trans                 &kp QUESTION           &trans       &kp PAGE_DOWN      &kp PAGE_UP  &trans
+&trans  &trans    &trans      &trans         &trans                                                                                                 &trans                 &trans             &trans       &trans     &trans
+&trans  &trans    &trans      &trans         &trans                &trans                                                            &trans         &trans                 &trans             &trans       &trans     &trans
+&trans  &trans    &trans      &kp SQT        &kp EXCL              &kp AMPERSAND                                                     &kp PIPE       &kp QMARK              &kp DOUBLE_QUOTES  &trans       &trans     &trans
+&trans  &kp AT    &kp DOLLAR  &kp LBRC       &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                  &kp RBKT       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp PERCENT  &kp HASH   &trans
+&trans  &kp PLUS  &kp STAR    &kp BACKSLASH  &kp UNDERSCORE        &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN  &kp MINUS              &kp SLASH          &kp CARET    &kp EQUAL  &trans
+&trans  &trans    &trans      &trans         &kp GRAVE                               &trans  &trans  &trans  &trans  &trans  &trans                 &kp TILDE              &kp PAGE_DOWN      &kp PAGE_UP  &trans     &trans
             >;
         };
 
@@ -370,6 +376,17 @@
 &trans  &trans          &kp ASTRK  &trans  &kp N3  &kp NUMBER_4                                                  &kp N9  &kp N8  &trans  &kp KP_DIVIDE  &trans           &trans
 &trans  &kp KP_PLUS     &kp EQUAL  &trans  &kp N1  &kp NUMBER_2  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7  &kp N6  &trans  &trans         &kp MINUS        &trans
 &trans  &kp LEFT_SHIFT  &kp LALT   &trans  &kp N0                &trans  &trans  &trans  &trans  &trans  &trans          &kp N5  &trans  &kp RALT       &kp RIGHT_SHIFT  &trans
+            >;
+        };
+
+        layer_left_control {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp A   &kp Z   &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
