@@ -327,12 +327,12 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans    &trans      &trans         &trans                                                                                                 &trans                 &trans             &trans       &trans     &trans
-&trans  &trans    &trans      &trans         &trans                &trans                                                            &trans         &trans                 &trans             &trans       &trans     &trans
-&trans  &trans    &trans      &kp SQT        &kp EXCL              &kp AMPERSAND                                                     &kp PIPE       &kp QMARK              &kp DOUBLE_QUOTES  &trans       &trans     &trans
-&trans  &kp AT    &kp DOLLAR  &kp LBRC       &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                  &kp RBKT       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp PERCENT  &kp HASH   &trans
-&trans  &kp PLUS  &kp STAR    &kp BACKSLASH  &kp UNDERSCORE        &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN  &kp MINUS              &kp SLASH          &kp CARET    &kp EQUAL  &trans
-&trans  &trans    &trans      &trans         &kp GRAVE                               &trans  &trans  &trans  &trans  &trans  &trans                 &kp TILDE              &kp PAGE_DOWN      &kp PAGE_UP  &trans     &trans
+&trans  &trans    &trans      &trans                &trans                                                                                               &trans             &trans                 &trans       &trans     &trans
+&trans  &trans    &trans      &trans                &trans            &trans                                                            &trans           &trans             &trans                 &trans       &trans     &trans
+&trans  &trans    &trans      &kp SQT               &kp EXCL          &kp AMPERSAND                                                     &kp PIPE         &kp QMARK          &kp DOUBLE_QUOTES      &trans       &trans     &trans
+&trans  &kp AT    &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE                                                    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp HASH   &trans
+&trans  &kp PLUS  &kp STAR    &kp BACKSLASH         &kp UNDERSCORE    &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN    &kp MINUS          &kp SLASH              &kp CARET    &kp EQUAL  &trans
+&trans  &trans    &trans      &trans                &kp GRAVE                           &trans  &trans  &trans  &trans  &trans  &trans                   &kp TILDE          &kp PAGE_DOWN          &kp PAGE_UP  &trans     &trans
             >;
         };
 
