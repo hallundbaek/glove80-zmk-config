@@ -382,12 +382,12 @@
 
         layer_numbers {
             bindings = <
-&trans  &trans          &trans        &trans  &trans                                                                        &trans  &trans  &trans         &trans           &trans
-&trans  &trans          &trans        &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans         &trans           &trans
-&trans  &trans          &trans        &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans         &trans           &trans
-&trans  &kp PLUS        &kp MINUS     &trans  &kp N3  &kp NUMBER_4                                                  &kp N9  &kp N8  &trans  &kp EQUAL      &trans           &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &kp N1  &kp NUMBER_2  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7  &kp N6  &trans  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &trans
-&trans  &kp ASTERISK    &kp SLASH     &trans  &kp N0                &trans  &trans  &trans  &trans  &trans  &trans          &kp N5  &trans  &kp COMMA      &kp DOT          &trans
+&trans  &trans          &trans        &trans  &trans                                                                                             &trans           &trans  &trans         &trans           &trans
+&trans  &trans          &trans        &trans  &trans           &trans                                                           &trans           &trans           &trans  &trans         &trans           &trans
+&trans  &trans          &trans        &trans  &trans           &trans                                                           &trans           &trans           &trans  &trans         &trans           &trans
+&trans  &kp PLUS        &kp MINUS     &trans  &kp KP_NUMBER_3  &kp KP_NUMBER_4                                                  &kp KP_NUMBER_9  &kp KP_NUMBER_8  &trans  &kp EQUAL      &trans           &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_6  &trans  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &trans
+&trans  &kp ASTERISK    &kp SLASH     &trans  &kp KP_NUMBER_0                   &trans  &trans  &trans  &trans  &trans  &trans                   &kp KP_NUMBER_5  &trans  &kp COMMA      &kp DOT          &trans
             >;
         };
     };
