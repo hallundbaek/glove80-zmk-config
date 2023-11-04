@@ -311,42 +311,42 @@
         };
 
         numbers_left {
-            bindings = <&mo 6>;
+            bindings = <&stmhl 6 6>;
             key-positions = <49 37>;
             slow-release;
             timeout-ms = <80>;
         };
 
         number_right {
-            bindings = <&mo 6>;
+            bindings = <&stmhl 6 6>;
             key-positions = <60 42>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_left {
-            bindings = <&mo 5>;
+            bindings = <&stmhl 5 5>;
             key-positions = <23 35>;
             slow-release;
             timeout-ms = <80>;
         };
 
         function_right {
-            bindings = <&mo 4>;
+            bindings = <&stmhl 4 4>;
             key-positions = <44 32>;
             slow-release;
             timeout-ms = <80>;
         };
 
         symbols_left_mid {
-            bindings = <&mo 1>;
+            bindings = <&stmhl 1 1>;
             key-positions = <48 36>;
             timeout-ms = <80>;
             slow-release;
         };
 
         symbols_right_mid {
-            bindings = <&mo 1>;
+            bindings = <&stmhl 1 1>;
             key-positions = <61 43>;
             timeout-ms = <80>;
             slow-release;
