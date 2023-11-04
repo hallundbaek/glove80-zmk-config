@@ -116,7 +116,12 @@
         double_shift: double_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp LEFT_SHIFT>;
+
             label = "DOUBLE_SHIFT";
         };
     };
