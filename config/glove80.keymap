@@ -72,7 +72,7 @@
         };
         stmhdes: sthmdes {
             compatible = "zmk,behavior-mod-morph";
-            label = "STICKY_TAP_MOMENTARY_HOLD_DOUBLE_ENABLED_LAYER";
+            label = "sthmdes";
             #binding-cells = <0>;
             bindings = <&stmhk LEFT_SHIFT LEFT_SHIFT>, <&kp Z>;
 
