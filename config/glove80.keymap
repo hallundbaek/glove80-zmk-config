@@ -118,8 +118,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
             label = "DOUBLE_SHIFT";
-            wait-ms = <150>;
-            tap-ms = <25>;
+            wait-ms = <200>;
         };
     };
 };
