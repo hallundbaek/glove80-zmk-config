@@ -51,7 +51,7 @@
 
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
-        }; 
+        };
         stmhl: sticky_tap_momentary_hold_LAYER {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_TAP_MOMENTARY_HOLD_LAYER";
@@ -318,14 +318,9 @@
             slow-release;
         };
 
-        toggle_numbers_left {
-            bindings = <&tog 6>;
-            key-positions = <51 39>;
-        };
-
-        toggle_numbers_right {
-            bindings = <&tog 6>;
-            key-positions = <58 40>;
+        comma_dot_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <61 60>;
         };
     };
 
