@@ -78,6 +78,22 @@
 
             mods = <(MOD_LSFT)>;
         };
+        stmhdec: stmhdec {
+            compatible = "zmk,behavior-mod-morph";
+            label = "STMHDEC";
+            #binding-cells = <0>;
+            bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>, <&double_control>;
+
+            mods = <(MOD_LCTL)>;
+        };
+        stmhdea: stmhdea {
+            compatible = "zmk,behavior-mod-morph";
+            label = "STMHDEA";
+            #binding-cells = <0>;
+            bindings = <&stmhk LEFT_ALT LEFT_ALT>, <&double_alt>;
+
+            mods = <(MOD_LALT)>;
+        };
     };
 };
 
@@ -118,6 +134,22 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT &kp RIGHT_SHIFT>;
             label = "DOUBLE_SHIFT";
+            wait-ms = <50>;
+            tap-ms = <50>;
+        };
+        double_control: double_control {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp RIGHT_CONTROL>;
+            label = "DOUBLE_CONTROL";
+            wait-ms = <50>;
+            tap-ms = <50>;
+        };
+        double_alt: double_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp RIGHT_ALT>;
+            label = "DOUBLE_ALT";
             wait-ms = <50>;
             tap-ms = <50>;
         };
@@ -237,7 +269,7 @@
         compatible = "zmk,combos";
 
         hrc-l-ctrl {
-            bindings = <&kp LEFT_CONTROL>;
+            bindings = <&stmhdec>;
             key-positions = <35 47>;
             slow-release;
             timeout-ms = <80>;
@@ -251,28 +283,28 @@
         };
 
         hrc-l-alt {
-            bindings = <&kp LEFT_ALT>;
+            bindings = <&stmhdea>;
             key-positions = <38 26>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-r-ctrl {
-            bindings = <&kp RCTRL>;
+            bindings = <&stmhdec>;
             key-positions = <62 44>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-r-shift {
-            bindings = <&kp RSHFT>;
+            bindings = <&stmhdes>;
             key-positions = <42 30>;
             slow-release;
             timeout-ms = <80>;
         };
 
         hrc-r-alt {
-            bindings = <&kp RALT>;
+            bindings = <&stmhdea>;
             key-positions = <41 29>;
             slow-release;
             timeout-ms = <80>;
@@ -323,6 +355,56 @@
         comma_dot_slash {
             bindings = <&kp SLASH>;
             key-positions = <61 60>;
+        };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <48 49>;
+        };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <50 49>;
+        };
+
+        ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <66 67>;
+        };
+
+        ctrl_a {
+            bindings = <&kp LC(A)>;
+            key-positions = <36 37>;
+        };
+
+        ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <50 48>;
+        };
+
+        ctrl_d {
+            bindings = <&kp LC(D)>;
+            key-positions = <36 38>;
+        };
+
+        ctrl_w {
+            bindings = <&kp LC(W)>;
+            key-positions = <25 24>;
+        };
+
+        ctrl_r {
+            bindings = <&kp LC(R)>;
+            key-positions = <25 26>;
+        };
+
+        ctrl_t {
+            bindings = <&kp LC(T)>;
+            key-positions = <25 27>;
+        };
+
+        ctrl_s {
+            bindings = <&kp LC(S)>;
+            key-positions = <38 37>;
         };
     };
 
