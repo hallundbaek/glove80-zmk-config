@@ -70,7 +70,7 @@
             tapping-term-ms = <400>;
             flavor = "balanced";
         };
-        stmhdes: sticky_tap_momentary_hold_double_enabled_shift {
+        stmhdes: sthmdes {
             compatible = "zmk,behavior-mod-morph";
             label = "STICKY_TAP_MOMENTARY_HOLD_DOUBLE_ENABLED_LAYER";
             #binding-cells = <0>;
