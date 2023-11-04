@@ -262,20 +262,6 @@
             timeout-ms = <80>;
         };
 
-        symbols_left {
-            bindings = <&tog 1>;
-            key-positions = <47 35>;
-            slow-release;
-            timeout-ms = <80>;
-        };
-
-        symbols_right {
-            bindings = <&tog 1>;
-            key-positions = <62 44>;
-            slow-release;
-            timeout-ms = <80>;
-        };
-
         numbers_left {
             bindings = <&mo 6>;
             key-positions = <49 37>;
