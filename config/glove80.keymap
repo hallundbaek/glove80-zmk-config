@@ -374,8 +374,8 @@
 
         ctrl_a {
             bindings = <&kp LC(A)>;
-            key-positions = <36 37>;
-            require-prior-idle-ms = <100>;
+            key-positions = <36 38>;
+            timeout-ms = <50>;
         };
 
         ctrl_x {
@@ -385,7 +385,7 @@
 
         ctrl_d {
             bindings = <&kp LC(D)>;
-            key-positions = <36 38>;
+            key-positions = <39 36>;
         };
 
         ctrl_w {
@@ -405,7 +405,7 @@
 
         ctrl_s {
             bindings = <&kp LC(S)>;
-            key-positions = <38 37>;
+            key-positions = <39 37>;
             require-prior-idle-ms = <100>;
         };
     };
