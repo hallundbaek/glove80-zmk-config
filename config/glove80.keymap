@@ -586,12 +586,12 @@
 
         layer_tab_f {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp TAB      &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LS(TAB)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans                                                                   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(TAB)  &trans  &kp TAB  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
