@@ -467,6 +467,11 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <30 41>;
         };
+
+        ctrl_f {
+            bindings = <&kp LC(F)>;
+            key-positions = <25 38>;
+        };
     };
 
     keymap {
