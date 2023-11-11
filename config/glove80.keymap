@@ -450,12 +450,12 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans    &trans      &trans                &trans                                                                                               &trans             &trans                 &trans       &trans     &trans
-&trans  &trans    &trans      &trans                &trans            &trans                                                            &trans           &trans             &trans                 &trans       &trans     &trans
-&trans  &trans    &trans      &kp SQT               &kp EXCL          &kp AMPERSAND                                                     &kp PIPE         &kp QMARK          &kp DOUBLE_QUOTES      &trans       &trans     &trans
-&trans  &kp AT    &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE                                                    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp HASH   &trans
-&trans  &kp PLUS  &kp STAR    &kp BACKSLASH         &kp UNDERSCORE    &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN    &kp MINUS          &kp SLASH              &kp CARET    &kp EQUAL  &trans
-&trans  &trans    &trans      &trans                &kp GRAVE                           &trans  &trans  &trans  &trans  &trans  &trans                   &kp TILDE          &kp PAGE_DOWN          &kp PAGE_UP  &trans     &trans
+&trans  &trans    &trans      &trans                &trans                                                                                               &trans             &trans                &trans       &trans     &trans
+&trans  &trans    &trans      &trans                &trans            &trans                                                            &trans           &trans             &trans                &trans       &trans     &trans
+&trans  &trans    &trans      &kp BACKSLASH         &kp EXCL          &kp AMPERSAND                                                     &kp PIPE         &kp UNDERSCORE     &kp DOUBLE_QUOTES     &trans       &trans     &trans
+&trans  &kp AT    &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE                                                    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp PERCENT  &kp HASH   &trans
+&trans  &kp PLUS  &kp STAR    &kp BACKSLASH         &kp QUESTION      &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN    &kp MINUS          &kp SLASH             &da_hat      &kp EQUAL  &trans
+&trans  &trans    &trans      &trans                &da_grave                           &trans  &trans  &trans  &trans  &trans  &trans                   &da_tilde          &kp PAGE_DOWN         &kp PAGE_UP  &trans     &trans
             >;
         };
 
@@ -472,12 +472,12 @@
 
         layer_Game {
             bindings = <
-&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                           &trans   &trans     &trans  &trans  &trans
-&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                        &trans     &trans   &trans     &trans  &trans  &trans
-&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                         &trans     &trans   &trans     &trans  &trans  &trans
-&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                         &trans     &trans   &trans     &trans  &trans  &trans
-&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &trans  &trans  &da_grave  &da_hat  &da_tilde  &trans  &trans  &trans
-&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &trans  &trans             &trans   &trans     &trans  &trans  &trans
+&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                                 &trans           &trans     &trans  &trans  &trans
+&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                        &trans           &trans           &trans     &trans  &trans  &trans
+&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                         &trans           &trans           &trans     &trans  &trans  &trans
+&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                         &kp NON_US_BSLH  &kp NON_US_HASH  &trans     &trans  &trans  &trans
+&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &trans  &trans  &da_grave        &da_hat          &da_tilde  &trans  &trans  &trans
+&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &trans  &trans                   &trans           &trans     &trans  &trans  &trans
             >;
         };
 
