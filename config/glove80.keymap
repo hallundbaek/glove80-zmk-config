@@ -506,20 +506,15 @@
             key-positions = <59 60 61>;
         };
 
-        ctrl_h {
-            bindings = <&kp LC(H)>;
-            key-positions = <39 25>;
+        s_d_shift_tab {
+            bindings = <&shift_tab_macro>;
+            key-positions = <37 36>;
+            slow-release;
         };
 
         d_f_tab {
             bindings = <&tab_macro>;
             key-positions = <37 38>;
-            slow-release;
-        };
-
-        s_d_shift_tab {
-            bindings = <&shift_tab_macro>;
-            key-positions = <37 36>;
             slow-release;
         };
     };
