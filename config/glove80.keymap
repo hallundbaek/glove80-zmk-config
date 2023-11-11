@@ -159,6 +159,18 @@
             bindings = <&kp EQUAL &kp SPACE>;
             label = "DA_GRAVE";
         };
+        da_hat: da_hat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC &kp SPACE>;
+            label = "DA_HAT";
+        };
+        da_tilde: da_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(RIGHT_BRACKET) &kp SPACE>;
+            label = "DA_TILDE";
+        };
     };
 };
 
@@ -452,12 +464,12 @@
 
         layer_Game {
             bindings = <
-&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                           &trans  &trans  &trans  &trans  &trans
-&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                        &trans     &trans  &trans  &trans  &trans  &trans
-&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                         &trans     &trans  &trans  &trans  &trans  &trans
-&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                         &trans     &trans  &trans  &trans  &trans  &trans
-&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &trans  &trans  &da_grave  &trans  &trans  &trans  &trans  &trans
-&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans
+&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                           &trans   &trans     &trans  &trans  &trans
+&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                        &trans     &trans   &trans     &trans  &trans  &trans
+&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                         &trans     &trans   &trans     &trans  &trans  &trans
+&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                         &trans     &trans   &trans     &trans  &trans  &trans
+&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &trans  &trans  &da_grave  &da_hat  &da_tilde  &trans  &trans  &trans
+&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &trans  &trans             &trans   &trans     &trans  &trans  &trans
             >;
         };
 
