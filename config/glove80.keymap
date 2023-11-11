@@ -158,18 +158,24 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp SPACE>;
             label = "DA_GRAVE";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
         da_hat: da_hat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RBRC &kp SPACE>;
             label = "DA_HAT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
         da_tilde: da_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(RIGHT_BRACKET) &kp SPACE>;
             label = "DA_TILDE";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 };
