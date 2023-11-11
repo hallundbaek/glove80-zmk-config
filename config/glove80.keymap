@@ -156,7 +156,7 @@
         da_grave: da_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp SPACE>;
+            bindings = <&kp LS(EQUAL) &kp SPACE>;
             label = "DA_GRAVE";
             wait-ms = <1>;
             tap-ms = <1>;
