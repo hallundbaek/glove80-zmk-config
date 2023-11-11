@@ -477,6 +477,16 @@
             bindings = <&kp RA(NON_US_BSLH)>;
             key-positions = <59 60 61>;
         };
+
+        ctrl_h {
+            bindings = <&kp LC(F)>;
+            key-positions = <25 39>;
+        };
+
+        d_f_tab {
+            bindings = <&kp TAB>;
+            key-positions = <37 38>;
+        };
     };
 
     keymap {
