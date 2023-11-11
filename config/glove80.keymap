@@ -177,6 +177,12 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+        d_f_tab_f: d_f_tab_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &mo 7>;
+            label = "D_F_TAB_F";
+        };
     };
 };
 
@@ -486,6 +492,7 @@
         d_f_tab {
             bindings = <&kp TAB>;
             key-positions = <37 38>;
+            slow-release;
         };
     };
 
@@ -566,6 +573,17 @@
 &trans  &trans  &kp LEFT_SHIFT  &trans  &kp N3        &kp NUMBER_4                                                  &kp NUMBER_9  &kp N8        &trans  &kp RSHIFT     &trans  &trans
 &trans  &trans  &kp LEFT_ALT    &trans  &kp NUMBER_1  &kp NUMBER_2  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp NUMBER_6  &trans  &kp RIGHT_ALT  &trans  &trans
 &trans  &trans  &trans          &trans  &kp N0                      &trans  &trans  &trans  &trans  &trans  &trans                &kp N5        &trans  &trans         &trans  &trans
+            >;
+        };
+
+        layer_tab_f {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp TAB      &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LS(TAB)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
