@@ -177,7 +177,7 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
-        d_f_tab_f: d_f_tab_f {
+        d_f_tab: d_f_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -189,7 +189,21 @@
                 <&macro_release>,
                 <&mo 7>;
 
-            label = "D_F_TAB_F";
+            label = "D_F_TAB";
+        };
+        s_d_stab: s_d_stab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(TAB)>,
+                <&macro_press>,
+                <&mo 7>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 7>;
+
+            label = "S_D_STAB";
         };
     };
 };
@@ -498,8 +512,14 @@
         };
 
         d_f_tab {
-            bindings = <&d_f_tab_f>;
+            bindings = <&d_f_tab>;
             key-positions = <37 38>;
+            slow-release;
+        };
+
+        s_d_stab {
+            bindings = <&s_d_stab>;
+            key-positions = <37 36>;
             slow-release;
         };
     };
