@@ -450,12 +450,12 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans    &trans      &trans                &trans                                                                                               &trans             &trans                &trans       &trans     &trans
-&trans  &trans    &trans      &trans                &trans            &trans                                                            &trans           &trans             &trans                &trans       &trans     &trans
-&trans  &trans    &trans      &kp BACKSLASH         &kp EXCL          &kp AMPERSAND                                                     &kp PIPE         &kp UNDERSCORE     &kp DOUBLE_QUOTES     &trans       &trans     &trans
-&trans  &kp AT    &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE                                                    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp PERCENT  &kp HASH   &trans
-&trans  &kp PLUS  &kp STAR    &kp BACKSLASH         &kp QUESTION      &kp GREATER_THAN  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp LESS_THAN    &kp MINUS          &kp SLASH             &da_hat      &kp EQUAL  &trans
-&trans  &trans    &trans      &trans                &da_grave                           &trans  &trans  &trans  &trans  &trans  &trans                   &da_tilde          &kp PAGE_DOWN         &kp PAGE_UP  &trans     &trans
+&trans  &trans      &trans      &trans                    &trans                                                                                                        &trans          &trans            &trans       &trans      &trans
+&trans  &trans      &trans      &trans                    &trans        &trans                                                                    &trans                &trans          &trans            &trans       &trans      &trans
+&trans  &trans      &trans      &kp BACKSLASH             &kp EXCL      &kp RA(EQUAL)                                                             &kp RS(NUMBER_6)      &kp UNDERSCORE  &kp LS(NUMBER_2)  &trans       &trans      &trans
+&trans  &kp RA(N2)  &kp RA(N4)  &kp LS(NUMBER_8)          &kp RA(N8)    &kp RA(NUMBER_7)                                                          &kp RA(N0)            &kp RA(N9)      &kp RS(NUMBER_9)  &kp PERCENT  &kp HASH    &trans
+&trans  &kp MINUS   &kp PIPE    &kp RA(NON_US_BACKSLASH)  &kp QUESTION  &kp LS(NON_US_BACKSLASH)  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp NON_US_BACKSLASH  &kp MINUS       &kp RS(N7)        &da_hat      &kp RS(N0)  &trans
+&trans  &trans      &trans      &trans                    &da_grave                               &trans  &trans  &trans  &trans  &trans  &trans                        &da_tilde       &kp PAGE_DOWN     &kp PAGE_UP  &trans      &trans
             >;
         };
 
