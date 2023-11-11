@@ -472,6 +472,11 @@
             bindings = <&kp LC(F)>;
             key-positions = <25 38>;
         };
+
+        m_comma_dot_bslash {
+            bindings = <&kp RA(NON_US_BSLH)>;
+            key-positions = <59 60 61>;
+        };
     };
 
     keymap {
