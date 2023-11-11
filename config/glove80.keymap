@@ -181,10 +181,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &kp TAB>,
-                <&macro_press &mo 7>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_press>,
+                <&mo 7>,
                 <&macro_pause_for_release>,
-                <&macro_release &mo 7>;
+                <&macro_release>,
+                <&mo 7>;
 
             label = "D_F_TAB_F";
         };
@@ -495,7 +498,7 @@
         };
 
         d_f_tab {
-            bindings = <&kp TAB>;
+            bindings = <&d_f_tab_f>;
             key-positions = <37 38>;
             slow-release;
         };
