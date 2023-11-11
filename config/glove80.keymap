@@ -379,7 +379,7 @@
         };
 
         comma_dot_slash {
-            bindings = <&kp SLASH>;
+            bindings = <&kp RS(N7)>;
             key-positions = <61 60>;
         };
 
@@ -432,6 +432,11 @@
             bindings = <&kp LC(S)>;
             key-positions = <39 37>;
         };
+
+        m_comma_dash {
+            bindings = <&kp RS(FSLH)>;
+            key-positions = <60 59>;
+        };
     };
 
     keymap {
@@ -454,7 +459,7 @@
 &trans  &trans      &trans      &trans                    &trans        &trans                                                                    &trans                &trans          &trans            &trans       &trans      &trans
 &trans  &trans      &trans      &kp BACKSLASH             &kp EXCL      &kp RA(EQUAL)                                                             &kp RS(NUMBER_6)      &kp UNDERSCORE  &kp LS(NUMBER_2)  &trans       &trans      &trans
 &trans  &kp RA(N2)  &kp RA(N4)  &kp LS(NUMBER_8)          &kp RA(N8)    &kp RA(NUMBER_7)                                                          &kp RA(N0)            &kp RA(N9)      &kp RS(NUMBER_9)  &kp PERCENT  &kp HASH    &trans
-&trans  &kp MINUS   &kp PIPE    &kp RA(NON_US_BACKSLASH)  &kp QUESTION  &kp LS(NON_US_BACKSLASH)  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp NON_US_BACKSLASH  &kp MINUS       &kp RS(N7)        &da_hat      &kp RS(N0)  &trans
+&trans  &kp MINUS   &kp PIPE    &kp RA(NON_US_BACKSLASH)  &kp QUESTION  &kp LS(NON_US_BACKSLASH)  &mo 1   &trans  &trans  &trans  &trans  &mo 1   &kp NON_US_BACKSLASH  &kp FSLH        &kp RS(N7)        &da_hat      &kp RS(N0)  &trans
 &trans  &trans      &trans      &trans                    &da_grave                               &trans  &trans  &trans  &trans  &trans  &trans                        &da_tilde       &kp PAGE_DOWN     &kp PAGE_UP  &trans      &trans
             >;
         };
@@ -472,12 +477,12 @@
 
         layer_Game {
             bindings = <
-&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                                 &trans           &trans     &trans  &trans  &trans
-&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                        &trans           &trans           &trans     &trans  &trans  &trans
-&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                         &trans           &trans           &trans     &trans  &trans  &trans
-&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                         &kp NON_US_BSLH  &kp NON_US_HASH  &trans     &trans  &trans  &trans
-&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &trans  &trans  &da_grave        &da_hat          &da_tilde  &trans  &trans  &trans
-&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &trans  &trans                   &trans           &trans     &trans  &trans  &trans
+&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                        &trans  &trans  &trans  &trans  &trans
+&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
