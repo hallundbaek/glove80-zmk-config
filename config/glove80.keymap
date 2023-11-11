@@ -177,7 +177,7 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
-        d_f_tab: d_f_tab {
+        tab_macro: tab_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -189,9 +189,9 @@
                 <&macro_release>,
                 <&mo 7>;
 
-            label = "D_F_TAB";
+            label = "TAB_MACRO";
         };
-        s_d_stab: s_d_stab {
+        shift_tab_macro: shift_tab_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -203,7 +203,7 @@
                 <&macro_release>,
                 <&mo 7>;
 
-            label = "S_D_STAB";
+            label = "SHIFT_TAB_MACRO";
         };
     };
 };
@@ -512,13 +512,13 @@
         };
 
         d_f_tab {
-            bindings = <&d_f_tab>;
+            bindings = <&tab_macro>;
             key-positions = <37 38>;
             slow-release;
         };
 
-        s_d_stab {
-            bindings = <&s_d_stab>;
+        s_d_shift_tab {
+            bindings = <&shift_tab_macro>;
             key-positions = <37 36>;
             slow-release;
         };
