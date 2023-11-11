@@ -479,7 +479,7 @@
         };
 
         ctrl_h {
-            bindings = <&kp LC(F)>;
+            bindings = <&kp LC(H)>;
             key-positions = <25 39>;
         };
 
