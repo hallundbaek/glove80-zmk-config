@@ -433,9 +433,39 @@
             key-positions = <39 37>;
         };
 
-        m_comma_dash {
+        m_dot_underscore {
             bindings = <&kp RS(FSLH)>;
-            key-positions = <60 59>;
+            key-positions = <59 61>;
+        };
+
+        k_comma_dash {
+            bindings = <&kp FSLH>;
+            key-positions = <59 60>;
+        };
+
+        j_k_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <42 41>;
+        };
+
+        k_l_sqt {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <42 43>;
+        };
+
+        i_o_dqt {
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <30 31>;
+        };
+
+        u_i_excl {
+            bindings = <&kp LS(NUMBER_1)>;
+            key-positions = <30 29>;
+        };
+
+        j_i_qmark {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <30 41>;
         };
     };
 
