@@ -225,7 +225,7 @@
             label = "SHIFT_TAB_MACRO";
         };
 
-        tap_and_momentary_layer: tap_and_momentary_layer {
+        tap_and_mo: tap_and_mo {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings =
@@ -236,7 +236,7 @@
                 <&macro_release>,
                 <&macro_param_2to1 &mo MACRO_PLACEHOLDER>;
 
-            label = "TAP_AND_MOMENTARY_LAYER";
+            label = "TAP_AND_MO";
         };
     };
 };
@@ -534,19 +534,19 @@
             key-positions = <25 38>;
         };
 
-        m_comma_dot_bslash {
+        backslash {
             bindings = <&kp RA(NON_US_BSLH)>;
-            key-positions = <59 60 61>;
+            key-positions = <76 77>;
         };
 
-        s_d_shift_tab {
-            bindings = <&shift_tab_macro>;
+        shift_tab_macro {
+            bindings = <&tap_and_mo LS(TAB) 7>;
             key-positions = <37 36>;
             slow-release;
         };
 
         d_f_tab {
-            bindings = <&tab_macro>;
+            bindings = <&tap_and_mo TAB 7>;
             key-positions = <37 38>;
             slow-release;
         };
