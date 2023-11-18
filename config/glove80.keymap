@@ -554,21 +554,48 @@
         open_parenthesis {
             bindings = <&tap_and_mo LS(N8) 8>;
             key-positions = <42 43 59>;
+            slow-release;
         };
 
         close_parenthesis {
             bindings = <&tap_and_mo LS(N9) 8>;
             key-positions = <42 43 41>;
+            slow-release;
         };
 
         open_brace {
             bindings = <&tap_and_mo RA(N7) 10>;
             key-positions = <41 30 31>;
+            slow-release;
         };
 
         close_brace {
             bindings = <&tap_and_mo RA(N0) 10>;
             key-positions = <30 31 29>;
+            slow-release;
+        };
+
+        open_bracket {
+            bindings = <&tap_and_mo RS(N8) 9>;
+            key-positions = <75 60 61>;
+            slow-release;
+        };
+
+        close_bracket {
+            bindings = <&tap_and_mo RS(N9) 9>;
+            key-positions = <60 61 59>;
+            slow-release;
+        };
+
+        equals {
+            bindings = <&kp RS(N0)>;
+            key-positions = <42 59>;
+            slow-release;
+        };
+
+        plus {
+            bindings = <&kp MINUS>;
+            key-positions = <58 42>;
         };
     };
 
