@@ -550,6 +550,26 @@
             key-positions = <37 38>;
             slow-release;
         };
+
+        open_parenthesis {
+            bindings = <&tap_and_mo LS(N8) 8>;
+            key-positions = <42 43 59>;
+        };
+
+        close_parenthesis {
+            bindings = <&tap_and_mo LS(N9) 8>;
+            key-positions = <42 43 41>;
+        };
+
+        open_brace {
+            bindings = <&tap_and_mo RA(N7) 10>;
+            key-positions = <41 30 31>;
+        };
+
+        close_brace {
+            bindings = <&tap_and_mo RA(N0) 10>;
+            key-positions = <30 31 29>;
+        };
     };
 
     keymap {
@@ -643,7 +663,7 @@
             >;
         };
 
-        parenthesis {
+        parentheses {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans      &trans  &trans  &trans  &trans
@@ -654,7 +674,7 @@
             >;
         };
 
-        braces {
+        brackets {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans      &trans  &trans  &trans  &trans
@@ -662,6 +682,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(N9)  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp RA(N8)  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        braces {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp RA(N0)  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp RA(N7)  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans
             >;
         };
     };
