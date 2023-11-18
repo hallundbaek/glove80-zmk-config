@@ -233,6 +233,7 @@
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_press>,
                 <&macro_param_2to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_2to1 &mo MACRO_PLACEHOLDER>;
 
@@ -576,13 +577,13 @@
         };
 
         open_bracket {
-            bindings = <&tap_and_mo RS(N8) 9>;
+            bindings = <&tap_and_mo RA(N8) 9>;
             key-positions = <75 60 61>;
             slow-release;
         };
 
         close_bracket {
-            bindings = <&tap_and_mo RS(N9) 9>;
+            bindings = <&tap_and_mo RA(N9) 9>;
             key-positions = <60 61 59>;
             slow-release;
         };
