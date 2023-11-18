@@ -554,19 +554,19 @@
 
         open_parenthesis {
             bindings = <&tap_and_mo LS(N8) 8>;
-            key-positions = <42 43 59>;
+            key-positions = <59 42 43>;
             slow-release;
         };
 
         close_parenthesis {
             bindings = <&tap_and_mo LS(N9) 8>;
-            key-positions = <42 43 41>;
+            key-positions = <41 42 43>;
             slow-release;
         };
 
         open_brace {
             bindings = <&tap_and_mo RA(N7) 10>;
-            key-positions = <41 30 31>;
+            key-positions = <31 41 30>;
             slow-release;
         };
 
@@ -588,16 +588,16 @@
             slow-release;
         };
 
+        plus {
+            bindings = <&kp MINUS>;
+            key-positions = <58 42>;
+        };
+
         equals {
             bindings = <&kp RS(N0)>;
             key-positions = <59 42>;
             slow-release;
-        };
-
-        plus {
-            bindings = <&kp MINUS>;
-            key-positions = <42 58>;
-        };
+        }; 
     };
 
     keymap {
