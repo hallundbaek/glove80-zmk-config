@@ -590,13 +590,13 @@
 
         equals {
             bindings = <&kp RS(N0)>;
-            key-positions = <42 59>;
+            key-positions = <59 42>;
             slow-release;
         };
 
         plus {
             bindings = <&kp MINUS>;
-            key-positions = <58 42>;
+            key-positions = <42 58>;
         };
     };
 
