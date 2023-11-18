@@ -34,6 +34,7 @@
             tapping-term-ms = <200>;
             bindings = <&mo 0>, <&to 0>;
         };
+
         ctrlacolon: ctrl_a_colon {
             compatible = "zmk,behavior-mod-morph";
             label = "CTRL_A_COLON";
@@ -43,6 +44,7 @@
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
+
         ctrlzhome: ctrl_z_home {
             compatible = "zmk,behavior-mod-morph";
             label = "CTRL_Z_HOME";
@@ -52,6 +54,7 @@
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
+
         stmhl: sticky_tap_momentary_hold_LAYER {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_TAP_MOMENTARY_HOLD_LAYER";
@@ -61,6 +64,7 @@
             tapping-term-ms = <400>;
             flavor = "tap-preferred";
         };
+
         stmhk: sticky_tap_momentary_hold_key {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_TAP_MOMENTARY_HOLD_KEY";
@@ -70,6 +74,7 @@
             tapping-term-ms = <400>;
             flavor = "tap-preferred";
         };
+
         stmhdes: sthmdes {
             compatible = "zmk,behavior-mod-morph";
             label = "sthmdes";
@@ -78,6 +83,7 @@
 
             mods = <(MOD_LSFT)>;
         };
+
         stmhdec: stmhdec {
             compatible = "zmk,behavior-mod-morph";
             label = "STMHDEC";
@@ -86,6 +92,7 @@
 
             mods = <(MOD_LCTL)>;
         };
+
         stmhdea: stmhdea {
             compatible = "zmk,behavior-mod-morph";
             label = "STMHDEA";
@@ -105,30 +112,35 @@
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_STATUS>;
         };
+
         bt_0: bt_profile_macro_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 0>;
         };
+
         bt_1: bt_profile_macro_1 {
             label = "BT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 1>;
         };
+
         bt_2: bt_profile_macro_2 {
             label = "BT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 2>;
         };
+
         bt_3: bt_profile_macro_3 {
             label = "BT_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
+
         double_shift: double_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -137,6 +149,7 @@
             wait-ms = <50>;
             tap-ms = <50>;
         };
+
         double_control: double_control {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -145,6 +158,7 @@
             wait-ms = <50>;
             tap-ms = <50>;
         };
+
         double_alt: double_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -153,6 +167,7 @@
             wait-ms = <50>;
             tap-ms = <50>;
         };
+
         da_grave: da_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -161,6 +176,7 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
         da_hat: da_hat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -169,6 +185,7 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
         da_tilde: da_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -177,6 +194,7 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
         tab_macro: tab_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -191,6 +209,7 @@
 
             label = "TAB_MACRO";
         };
+
         shift_tab_macro: shift_tab_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -204,6 +223,20 @@
                 <&mo 7>;
 
             label = "SHIFT_TAB_MACRO";
+        };
+
+        tap_and_momentary_layer: tap_and_momentary_layer {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_tap>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_press>,
+                <&macro_param_2to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&macro_param_2to1 &mo MACRO_PLACEHOLDER>;
+
+            label = "TAP_AND_MOMENTARY_LAYER";
         };
     };
 };
