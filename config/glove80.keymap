@@ -363,6 +363,11 @@
             key-positions = <31 30>;
         };
 
+        equals {
+            bindings = <&kp RS(N0)>;
+            key-positions = <59 42>;
+        };
+
         excl {
             bindings = <&kp LS(NUMBER_1)>;
             key-positions = <29 30>;
@@ -376,11 +381,6 @@
         plus {
             bindings = <&kp MINUS>;
             key-positions = <58 42>;
-        };
-
-        equals {
-            bindings = <&kp RS(N0)>;
-            key-positions = <59 42>;
         };
 
         close_brace {
