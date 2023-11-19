@@ -408,12 +408,12 @@
 
         at {
             bindings = <&kp RA(NUMBER_2)>;
-            key-positions = <60 77>;
+            key-positions = <60 75>;
         };
 
         hash {
             bindings = <&kp HASH>;
-            key-positions = <60 75>;
+            key-positions = <60 77>;
         };
 
         left_numbers {
