@@ -91,9 +91,9 @@
             mods = <(MOD_LALT)>;
         };
 
-        tap_or_mod: tap_or_mod {
+        tap_or_mo: tap_or_mo {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_OR_MOD";
+            label = "TAP_OR_MO";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -351,12 +351,12 @@
         };
 
         sqt_and_parens {
-            bindings = <&tap_and_mo BACKSLASH 8>;
+            bindings = <&tap_or_mo 8 BACKSLASH>;
             key-positions = <43 42>;
         };
 
         dqt_and_braces {
-            bindings = <&tap_and_mo LS(NUMBER_2) 10>;
+            bindings = <&tap_or_mo 10 LS(NUMBER_2)>;
             key-positions = <31 30>;
         };
 
@@ -386,7 +386,7 @@
         };
 
         slash_and_brackets {
-            bindings = <&tap_and_mo RS(N7) 9>;
+            bindings = <&tap_or_mo 9 RS(N7)>;
             key-positions = <61 60>;
         };
 
