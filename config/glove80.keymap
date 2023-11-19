@@ -475,14 +475,14 @@
             slow-release;
         };
 
-        equals {
-            bindings = <&kp RS(N0)>;
-            key-positions = <59 42>;
-        };
-
         plus {
             bindings = <&kp MINUS>;
             key-positions = <58 42>;
+        };
+
+        equals {
+            bindings = <&kp RS(N0)>;
+            key-positions = <59 42>;
         };
 
         k_comma_dash {
