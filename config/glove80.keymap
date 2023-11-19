@@ -406,11 +406,6 @@
             layers = <0>;
         };
 
-        comma_dot_slash {
-            bindings = <&kp RS(N7)>;
-            key-positions = <61 60>;
-        };
-
         ctrl_c {
             bindings = <&kp LC(C)>;
             key-positions = <48 49>;
@@ -459,16 +454,6 @@
         ctrl_s {
             bindings = <&kp LC(S)>;
             key-positions = <39 37>;
-        };
-
-        m_dot_underscore {
-            bindings = <&kp RS(FSLH)>;
-            key-positions = <59 61>;
-        };
-
-        k_comma_dash {
-            bindings = <&kp FSLH>;
-            key-positions = <59 60>;
         };
 
         j_k_escape {
@@ -522,6 +507,21 @@
             bindings = <&tap_and_mo RA(N0) 10>;
             key-positions = <30 31 29>;
             slow-release;
+        };
+
+        comma_dot_slash {
+            bindings = <&kp RS(N7)>;
+            key-positions = <61 60>;
+        };
+
+        m_dot_underscore {
+            bindings = <&kp RS(FSLH)>;
+            key-positions = <59 61>;
+        };
+
+        k_comma_dash {
+            bindings = <&kp FSLH>;
+            key-positions = <59 60>;
         };
 
         open_bracket {
