@@ -383,11 +383,11 @@
             key-positions = <58 42>;
         };
 
-        equals {
+ /*       equals {
             bindings = <&kp RS(N0)>;
             key-positions = <59 42>;
         };
-
+*/
         open_parenthesis {
             bindings = <&tap_and_mo LS(N8) 8>;
             key-positions = <42 43 59>;
