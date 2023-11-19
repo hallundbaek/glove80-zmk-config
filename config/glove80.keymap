@@ -352,18 +352,6 @@
             slow-release;
         };
 
-        function_left {
-            bindings = <&stmhl 5 5>;
-            key-positions = <23 35>;
-            slow-release;
-        };
-
-        function_right {
-            bindings = <&stmhl 4 4>;
-            key-positions = <44 32>;
-            slow-release;
-        };
-
         symbols_left_mid {
             bindings = <&stmhl 1 1>;
             key-positions = <48 36>;
@@ -433,6 +421,23 @@
             key-positions = <25 38>;
         };
 
+        shift_tab_macro {
+            bindings = <&tap_and_mo LS(TAB) 7>;
+            key-positions = <37 36>;
+            slow-release;
+        };
+
+        d_f_tab {
+            bindings = <&tap_and_mo TAB 7>;
+            key-positions = <37 38>;
+            slow-release;
+        };
+
+        backslash {
+            bindings = <&kp RA(NON_US_BSLH)>;
+            key-positions = <76 77>;
+        };
+
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <42 41>;
@@ -458,20 +463,21 @@
             key-positions = <30 41>;
         };
 
-        backslash {
-            bindings = <&kp RA(NON_US_BSLH)>;
-            key-positions = <76 77>;
-        };
-
-        shift_tab_macro {
-            bindings = <&tap_and_mo LS(TAB) 7>;
-            key-positions = <37 36>;
+        close_brace {
+            bindings = <&tap_and_mo RA(N0) 10>;
+            key-positions = <30 31 29>;
             slow-release;
         };
 
-        d_f_tab {
-            bindings = <&tap_and_mo TAB 7>;
-            key-positions = <37 38>;
+        open_brace {
+            bindings = <&tap_and_mo RA(N7) 10>;
+            key-positions = <30 31 41>;
+            slow-release;
+        };
+
+        close_parenthesis {
+            bindings = <&tap_and_mo LS(N9) 8>;
+            key-positions = <42 43 41>;
             slow-release;
         };
 
@@ -485,31 +491,20 @@
             key-positions = <59 42>;
         };
 
+        open_parenthesis {
+            bindings = <&tap_and_mo LS(N8) 8>;
+            key-positions = <42 43 59>;
+            slow-release;
+        };
+
         k_comma_dash {
             bindings = <&kp FSLH>;
             key-positions = <59 60>;
         };
 
-        m_dot_underscore {
-            bindings = <&kp RS(FSLH)>;
-            key-positions = <59 61>;
-        };
-
         comma_dot_slash {
             bindings = <&kp RS(N7)>;
             key-positions = <61 60>;
-        };
-
-        close_parenthesis {
-            bindings = <&tap_and_mo LS(N9) 8>;
-            key-positions = <42 43 41>;
-            slow-release;
-        };
-
-        open_parenthesis {
-            bindings = <&tap_and_mo LS(N8) 8>;
-            key-positions = <42 43 59>;
-            slow-release;
         };
 
         close_bracket {
@@ -518,24 +513,16 @@
             slow-release;
         };
 
+        m_dot_underscore {
+            bindings = <&kp RS(FSLH)>;
+            key-positions = <59 61>;
+        };
+
         open_bracket {
             bindings = <&tap_and_mo RA(N8) 9>;
             key-positions = <60 61 75>;
             slow-release;
         };
-
-        close_brace {
-            bindings = <&tap_and_mo RA(N0) 10>;
-            key-positions = <30 31 29>;
-            slow-release;
-        };
-
-        open_brace {
-            bindings = <&tap_and_mo RA(N7) 10>;
-            key-positions = <30 31 41>;
-            slow-release;
-        };
-
     };
 
     keymap {
