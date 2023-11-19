@@ -377,7 +377,7 @@
 
         plus {
             bindings = <&kp MINUS>;
-            key-positions = <58 42>;
+            key-positions = <76 75>;
         };
 
         k_comma_dash {
