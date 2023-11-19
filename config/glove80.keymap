@@ -341,7 +341,7 @@
         };
 
         backslash {
-            bindings = <&kp RA(NON_US_BSLH)>;
+            bindings = <&tap_or_mo 11 RA(NON_US_BSLH)>;
             key-positions = <76 77>;
         };
 
@@ -517,6 +517,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp RA(N7)  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans
+            >;
+        };
+
+        greater_less_than {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NON_US_BSLH      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LS(NON_US_BSLH)  &trans  &trans  &trans  &trans
             >;
         };
     };
