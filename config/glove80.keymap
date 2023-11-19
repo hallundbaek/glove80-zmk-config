@@ -418,12 +418,12 @@
 
         left_numbers {
             bindings = <&tog 14>;
-            key-positions = <49 26>;
+            key-positions = <25 50>;
         };
 
         right_numbers {
             bindings = <&tog 15>;
-            key-positions = <29 60>;
+            key-positions = <30 59>;
         };
     };
 
