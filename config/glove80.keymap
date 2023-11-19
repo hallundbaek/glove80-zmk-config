@@ -415,6 +415,16 @@
             bindings = <&kp HASH>;
             key-positions = <60 75>;
         };
+
+        left_numbers {
+            bindings = <&tog 14>;
+            key-positions = <49 26>;
+        };
+
+        right_numbers {
+            bindings = <&tog 15>;
+            key-positions = <29 60>;
+        };
     };
 
     keymap {
@@ -576,12 +586,23 @@
 
         left_numbers {
             bindings = <
-&trans  &trans  &trans     &trans  &trans                                                                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans   &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N7     &kp N8  &kp N9   &kp MINUS                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N4     &kp N5  &kp N6   &kp SLASH                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N1     &kp N2  &kp N3   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp COMMA  &kp N0  &kp DOT             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans     &trans  &trans                                                                       &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans     &trans  &trans   &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp N7     &kp N8  &kp N9   &kp MINUS                                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PIPE  &kp N4     &kp N5  &kp N6   &kp SLASH                                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp N1     &kp N2  &kp N3   &kp RS(N0)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp COMMA  &kp N0  &kp DOT              &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        right_numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                      &trans     &trans  &trans   &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans      &trans     &trans  &trans   &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp MINUS   &kp N7     &kp N8  &kp N9   &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp SLASH   &kp N4     &kp N5  &kp N6   &kp PIPE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RS(N0)  &kp N1     &kp N2  &kp N3   &trans    &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans              &kp COMMA  &kp N0  &kp DOT  &trans    &trans
             >;
         };
     };
