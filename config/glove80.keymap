@@ -512,15 +512,15 @@
             slow-release;
         };
 
-        open_bracket {
-            bindings = <&tap_and_mo RA(N8) 9>;
-            key-positions = <75 60 61>;
-            slow-release;
-        };
-
         close_bracket {
             bindings = <&tap_and_mo RA(N9) 9>;
             key-positions = <60 61 59>;
+            slow-release;
+        };
+
+        open_bracket {
+            bindings = <&tap_and_mo RA(N8) 9>;
+            key-positions = <60 61 75>;
             slow-release;
         };
 
