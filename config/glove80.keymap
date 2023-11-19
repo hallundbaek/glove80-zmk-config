@@ -201,6 +201,7 @@
     combos {
         compatible = "zmk,combos";
 
+
         hrc-l-ctrl {
             bindings = <&stmhdec>;
             key-positions = <35 47>;
@@ -330,6 +331,18 @@
             slow-release;
         };
 
+        close_parenthesis {
+            bindings = <&tap_and_mo LS(N9) 8>;
+            key-positions = <41 42 43>;
+            slow-release;
+        };
+
+        open_parenthesis {
+            bindings = <&tap_and_mo LS(N8) 8>;
+            key-positions = <59 42 43>;
+            slow-release;
+        };
+
         backslash {
             bindings = <&kp RA(NON_US_BSLH)>;
             key-positions = <76 77>;
@@ -337,45 +350,27 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <42 41>;
+            key-positions = <41 42>;
         };
 
         sqt {
             bindings = <&kp BACKSLASH>;
-            key-positions = <42 43>;
+            key-positions = <43 42>;
         };
 
         dqt {
             bindings = <&kp LS(NUMBER_2)>;
-            key-positions = <30 31>;
+            key-positions = <31 30>;
         };
 
         excl {
             bindings = <&kp LS(NUMBER_1)>;
-            key-positions = <30 29>;
+            key-positions = <29 30>;
         };
 
         qmark {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <30 41>;
-        };
-
-        close_brace {
-            bindings = <&tap_and_mo RA(N0) 10>;
-            key-positions = <30 31 29>;
-            slow-release;
-        };
-
-        open_brace {
-            bindings = <&tap_and_mo RA(N7) 10>;
-            key-positions = <30 31 41>;
-            slow-release;
-        };
-
-        close_parenthesis {
-            bindings = <&tap_and_mo LS(N9) 8>;
-            key-positions = <42 43 41>;
-            slow-release;
+            key-positions = <41 30>;
         };
 
         plus {
@@ -383,14 +378,20 @@
             key-positions = <58 42>;
         };
 
- /*       equals {
+        equals {
             bindings = <&kp RS(N0)>;
             key-positions = <59 42>;
         };
-*/
-        open_parenthesis {
-            bindings = <&tap_and_mo LS(N8) 8>;
-            key-positions = <42 43 59>;
+
+        close_brace {
+            bindings = <&tap_and_mo RA(N0) 10>;
+            key-positions = <29 30 31>;
+            slow-release;
+        };
+
+        open_brace {
+            bindings = <&tap_and_mo RA(N7) 10>;
+            key-positions = <41 30 31>;
             slow-release;
         };
 
@@ -406,7 +407,7 @@
 
         close_bracket {
             bindings = <&tap_and_mo RA(N9) 9>;
-            key-positions = <60 61 59>;
+            key-positions = <59 60 61>;
             slow-release;
         };
 
@@ -417,7 +418,7 @@
 
         open_bracket {
             bindings = <&tap_and_mo RA(N8) 9>;
-            key-positions = <60 61 75>;
+            key-positions = <75 60 61>;
             slow-release;
         };
     };
