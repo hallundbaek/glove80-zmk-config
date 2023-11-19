@@ -35,26 +35,6 @@
             bindings = <&mo 0>, <&to 0>;
         };
 
-        ctrlacolon: ctrl_a_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_A_COLON";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp A>;
-
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
-        };
-
-        ctrlzhome: ctrl_z_home {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_Z_HOME";
-            #binding-cells = <0>;
-            bindings = <&kp HOME>, <&kp Z>;
-
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
-        };
-
         stmhl: sticky_tap_momentary_hold_LAYER {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_TAP_MOMENTARY_HOLD_LAYER";
@@ -193,36 +173,6 @@
             label = "DA_TILDE";
             wait-ms = <1>;
             tap-ms = <1>;
-        };
-
-        tab_macro: tab_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_press>,
-                <&mo 7>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 7>;
-
-            label = "TAB_MACRO";
-        };
-
-        shift_tab_macro: shift_tab_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LS(TAB)>,
-                <&macro_press>,
-                <&mo 7>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 7>;
-
-            label = "SHIFT_TAB_MACRO";
         };
 
         tap_and_mo: tap_and_mo {
