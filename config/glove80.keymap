@@ -274,8 +274,9 @@
         };
 
         ctrl_c {
-            bindings = <&kp LC(C)>;
+            bindings = <&tap_or_mo 6 LC(C)>;
             key-positions = <48 49>;
+            slow-release;
         };
 
         ctrl_v {
