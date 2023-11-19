@@ -405,6 +405,16 @@
             bindings = <&tap_or_mo 13 RS(NUMBER_6)>;
             key-positions = <30 43>;
         };
+
+        at {
+            bindings = <&kp RA(NUMBER_2)>;
+            key-positions = <60 77>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <60 75>;
+        };
     };
 
     keymap {
@@ -561,6 +571,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp PERCENT       &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(NUMBER_4)  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans  &trans  &trans  &trans
+            >;
+        };
+
+        left_numbers {
+            bindings = <
+&trans  &trans  &trans     &trans  &trans                                                                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans   &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N7     &kp N8  &kp N9   &kp MINUS                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N4     &kp N5  &kp N6   &kp SLASH                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1     &kp N2  &kp N3   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp COMMA  &kp N0  &kp DOT             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
