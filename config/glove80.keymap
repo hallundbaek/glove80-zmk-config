@@ -500,15 +500,15 @@
             key-positions = <61 60>;
         };
 
-        open_parenthesis {
-            bindings = <&tap_and_mo LS(N8) 8>;
-            key-positions = <59 42 43>;
+        close_parenthesis {
+            bindings = <&tap_and_mo LS(N9) 8>;
+            key-positions = <42 43 41>;
             slow-release;
         };
 
-        close_parenthesis {
-            bindings = <&tap_and_mo LS(N9) 8>;
-            key-positions = <41 42 43>;
+        open_parenthesis {
+            bindings = <&tap_and_mo LS(N8) 8>;
+            key-positions = <42 43 59>;
             slow-release;
         };
 
@@ -532,7 +532,7 @@
 
         open_brace {
             bindings = <&tap_and_mo RA(N7) 10>;
-            key-positions = <31 41 30>;
+            key-positions = <30 31 41>;
             slow-release;
         };
 
