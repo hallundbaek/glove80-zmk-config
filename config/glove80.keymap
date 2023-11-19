@@ -394,6 +394,16 @@
             bindings = <&kp RS(FSLH)>;
             key-positions = <59 61>;
         };
+
+        pipe_or_symb {
+            bindings = <&tap_or_mo 12 RA(EQUAL)>;
+            key-positions = <61 42>;
+        };
+
+        amp_or_symb {
+            bindings = <&tap_or_mo 13 RS(NUMBER_6)>;
+            key-positions = <30 43>;
+        };
     };
 
     keymap {
@@ -528,6 +538,28 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp LEFT             &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NON_US_BSLH)  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp NON_US_BSLH      &trans  &trans  &trans  &trans
+            >;
+        };
+
+        pipe_symbs {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_grave  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_hat    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans  &trans  &trans
+            >;
+        };
+
+        amp_symbs {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans            &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans            &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_tilde         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp PERCENT       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(NUMBER_4)  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans  &trans  &trans  &trans
             >;
         };
     };
