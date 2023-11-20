@@ -432,6 +432,11 @@
             bindings = <&tog 1>;
             key-positions = <30 59>;
         };
+
+        colon {
+            bindings = <&kp RS(DOT)>;
+            key-positions = <37 50>;
+        };
     };
 
     keymap {
