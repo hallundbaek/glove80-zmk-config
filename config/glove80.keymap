@@ -114,7 +114,7 @@
         left_shift_tap_or_mo: left_shift_tap_or_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_SHIFT_TAP_OR_MO";
-            bindings = <&mo_key_and_layer>, <&sticky_lshift>;
+            bindings = <&mo_lshift_and_layer>, <&sticky_lshift>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -124,7 +124,7 @@
         right_shift_tap_or_mo: right_shift_tap_or_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_SHIFT_TAP_OR_MO";
-            bindings = <&mo_key_and_layer>, <&sticky_rshift>;
+            bindings = <&mo_rshift_and_layer>, <&sticky_rshift>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -258,17 +258,30 @@
             label = "STICKY_RSHIFT";
         };
 
-        mo_key_and_layer: mo_key_and_layer {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
+        mo_lshift_and_layer: mo_lshift_and_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &mo MACRO_PLACEHOLDER>,
+                <&kp LSHFT &mo 1>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &mo MACRO_PLACEHOLDER>;
+                <&kp LEFT_SHIFT &mo 1>;
 
-            label = "MO_KEY_AND_LAYER";
+            label = "MO_LSHIFT_AND_LAYER";
+        };
+
+        mo_rshift_and_layer: mo_rshift_and_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RSHIFT &mo 2>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp RSHIFT &mo 2>;
+
+            label = "MO_RSHIFT_AND_LAYER";
         };
     };
 
@@ -282,9 +295,10 @@
         };
 
         hrc-l-shift {
-            bindings = <&stmhdes>;
+            bindings = <&left_shift_tap_or_mo 0 0>;
             key-positions = <37 25>;
             slow-release;
+            layers = <0>;
         };
 
         hrc-l-alt {
@@ -300,9 +314,10 @@
         };
 
         hrc-r-shift {
-            bindings = <&stmhdes>;
+            bindings = <&left_shift_tap_or_mo 0 0>;
             key-positions = <42 30>;
             slow-release;
+            layers = <0>;
         };
 
         hrc-r-alt {
@@ -493,6 +508,30 @@
         colon {
             bindings = <&kp RS(DOT)>;
             key-positions = <37 50>;
+        };
+
+        lshift_ctrl_k {
+            bindings = <&kp LC(K)>;
+            key-positions = <25 37>;
+            layers = <1>;
+        };
+
+        rshift_ctrl_dash {
+            bindings = <&kp LC(SLASH)>;
+            key-positions = <30 42>;
+            layers = <2>;
+        };
+
+        double_left_caps_word {
+            bindings = <&caps_word>;
+            key-positions = <25 37>;
+            layers = <2>;
+        };
+
+        double_right_caps_lock {
+            bindings = <&kp CLCK>;
+            key-positions = <42 30>;
+            layers = <1>;
         };
     };
 
