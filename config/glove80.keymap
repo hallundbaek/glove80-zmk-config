@@ -110,6 +110,26 @@
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
         };
+
+        left_shift_tap_or_mo: left_shift_tap_or_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_SHIFT_TAP_OR_MO";
+            bindings = <&mo_key_and_layer>, <&sticky_lshift>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+        };
+
+        right_shift_tap_or_mo: right_shift_tap_or_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_SHIFT_TAP_OR_MO";
+            bindings = <&mo_key_and_layer>, <&sticky_rshift>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+        };
     };
 
     macros {
