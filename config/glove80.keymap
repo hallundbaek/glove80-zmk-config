@@ -114,7 +114,7 @@
         left_shift_tap_or_mo: left_shift_tap_or_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_SHIFT_TAP_OR_MO";
-            bindings = <&mo_lshift_and_layer>, <&sticky_lshift>;
+            bindings = <&mo_lshift_and_layer>, <&sl>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -124,7 +124,7 @@
         right_shift_tap_or_mo: right_shift_tap_or_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_SHIFT_TAP_OR_MO";
-            bindings = <&mo_rshift_and_layer>, <&sticky_rshift>;
+            bindings = <&mo_rshift_and_layer>, <&sl>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -244,20 +244,6 @@
             label = "BRACE_SPACE";
         };
 
-        sticky_lshift: sticky_lshift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LSHFT &sl 1>;
-            label = "STICKY_LSHIFT";
-        };
-
-        sticky_rshift: sticky_rshift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk RSHFT &sl 2>;
-            label = "STICKY_RSHIFT";
-        };
-
         mo_lshift_and_layer: mo_lshift_and_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -295,7 +281,7 @@
         };
 
         hrc-l-shift {
-            bindings = <&left_shift_tap_or_mo 0 0>;
+            bindings = <&left_shift_tap_or_mo 0 1>;
             key-positions = <37 25>;
             slow-release;
             layers = <0>;
@@ -314,7 +300,7 @@
         };
 
         hrc-r-shift {
-            bindings = <&right_shift_tap_or_mo 0 0>;
+            bindings = <&right_shift_tap_or_mo 0 2>;
             key-positions = <42 30>;
             slow-release;
             layers = <0>;
@@ -553,23 +539,23 @@
 
         left_shift {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans      &trans                                                                      &trans  &trans     &trans   &trans        &trans
+&trans  &trans      &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp N5                                                  &kp N6  &kp N7  &kp N8     &kp N9   &kp MINUS     &trans
+&trans  &kp LS(N1)  &kp W       &kp E       &kp R       &kp T                                                   &kp Y   &kp U   &kp I      &kp O    &kp N0        &kp LEFT_BRACKET
+&trans  &kp Q       &kp S       &kp D       &kp F       &kp G                                                   &kp H   &kp J   &kp K      &kp L    &kp P         &kp APOS
+&trans  &kp A       &kp X       &kp C       &kp V       &kp B   &trans  &trans  &trans  &trans  &trans  &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp LS(SEMI)  &kp SEMI
+&trans  &trans      &trans      &trans      &trans              &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans     &trans   &trans        &trans
             >;
         };
 
         right_shift {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RS(Q)  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
