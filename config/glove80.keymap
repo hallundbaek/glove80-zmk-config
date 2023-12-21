@@ -100,6 +100,16 @@
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
         };
+
+        hat_or_mo: hat_or_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HAT_OR_MO";
+            bindings = <&mo>, <&da_hat>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+        };
     };
 
     macros {
@@ -413,13 +423,13 @@
             key-positions = <30 43>;
         };
 
-        at {
-            bindings = <&kp RA(NUMBER_2)>;
+        at_or_gtlt {
+            bindings = <&tap_or_mo 13 RA(NUMBER_2)>;
             key-positions = <60 75>;
         };
 
-        hat {
-            bindings = <&da_hat>;
+        hat_or_gtlt {
+            bindings = <&hat_or_mo 13 0>;
             key-positions = <60 77>;
         };
 
