@@ -223,6 +223,33 @@
             bindings = <&kp ENTER &kp ENTER &kp UP_ARROW &kp TAB>;
             label = "BRACE_SPACE";
         };
+
+        sticky_lshift: sticky_lshift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LSHFT &sl 1>;
+            label = "STICKY_LSHIFT";
+        };
+
+        sticky_rshift: sticky_rshift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk RSHFT &sl 2>;
+            label = "STICKY_RSHIFT";
+        };
+
+        mo_key_and_layer: mo_key_and_layer {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &mo MACRO_PLACEHOLDER>;
+
+            label = "MO_KEY_AND_LAYER";
+        };
     };
 
     combos {
@@ -235,7 +262,7 @@
         };
 
         hrc-l-shift {
-            bindings = <&stmhdes LEFT_SHIFT>;
+            bindings = <&stmhdes>;
             key-positions = <37 25>;
             slow-release;
         };
@@ -265,33 +292,33 @@
         };
 
         numbers_left {
-            bindings = <&stmhl 8 8>;
+            bindings = <&stmhl 10 10>;
             key-positions = <49 37>;
             slow-release;
         };
 
         number_right {
-            bindings = <&stmhl 8 8>;
+            bindings = <&stmhl 10 10>;
             key-positions = <60 42>;
             slow-release;
         };
 
         symbols_left_mid {
-            bindings = <&stmhl 3 3>;
+            bindings = <&stmhl 5 5>;
             key-positions = <48 36>;
             slow-release;
             layers = <0>;
         };
 
         symbols_right_mid {
-            bindings = <&stmhl 3 3>;
+            bindings = <&stmhl 5 5>;
             key-positions = <61 43>;
             slow-release;
             layers = <0>;
         };
 
         ctrl_c {
-            bindings = <&tap_or_mo 8 LC(C)>;
+            bindings = <&tap_or_mo 10 LC(C)>;
             key-positions = <48 49>;
             slow-release;
         };
@@ -347,19 +374,19 @@
         };
 
         shift_tab_macro {
-            bindings = <&tap_and_mo LS(TAB) 9>;
+            bindings = <&tap_and_mo LS(TAB) 11>;
             key-positions = <37 36>;
             slow-release;
         };
 
         d_f_tab {
-            bindings = <&tap_and_mo TAB 9>;
+            bindings = <&tap_and_mo TAB 11>;
             key-positions = <37 38>;
             slow-release;
         };
 
         backslash {
-            bindings = <&tap_or_mo 13 RA(NON_US_BSLH)>;
+            bindings = <&tap_or_mo 15 RA(NON_US_BSLH)>;
             key-positions = <76 77>;
         };
 
@@ -369,12 +396,12 @@
         };
 
         sqt_and_parens {
-            bindings = <&tap_or_mo 10 BACKSLASH>;
+            bindings = <&tap_or_mo 12 BACKSLASH>;
             key-positions = <43 42>;
         };
 
         dqt_and_braces {
-            bindings = <&tap_or_mo 12 LS(NUMBER_2)>;
+            bindings = <&tap_or_mo 14 LS(NUMBER_2)>;
             key-positions = <31 30>;
         };
 
@@ -404,7 +431,7 @@
         };
 
         slash_and_brackets {
-            bindings = <&tap_or_mo 11 RS(N7)>;
+            bindings = <&tap_or_mo 13 RS(N7)>;
             key-positions = <61 60>;
         };
 
@@ -414,32 +441,32 @@
         };
 
         pipe_or_symb {
-            bindings = <&tap_or_mo 14 RA(EQUAL)>;
+            bindings = <&tap_or_mo 16 RA(EQUAL)>;
             key-positions = <61 42>;
         };
 
         amp_or_symb {
-            bindings = <&tap_or_mo 15 RS(NUMBER_6)>;
+            bindings = <&tap_or_mo 17 RS(NUMBER_6)>;
             key-positions = <30 43>;
         };
 
         at_or_gtlt {
-            bindings = <&tap_or_mo 13 RA(NUMBER_2)>;
+            bindings = <&tap_or_mo 15 RA(NUMBER_2)>;
             key-positions = <60 75>;
         };
 
         hat_or_gtlt {
-            bindings = <&hat_or_mo 13 0>;
+            bindings = <&hat_or_mo 15 0>;
             key-positions = <60 77>;
         };
 
         left_numbers {
-            bindings = <&tog 2>;
+            bindings = <&tog 4>;
             key-positions = <25 50>;
         };
 
         right_numbers {
-            bindings = <&tog 1>;
+            bindings = <&tog 3>;
             key-positions = <30 59>;
         };
 
@@ -458,8 +485,30 @@
 &kp GRAVE   &caps_word    &kp NUMBER_2  &kp N3    &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8               &kp N9             &kp SLASH      &kp EQUAL
 &kp F11     &kp NUMBER_1  &kp W         &kp E     &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                &kp O              &kp N0         &kp LEFT_BRACKET
 &kp ESCAPE  &kp Q         &kp S         &kp D     &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                &kp L              &kp P          &kp SQT
-&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 5          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &tap_or_mo 16 COMMA  &tap_or_mo 16 DOT  &kp LS(COMMA)  &kp SEMI
-&magic 4 0  &kp Z         &kp LS(DOT)   &kp HOME  &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN             &kp UP             &kp RIGHT      &kp F12
+&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 7          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &tap_or_mo 18 COMMA  &tap_or_mo 18 DOT  &kp LS(COMMA)  &kp SEMI
+&magic 6 0  &kp Z         &kp LS(DOT)   &kp HOME  &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN             &kp UP             &kp RIGHT      &kp F12
+            >;
+        };
+
+        left_shift {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        right_shift {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -491,7 +540,7 @@
 &trans  &trans      &trans      &trans                    &trans        &trans                                                                    &trans                &trans          &trans            &trans       &trans      &trans
 &trans  &trans      &trans      &kp BACKSLASH             &kp EXCL      &kp RA(EQUAL)                                                             &kp RS(NUMBER_6)      &kp UNDERSCORE  &kp LS(NUMBER_2)  &trans       &trans      &trans
 &trans  &kp RA(N2)  &kp RA(N4)  &kp LS(NUMBER_8)          &kp RA(N8)    &kp RA(NUMBER_7)                                                          &kp RA(N0)            &kp RA(N9)      &kp RS(NUMBER_9)  &kp PERCENT  &kp HASH    &trans
-&trans  &kp MINUS   &kp PIPE    &kp RA(NON_US_BACKSLASH)  &kp QUESTION  &kp LS(NON_US_BACKSLASH)  &mo 3   &trans  &trans  &trans  &trans  &mo 3   &kp NON_US_BACKSLASH  &kp FSLH        &kp RS(N7)        &da_hat      &kp RS(N0)  &trans
+&trans  &kp MINUS   &kp PIPE    &kp RA(NON_US_BACKSLASH)  &kp QUESTION  &kp LS(NON_US_BACKSLASH)  &mo 5   &trans  &trans  &trans  &trans  &mo 5   &kp NON_US_BACKSLASH  &kp FSLH        &kp RS(N7)        &da_hat      &kp RS(N0)  &trans
 &trans  &trans      &trans      &trans                    &da_grave                               &trans  &trans  &trans  &trans  &trans  &trans                        &da_tilde       &kp PAGE_DOWN     &kp PAGE_UP  &trans      &trans
             >;
         };
