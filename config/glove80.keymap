@@ -326,8 +326,8 @@
             key-positions = <25 27>;
         };
 
-        ctrl_s {
-            bindings = <&kp LC(S)>;
+        ctrl_o {
+            bindings = <&kp LC(O)>;
             key-positions = <39 37>;
         };
 
