@@ -548,7 +548,7 @@
             >;
         };
 
-        left_shift {
+        right_shift {
             bindings = <
 &trans  &trans      &trans      &trans      &trans                                                                      &trans  &trans     &trans   &trans        &trans
 &trans  &trans      &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)                                                  &kp RS(N6)  &kp RS(N7)  &kp RS(N8)     &kp RS(N9)   &kp RS(MINUS)     &trans
