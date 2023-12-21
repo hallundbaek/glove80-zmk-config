@@ -202,7 +202,7 @@
                 <&macro_param_2to1 &mo MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_2to1 &mo 0>;
+                <&macro_param_2to1 &mo MACRO_PLACEHOLDER>;
 
             label = "TAP_AND_MO";
         };
@@ -419,7 +419,7 @@
         };
 
         hash {
-            bindings = <&kp HASH>;
+            bindings = <&da_hat>;
             key-positions = <60 77>;
         };
 
@@ -601,7 +601,7 @@
 &trans  &trans  &trans  &trans  &trans                                                                  &trans     &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_grave  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_hat    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp HASH   &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE   &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans  &trans  &trans
             >;
