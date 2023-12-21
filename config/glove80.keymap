@@ -117,7 +117,7 @@
             bindings = <&mo_lshift_and_layer>, <&sl>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <300>;
         };
 
@@ -127,7 +127,7 @@
             bindings = <&mo_rshift_and_layer>, <&sl>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <300>;
         };
 
