@@ -314,7 +314,7 @@
         };
 
         hrc-r-shift {
-            bindings = <&left_shift_tap_or_mo 0 0>;
+            bindings = <&right_shift_tap_or_mo 0 0>;
             key-positions = <42 30>;
             slow-release;
             layers = <0>;
@@ -488,11 +488,13 @@
         at_or_gtlt {
             bindings = <&tap_or_mo 15 RA(NUMBER_2)>;
             key-positions = <60 75>;
+            slow-release;
         };
 
         hat_or_gtlt {
             bindings = <&hat_or_mo 15 0>;
             key-positions = <60 77>;
+            slow-release;
         };
 
         left_numbers {
