@@ -511,7 +511,7 @@
         };
 
         double_left_caps_word {
-            bindings = <&kp CLCK>;
+            bindings = <&caps_word>;
             key-positions = <25 37>;
             layers = <2>;
         };
@@ -520,6 +520,11 @@
             bindings = <&caps_word>;
             key-positions = <42 30>;
             layers = <1>;
+        };
+
+        caps_lock {
+            bindings = <&kp CLCK>;
+            key-positions = <25 37 30 42>;
         };
     };
 
