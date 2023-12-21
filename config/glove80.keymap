@@ -140,6 +140,17 @@
             flavor = "hold-preferred";
             tapping-term-ms = <300>;
         };
+
+        hold_tap_comma_dot: hold_tap_comma_dot {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_COMMA_DOT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <300>;
+            hold-trigger-key-positions = <61 60>;
+        };
     };
 
     macros {
@@ -543,12 +554,12 @@
 
         layer_Base {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4    &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                         &kp F9         &kp F10
-&kp GRAVE   &caps_word    &kp NUMBER_2  &kp N3    &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                         &kp SLASH      &kp EQUAL
-&kp F11     &kp NUMBER_1  &kp W         &kp E     &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                          &kp N0         &kp LEFT_BRACKET
-&kp ESCAPE  &kp Q         &kp S         &kp D     &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                          &kp P          &kp SQT
-&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 7          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &tap_or_mo_balanced 18 COMMA  &tap_or_mo_balanced 18 PERIOD  &kp LS(COMMA)  &kp SEMI
-&magic 6 0  &kp Z         &kp LS(DOT)   &kp HOME  &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                         &kp RIGHT      &kp F12
+&kp F1      &kp F2        &kp F3        &kp F4    &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9         &kp F10
+&kp GRAVE   &caps_word    &kp NUMBER_2  &kp N3    &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp SLASH      &kp EQUAL
+&kp F11     &kp NUMBER_1  &kp W         &kp E     &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0         &kp LEFT_BRACKET
+&kp ESCAPE  &kp Q         &kp S         &kp D     &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P          &kp SQT
+&kp TAB     &kp A         &kp X         &kp C     &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 7          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 18 COMMA  &hold_tap_comma_dot 18 DOT  &kp LS(COMMA)  &kp SEMI
+&magic 6 0  &kp Z         &kp LS(DOT)   &kp HOME  &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT      &kp F12
             >;
         };
 
