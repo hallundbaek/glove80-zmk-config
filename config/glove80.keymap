@@ -561,7 +561,7 @@
 &trans  &kp LS(N1)  &kp LS(W)   &kp LS(E)   &kp LS(R)   &kp LS(T)                                                   &kp LS(Y)   &kp LS(U)   &kp LS(I)      &kp LS(O)    &kp LS(N0)     &kp LS(LEFT_BRACKET)
 &trans  &kp LS(Q)   &kp LS(S)   &kp LS(D)   &kp LS(F)   &kp LS(G)                                                   &kp LS(H)   &kp LS(J)   &kp LS(K)      &kp LS(L)    &kp LS(P)      &kp LS(APOS)
 &trans  &kp LS(A)   &kp LS(X)   &kp LS(C)   &kp LS(V)   &kp LS(B)   &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(N)   &kp LS(M)   &kp LS(COMMA)  &kp LS(DOT)  &kp COMMA      &kp LS(SEMI)
-&trans  &trans      &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans              &trans      &trans         &trans       &trans         &trans
+&trans  &kp LS(Z)   &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans              &trans      &trans         &trans       &trans         &trans
             >;
         };
 
@@ -572,7 +572,7 @@
 &trans  &kp RS(N1)  &kp RS(W)   &kp RS(E)   &kp RS(R)   &kp RS(T)                                                   &kp RS(Y)   &kp RS(U)   &kp RS(I)      &kp RS(O)    &kp RS(N0)     &kp RS(LEFT_BRACKET)
 &trans  &kp RS(Q)   &kp RS(S)   &kp RS(D)   &kp RS(F)   &kp RS(G)                                                   &kp RS(H)   &kp RS(J)   &kp RS(K)      &kp RS(L)    &kp RS(P)      &kp RS(APOS)
 &trans  &kp RS(A)   &kp RS(X)   &kp RS(C)   &kp RS(V)   &kp RS(B)   &trans  &trans  &trans  &trans  &trans  &trans  &kp RS(N)   &kp RS(M)   &kp RS(COMMA)  &kp RS(DOT)  &kp COMMA      &kp RS(SEMI)
-&trans  &trans      &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans              &trans      &trans         &trans       &trans         &trans
+&trans  &kp RS(Z)   &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans              &trans      &trans         &trans       &trans         &trans
             >;
         };
 
