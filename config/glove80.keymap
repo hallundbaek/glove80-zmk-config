@@ -129,7 +129,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <300>;
-            hold-trigger-key-positions = <61 60>;
+            hold-trigger-key-positions = <61 60 42>;
         };
 
         hold_tap_xcv: hold_tap_xcv {
