@@ -494,16 +494,6 @@
             key-positions = <59 61>;
         };
 
-        pipe_or_symb {
-            bindings = <&tap_or_mo 12 RA(EQUAL)>;
-            key-positions = <61 42>;
-        };
-
-        amp_or_symb {
-            bindings = <&tap_or_mo 13 RS(NUMBER_6)>;
-            key-positions = <30 43>;
-        };
-
         hat {
             bindings = <&da_hat>;
             key-positions = <60 75>;
@@ -542,6 +532,11 @@
         caps_lock {
             bindings = <&kp CLCK>;
             key-positions = <25 37 30 42>;
+        };
+
+        excl {
+            bindings = <&kp LS(NUMBER_1)>;
+            key-positions = <30 43>;
         };
     };
 
