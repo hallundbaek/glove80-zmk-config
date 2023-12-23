@@ -614,12 +614,12 @@
 
         vim_leader {
             bindings = <
-&trans  &trans  &trans                   &trans       &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                   &trans       &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                   &kp DA_EXCL  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &tap_and_mo DA_COLON 14  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                   &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                   &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &kp DA_EXCL  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp COLON  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
