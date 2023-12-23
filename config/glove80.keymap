@@ -554,12 +554,12 @@
 
         layer_Base {
             bindings = <
-&kp F1      &kp F2                    &kp F3        &kp F4              &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9       &kp F10
-&kp GRAVE   &caps_word_da_underscore  &kp NUMBER_2  &kp N3              &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp SLASH    &kp EQUAL
-&kp F11     &kp NUMBER_1              &kp W         &kp E               &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0       &kp DA_A_RING
-&kp ESCAPE  &tap_or_mo_vim 15 Q       &kp S         &kp D               &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P        &kp DA_O_SLASH
-&kp TAB     &kp A                     &kp X         &hold_tap_xcv 11 C  &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 5          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 14 COMMA  &hold_tap_comma_dot 14 DOT  &kp DA_SEMI  &kp DA_AE
-&magic 4 0  &kp Z                     &kp DA_COLON  &kp HOME            &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT    &kp F12
+&kp F1      &kp F2                    &kp F3        &kp F4              &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9        &kp F10
+&kp GRAVE   &caps_word_da_underscore  &kp NUMBER_2  &kp N3              &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS  &kp EQUAL
+&kp F11     &kp NUMBER_1              &kp W         &kp E               &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0        &kp DA_A_RING
+&kp ESCAPE  &tap_or_mo_vim 15 Q       &kp S         &kp D               &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P         &kp DA_O_SLASH
+&kp TAB     &kp A                     &kp X         &hold_tap_xcv 11 C  &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 5          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 14 COMMA  &hold_tap_comma_dot 14 DOT  &kp DA_SEMI   &kp DA_AE
+&magic 4 0  &kp Z                     &kp DA_COLON  &kp HOME            &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT     &kp F12
             >;
         };
 
