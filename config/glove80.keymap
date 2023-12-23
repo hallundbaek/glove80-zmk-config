@@ -237,33 +237,6 @@
             tap-ms = <50>;
         };
 
-        da_grave: da_grave {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(EQUAL) &kp SPACE>;
-            label = "DA_GRAVE";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        da_hat: da_hat {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RBRC &kp SPACE>;
-            label = "DA_HAT";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        da_tilde: da_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(RIGHT_BRACKET) &kp SPACE>;
-            label = "DA_TILDE";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
         tap_and_mo: tap_and_mo {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
@@ -284,32 +257,6 @@
             #binding-cells = <0>;
             bindings = <&kp ENTER &kp ENTER &kp UP_ARROW &kp TAB>;
             label = "BRACE_SPACE";
-        };
-
-        mo_lshift_and_layer: mo_lshift_and_layer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT &mo 1>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT &mo 1>;
-
-            label = "MO_LSHIFT_AND_LAYER";
-        };
-
-        mo_rshift_and_layer: mo_rshift_and_layer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RSHIFT &mo 2>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp RSHIFT &mo 2>;
-
-            label = "MO_RSHIFT_AND_LAYER";
         };
     };
 
