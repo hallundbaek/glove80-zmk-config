@@ -318,8 +318,8 @@
         };
 
         ctrl_d {
-            bindings = <&kp LC(D)>;
-            key-positions = <39 36>;
+            bindings = <&tap_and_mo LC(D) 16>;
+            key-positions = <39 25>;
         };
 
         ctrl_w {
@@ -333,7 +333,7 @@
         };
 
         ctrl_t {
-            bindings = <&kp LC(T)>;
+            bindings = <&tap_and_mo LC(T) 16>;
             key-positions = <25 27>;
         };
 
@@ -631,6 +631,17 @@
 &trans  &trans  &trans  &vim_ten LC(A)  &kp LC(A)  &vim_hundred LC(A)                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &vim_ten LC(X)  &kp LC(X)  &vim_hundred LC(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans          &trans                         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        vim_ctrl_d_t {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LC(T)                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LC(D)                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
