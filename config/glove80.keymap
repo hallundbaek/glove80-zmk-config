@@ -355,33 +355,19 @@
         };
 
         numbers_left {
-            bindings = <&stmhl 6 6>;
+            bindings = <&stmhl 5 5>;
             key-positions = <49 37>;
             slow-release;
         };
 
         number_right {
-            bindings = <&stmhl 6 6>;
+            bindings = <&stmhl 5 5>;
             key-positions = <60 42>;
             slow-release;
         };
 
-        symbols_left_mid {
-            bindings = <&stmhl 3 3>;
-            key-positions = <48 36>;
-            slow-release;
-            layers = <0>;
-        };
-
-        symbols_right_mid {
-            bindings = <&stmhl 3 3>;
-            key-positions = <61 43>;
-            slow-release;
-            layers = <0>;
-        };
-
         ctrl_c {
-            bindings = <&tap_or_mo 6 LC(C)>;
+            bindings = <&tap_or_mo 5 LC(C)>;
             key-positions = <48 49>;
             slow-release;
         };
@@ -437,19 +423,19 @@
         };
 
         shift_tab_macro {
-            bindings = <&tap_and_mo LS(TAB) 7>;
+            bindings = <&tap_and_mo LS(TAB) 6>;
             key-positions = <37 36>;
             slow-release;
         };
 
         d_f_tab {
-            bindings = <&tap_and_mo TAB 7>;
+            bindings = <&tap_and_mo TAB 6>;
             key-positions = <37 38>;
             slow-release;
         };
 
         backslash {
-            bindings = <&tap_or_mo 11 RA(NON_US_BSLH)>;
+            bindings = <&tap_or_mo 10 RA(NON_US_BSLH)>;
             key-positions = <76 77>;
         };
 
@@ -459,12 +445,12 @@
         };
 
         sqt_and_parens {
-            bindings = <&tap_or_mo 8 BACKSLASH>;
+            bindings = <&tap_or_mo 7 BACKSLASH>;
             key-positions = <43 42>;
         };
 
         dqt_and_braces {
-            bindings = <&tap_or_mo 10 LS(NUMBER_2)>;
+            bindings = <&tap_or_mo 9 LS(NUMBER_2)>;
             key-positions = <31 30>;
         };
 
@@ -494,7 +480,7 @@
         };
 
         excl_and_brackets {
-            bindings = <&tap_or_mo 9 LS(NUMBER_1)>;
+            bindings = <&tap_or_mo 8 LS(NUMBER_1)>;
             key-positions = <61 60>;
         };
 
@@ -554,45 +540,34 @@
 
         layer_Base {
             bindings = <
-&kp F1      &kp F2                    &kp F3        &kp F4              &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9        &kp F10
-&kp GRAVE   &caps_word_da_underscore  &kp NUMBER_2  &kp N3              &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS  &kp EQUAL
-&kp F11     &kp NUMBER_1              &kp W         &kp E               &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0        &kp DA_A_RING
-&kp ESCAPE  &tap_or_mo_vim 15 Q       &kp S         &kp D               &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P         &kp DA_O_SLASH
-&kp TAB     &kp A                     &kp X         &hold_tap_xcv 11 C  &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 5          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 14 COMMA  &hold_tap_comma_dot 14 DOT  &kp DA_SEMI   &kp DA_AE
-&magic 4 0  &kp Z                     &kp DA_COLON  &kp HOME            &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT     &kp F12
+&kp F1           &kp F2                    &kp F3        &kp F4              &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9        &kp F10
+&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2  &kp N3              &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS  &kp DA_ACUTE
+&kp F11          &kp NUMBER_1              &kp W         &kp E               &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0        &kp DA_A_RING
+&kp ESCAPE       &tap_or_mo_vim 14 Q       &kp S         &kp D               &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P         &kp DA_O_SLASH
+&kp TAB          &kp A                     &kp X         &hold_tap_xcv 10 C  &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 13 COMMA  &hold_tap_comma_dot 13 DOT  &kp DA_SEMI   &kp DA_AE
+&magic 3 0       &kp Z                     &kp DA_COLON  &kp HOME            &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT     &kp F12
             >;
         };
 
         left_shift {
             bindings = <
-&kp LS(F1)      &kp LS(F2)  &kp LS(F3)  &kp LS(F4)    &kp LS(F5)                                                                                                                         &kp LS(F6)    &kp LS(F7)     &kp LS(F8)   &kp LS(F9)     &kp LS(F10)
-&kp LS(GRAVE)   &trans      &kp LS(N2)  &kp LS(N3)    &kp LS(N4)   &kp LS(N5)                                                                                                &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)   &kp LS(MINUS)  &kp EQUAL
-&kp LS(F11)     &kp LS(N1)  &kp LS(W)   &kp LS(E)     &kp LS(R)    &kp LS(T)                                                                                                 &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)    &kp LS(N0)     &kp LS(LEFT_BRACKET)
-&kp LS(ESCAPE)  &kp LS(Q)   &kp LS(S)   &kp LS(D)     &kp LS(F)    &kp LS(G)                                                                                                 &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)    &kp LS(P)      &kp LS(APOS)
-&kp LS(TAB)     &kp LS(A)   &kp LS(X)   &kp LS(C)     &kp LS(V)    &kp LS(B)   &kp LS(LEFT_ALT)  &kp LS(DEL)    &trans  &kp LS(RALT)       &kp LS(RCTRL)  &trans             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)  &kp COMMA      &kp LS(SEMI)
-&trans          &kp LS(Z)   &kp DOT     &kp LS(HOME)  &kp LS(END)              &kp LS(SPACE)     &kp LS(ENTER)  &trans  &kp LS(RIGHT_WIN)  &kp LS(DEL)    &kp LS(BACKSPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP)   &kp LS(RIGHT)  &kp LS(F12)
+&kp LS(F1)           &kp LS(F2)  &kp LS(F3)  &kp LS(F4)    &kp LS(F5)                                                                                                                         &kp LS(F6)    &kp LS(F7)     &kp LS(F8)   &kp LS(F9)        &kp LS(F10)
+&kp LS(DA_ONE_HALF)  &trans      &kp LS(N2)  &kp LS(N3)    &kp LS(N4)   &kp LS(N5)                                                                                                &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)   &kp LS(DA_MINUS)  &kp LS(DA_ACUTE)
+&kp LS(F11)          &kp LS(N1)  &kp LS(W)   &kp LS(E)     &kp LS(R)    &kp LS(T)                                                                                                 &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)    &kp LS(N0)        &kp LS(DA_A_RING)
+&kp LS(ESCAPE)       &kp LS(Q)   &kp LS(S)   &kp LS(D)     &kp LS(F)    &kp LS(G)                                                                                                 &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)    &kp LS(P)         &kp LS(DA_O_SLASH)
+&kp LS(TAB)          &kp LS(A)   &kp LS(X)   &kp LS(C)     &kp LS(V)    &kp LS(B)   &kp LS(LEFT_ALT)  &kp LS(DEL)    &trans  &kp LS(RALT)       &kp LS(RCTRL)  &trans             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)  &kp DA_COMMA      &kp LS(DA_AE)
+&trans               &kp LS(Z)   &kp DOT     &kp LS(HOME)  &kp LS(END)              &kp LS(SPACE)     &kp LS(ENTER)  &trans  &kp LS(RIGHT_WIN)  &kp LS(DEL)    &kp LS(BACKSPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP)   &kp LS(RIGHT)     &kp LS(F12)
             >;
         };
 
         right_shift {
             bindings = <
-&kp RS(F1)      &kp RS(F2)  &kp RS(F3)  &kp RS(F4)    &kp RS(F5)                                                                                                                         &kp RS(F6)    &kp RS(F7)     &kp RS(F8)   &kp RS(F9)     &kp RS(F10)
-&kp RS(GRAVE)   &trans      &kp RS(N2)  &kp RS(N3)    &kp RS(N4)   &kp RS(N5)                                                                                                &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)   &kp RS(MINUS)  &kp EQUAL
-&kp RS(F11)     &kp RS(N1)  &kp RS(W)   &kp RS(E)     &kp RS(R)    &kp RS(T)                                                                                                 &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)    &kp RS(N0)     &kp RS(LEFT_BRACKET)
-&kp RS(ESCAPE)  &kp RS(Q)   &kp RS(S)   &kp RS(D)     &kp RS(F)    &kp RS(G)                                                                                                 &kp RS(H)   &kp RS(J)     &kp RS(K)      &kp RS(L)    &kp RS(P)      &kp RS(APOS)
-&kp RS(TAB)     &kp RS(A)   &kp RS(X)   &kp RS(C)     &kp RS(V)    &kp RS(B)   &kp RS(LEFT_ALT)  &kp RS(DEL)    &trans  &kp RS(RALT)       &kp RS(RCTRL)  &trans             &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)  &kp COMMA      &kp RS(SEMI)
-&trans          &kp RS(Z)   &kp DOT     &kp RS(HOME)  &kp RS(END)              &kp RS(SPACE)     &kp RS(ENTER)  &trans  &kp RS(RIGHT_WIN)  &kp RS(DEL)    &kp RS(BACKSPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP)   &kp RS(RIGHT)  &kp RS(F12)
-            >;
-        };
-
-        layer_symbols {
-            bindings = <
-&trans  &trans      &trans      &trans                    &trans                                                                                                        &trans          &trans            &trans       &trans      &trans
-&trans  &trans      &trans      &trans                    &trans        &trans                                                                    &trans                &trans          &trans            &trans       &trans      &trans
-&trans  &trans      &trans      &kp BACKSLASH             &kp EXCL      &kp RA(EQUAL)                                                             &kp RS(NUMBER_6)      &kp UNDERSCORE  &kp LS(NUMBER_2)  &trans       &trans      &trans
-&trans  &kp RA(N2)  &kp RA(N4)  &kp LS(NUMBER_8)          &kp RA(N8)    &kp RA(NUMBER_7)                                                          &kp RA(N0)            &kp RA(N9)      &kp RS(NUMBER_9)  &kp PERCENT  &kp HASH    &trans
-&trans  &kp MINUS   &kp PIPE    &kp RA(NON_US_BACKSLASH)  &kp QUESTION  &kp LS(NON_US_BACKSLASH)  &mo 3   &trans  &trans  &trans  &trans  &mo 3   &kp NON_US_BACKSLASH  &kp FSLH        &kp RS(N7)        &da_hat      &kp RS(N0)  &trans
-&trans  &trans      &trans      &trans                    &da_grave                               &trans  &trans  &trans  &trans  &trans  &trans                        &da_tilde       &kp PAGE_DOWN     &kp PAGE_UP  &trans      &trans
+&kp RS(F1)           &kp RS(F2)  &kp RS(F3)  &kp RS(F4)    &kp RS(F5)                                                                                                                         &kp RS(F6)    &kp RS(F7)     &kp RS(F8)   &kp RS(F9)        &kp RS(F10)
+&kp RS(DA_ONE_HALF)  &trans      &kp RS(N2)  &kp RS(N3)    &kp RS(N4)   &kp RS(N5)                                                                                                &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)   &kp RS(DA_MINUS)  &kp RS(DA_ACUTE)
+&kp RS(F11)          &kp RS(N1)  &kp RS(W)   &kp RS(E)     &kp RS(R)    &kp RS(T)                                                                                                 &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)    &kp RS(N0)        &kp RS(DA_A_RING)
+&kp RS(ESCAPE)       &kp RS(Q)   &kp RS(S)   &kp RS(D)     &kp RS(F)    &kp RS(G)                                                                                                 &kp RS(H)   &kp RS(J)     &kp RS(K)      &kp RS(L)    &kp RS(P)         &kp RS(DA_O_SLASH)
+&kp RS(TAB)          &kp RS(A)   &kp RS(X)   &kp RS(C)     &kp RS(V)    &kp RS(B)   &kp RS(LEFT_ALT)  &kp RS(DEL)    &trans  &kp RS(RALT)       &kp RS(RCTRL)  &trans             &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)  &kp COMMA         &kp RS(DA_AE)
+&trans               &kp RS(Z)   &kp DOT     &kp RS(HOME)  &kp RS(END)              &kp RS(SPACE)     &kp RS(ENTER)  &trans  &kp RS(RIGHT_WIN)  &kp RS(DEL)    &kp RS(BACKSPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP)   &kp RS(RIGHT)     &kp RS(F12)
             >;
         };
 
@@ -642,89 +617,89 @@
 
         parentheses {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp RS(N8)    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(N9)    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans                   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_LEFT_PARENTHESIS  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_RPAR              &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT                 &trans  &trans  &trans  &trans
             >;
         };
 
         brackets {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp RA(N8)    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(N9)    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_LEFT_BRACKET  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_RBKT          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT             &trans  &trans  &trans  &trans
             >;
         };
 
         braces {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp RA(N7)    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp RA(N0)    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &brace_space  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_LEFT_BRACE  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_RBRC        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT           &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &brace_space       &trans  &trans  &trans  &trans
             >;
         };
 
         greater_less_than {
             bindings = <
-&trans  &trans  &trans           &trans  &trans                                                                               &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans  &trans               &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans  &trans               &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans  &trans               &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NON_US_BSLH  &trans  &kp LS(NON_US_BSLH)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp DA_LT  &trans  &kp DA_GT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         pipe_symbs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_grave  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp HASH   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans           &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans           &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_GRAVE     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_HASH      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_ASTERISK  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans  &trans  &trans  &trans
             >;
         };
 
         amp_symbs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans            &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans            &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_tilde         &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp PERCENT       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(NUMBER_4)  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_TILDE    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_PERCENT  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_DOLLAR   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans
             >;
         };
 
         slashes {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans                        &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans                        &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo 13 RS(NUMBER_6)    &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo_hold 12 RA(EQUAL)  &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 9 RA(NON_US_BSLH)  &kp RS(N7)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                        &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans                      &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans                      &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo 12 DA_AMPS       &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo_hold 11 DA_PIPE  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 8 DA_BSLH        &kp DA_SLASH  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                      &trans        &trans  &trans
             >;
         };
 
         vim_leader {
             bindings = <
-&trans  &trans  &trans       &trans            &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans            &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &kp LS(NUMBER_1)  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp RS(DOT)  &kp W             &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &kp DA_EXCL  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp DA_COLON  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
