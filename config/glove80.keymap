@@ -322,8 +322,9 @@
         };
 
         ctrl_z {
-            bindings = <&kp LC(Z)>;
+            bindings = <&tap_and_mo LC(Z) 19>;
             key-positions = <66 67>;
+            slow-release;
         };
 
         ctrl_a {
@@ -494,6 +495,7 @@
         ctrl_g {
             bindings = <&tap_and_mo LC(G) 17>;
             key-positions = <36 39>;
+            slow-release;
         };
     };
 
@@ -502,12 +504,12 @@
 
         layer_Base {
             bindings = <
-&kp F1           &kp F2                    &kp F3        &kp F4              &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9        &kp F10
-&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2  &kp N3              &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS  &kp DA_ACUTE
-&kp F11          &kp NUMBER_1              &kp W         &kp E               &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0        &kp DA_A_RING
-&kp ESCAPE       &tap_or_mo_vim 14 Q       &kp S         &kp D               &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P         &kp DA_O_SLASH
-&kp TAB          &kp A                     &kp X         &hold_tap_xcv 10 C  &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 13 COMMA  &hold_tap_comma_dot 13 DOT  &kp DA_SEMI   &kp DA_AE
-&magic 3 0       &kp Z                     &kp DA_COLON  &kp HOME            &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT     &kp F12
+&kp F1           &kp F2                    &kp F3        &kp F4              &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9             &kp F10
+&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2  &kp N3              &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS       &kp DA_ACUTE
+&kp F11          &kp NUMBER_1              &kp W         &kp E               &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
+&kp ESCAPE       &tap_or_mo_vim 14 Q       &kp S         &kp D               &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P              &kp DA_O_SLASH
+&kp TAB          &kp A                     &kp X         &hold_tap_xcv 10 C  &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 13 COMMA  &hold_tap_comma_dot 13 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
+&magic 3 0       &kp Z                     &kp DA_COLON  &kp HOME            &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT          &kp F12
             >;
         };
 
@@ -706,6 +708,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp DA_EQUAL  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_MINUS  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp DA_PLUS   &trans  &trans  &trans
+            >;
+        };
+
+        ctrl_z {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(Z)  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
