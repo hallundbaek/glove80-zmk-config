@@ -564,23 +564,23 @@
 
         left_shift {
             bindings = <
-&kp LS(F1)      &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &kp LS(F5)                                                                                                                        &kp LS(F6)    &kp LS(F7)     &kp LS(F8)   &kp LS(F9)     &kp LS(F10)
-&kp LS(GRAVE)   &trans      &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                                                                                &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)   &kp LS(MINUS)  &kp EQUAL
-&kp LS(F11)     &kp LS(N1)  &kp LS(W)   &kp LS(E)   &kp LS(R)   &kp LS(T)                                                                                                 &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)    &kp LS(N0)     &kp LS(LEFT_BRACKET)
-&kp LS(ESCAPE)  &kp LS(Q)   &kp LS(S)   &kp LS(D)   &kp LS(F)   &kp LS(G)                                                                                                 &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)    &kp LS(P)      &kp LS(APOS)
-&kp LS(TAB)     &kp LS(A)   &kp LS(X)   &kp LS(C)   &kp LS(V)   &kp LS(B)   &kp LS(LEFT_ALT)  &kp LS(DEL)    &trans  &kp LS(RALT)       &kp LS(RCTRL)  &trans             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)  &kp COMMA      &kp LS(SEMI)
-&trans          &kp LS(Z)   &trans      &trans      &trans                  &kp LS(SPACE)     &kp LS(ENTER)  &trans  &kp LS(RIGHT_WIN)  &kp LS(DEL)    &kp LS(BACKSPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP)   &kp LS(RIGHT)  &kp LS(F12)
+&kp LS(F1)      &kp LS(F2)  &kp LS(F3)  &kp LS(F4)    &kp LS(F5)                                                                                                                         &kp LS(F6)    &kp LS(F7)     &kp LS(F8)   &kp LS(F9)     &kp LS(F10)
+&kp LS(GRAVE)   &trans      &kp LS(N2)  &kp LS(N3)    &kp LS(N4)   &kp LS(N5)                                                                                                &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)   &kp LS(MINUS)  &kp EQUAL
+&kp LS(F11)     &kp LS(N1)  &kp LS(W)   &kp LS(E)     &kp LS(R)    &kp LS(T)                                                                                                 &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)    &kp LS(N0)     &kp LS(LEFT_BRACKET)
+&kp LS(ESCAPE)  &kp LS(Q)   &kp LS(S)   &kp LS(D)     &kp LS(F)    &kp LS(G)                                                                                                 &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)    &kp LS(P)      &kp LS(APOS)
+&kp LS(TAB)     &kp LS(A)   &kp LS(X)   &kp LS(C)     &kp LS(V)    &kp LS(B)   &kp LS(LEFT_ALT)  &kp LS(DEL)    &trans  &kp LS(RALT)       &kp LS(RCTRL)  &trans             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)  &kp COMMA      &kp LS(SEMI)
+&trans          &kp LS(Z)   &kp DOT     &kp LS(HOME)  &kp LS(END)              &kp LS(SPACE)     &kp LS(ENTER)  &trans  &kp LS(RIGHT_WIN)  &kp LS(DEL)    &kp LS(BACKSPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP)   &kp LS(RIGHT)  &kp LS(F12)
             >;
         };
 
         right_shift {
             bindings = <
-&kp RS(F1)      &kp RS(F2)  &kp RS(F3)  &kp RS(F4)  &kp RS(F5)                                                                                                                        &kp RS(F6)    &kp RS(F7)     &kp RS(F8)   &kp RS(F9)     &kp RS(F10)
-&kp RS(GRAVE)   &trans      &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)                                                                                                &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)   &kp RS(MINUS)  &kp EQUAL
-&kp RS(F11)     &kp RS(N1)  &kp RS(W)   &kp RS(E)   &kp RS(R)   &kp RS(T)                                                                                                 &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)    &kp RS(N0)     &kp RS(LEFT_BRACKET)
-&kp RS(ESCAPE)  &kp RS(Q)   &kp RS(S)   &kp RS(D)   &kp RS(F)   &kp RS(G)                                                                                                 &kp RS(H)   &kp RS(J)     &kp RS(K)      &kp RS(L)    &kp RS(P)      &kp RS(APOS)
-&kp RS(TAB)     &kp RS(A)   &kp RS(X)   &kp RS(C)   &kp RS(V)   &kp RS(B)   &kp RS(LEFT_ALT)  &kp RS(DEL)    &trans  &kp RS(RALT)       &kp RS(RCTRL)  &trans             &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)  &kp COMMA      &kp RS(SEMI)
-&trans          &kp RS(Z)   &trans      &trans      &trans                  &kp RS(SPACE)     &kp RS(ENTER)  &trans  &kp RS(RIGHT_WIN)  &kp RS(DEL)    &kp RS(BACKSPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP)   &kp RS(RIGHT)  &kp RS(F12)
+&kp RS(F1)      &kp RS(F2)  &kp RS(F3)  &kp RS(F4)    &kp RS(F5)                                                                                                                         &kp RS(F6)    &kp RS(F7)     &kp RS(F8)   &kp RS(F9)     &kp RS(F10)
+&kp RS(GRAVE)   &trans      &kp RS(N2)  &kp RS(N3)    &kp RS(N4)   &kp RS(N5)                                                                                                &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)   &kp RS(MINUS)  &kp EQUAL
+&kp RS(F11)     &kp RS(N1)  &kp RS(W)   &kp RS(E)     &kp RS(R)    &kp RS(T)                                                                                                 &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)    &kp RS(N0)     &kp RS(LEFT_BRACKET)
+&kp RS(ESCAPE)  &kp RS(Q)   &kp RS(S)   &kp RS(D)     &kp RS(F)    &kp RS(G)                                                                                                 &kp RS(H)   &kp RS(J)     &kp RS(K)      &kp RS(L)    &kp RS(P)      &kp RS(APOS)
+&kp RS(TAB)     &kp RS(A)   &kp RS(X)   &kp RS(C)     &kp RS(V)    &kp RS(B)   &kp RS(LEFT_ALT)  &kp RS(DEL)    &trans  &kp RS(RALT)       &kp RS(RCTRL)  &trans             &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)  &kp COMMA      &kp RS(SEMI)
+&trans          &kp RS(Z)   &kp DOT     &kp RS(HOME)  &kp RS(END)              &kp RS(SPACE)     &kp RS(ENTER)  &trans  &kp RS(RIGHT_WIN)  &kp RS(DEL)    &kp RS(BACKSPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP)   &kp RS(RIGHT)  &kp RS(F12)
             >;
         };
 
