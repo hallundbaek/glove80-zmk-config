@@ -386,7 +386,7 @@
 
         qmark {
             bindings = <&kp DA_QMARK>;
-            key-positions = <41 30>;
+            key-positions = <30 43>;
         };
 
         plus {
@@ -451,7 +451,7 @@
 
         excl {
             bindings = <&kp DA_EXCL>;
-            key-positions = <30 43>;
+            key-positions = <30 41>;
         };
     };
 
