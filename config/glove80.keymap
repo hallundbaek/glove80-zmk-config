@@ -279,12 +279,6 @@
             slow-release;
         };
 
-        right_control {
-            bindings = <&stmhdec>;
-            key-positions = <62 44>;
-            slow-release;
-        };
-
         right_shift {
             bindings = <&sl_or_mo_hold 2 2>;
             key-positions = <42 30>;
@@ -664,12 +658,12 @@
 
         vim_leader {
             bindings = <
-&trans  &trans  &trans     &trans       &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans       &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &kp DA_EXCL  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp COLON  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &kp DA_EXCL  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp DA_COLON  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
