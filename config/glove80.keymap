@@ -592,23 +592,23 @@
 
         slashes {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans                      &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans                      &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo 12 DA_AMPS       &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans                 &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans                 &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo 12 DA_AMPS  &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo 11 DA_PIPE  &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 8 DA_BSLH        &kp DA_SLASH  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                      &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 8 DA_BSLH   &kp DA_SLASH  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                 &trans        &trans  &trans
             >;
         };
 
         vim_leader {
             bindings = <
-&trans  &trans  &trans        &trans       &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans       &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &kp DA_EXCL  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp DA_COLON  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                   &trans       &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                   &trans       &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                   &kp DA_EXCL  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &tap_and_mo DA_COLON 14  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                   &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                   &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
