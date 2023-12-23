@@ -234,6 +234,27 @@
             bindings = <&kp NUMBER_1 &kp N0 &kp N0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "VIM_HUNDRED";
         };
+
+        da_tilde: da_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DA_TILDE &kp SPACE>;
+            label = "DA_TILDE";
+        };
+
+        da_grave: da_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DA_GRAVE &kp SPACE>;
+            label = "DA_GRAVE";
+        };
+
+        da_hat: da_hat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DA_CARET &kp SPACE>;
+            label = "DA_HAT";
+        };
     };
 
     combos {
@@ -410,7 +431,7 @@
         };
 
         hat {
-            bindings = <&kp DA_CARET>;
+            bindings = <&da_hat>;
             key-positions = <60 75>;
             slow-release;
         };
@@ -583,7 +604,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans           &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans           &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_GRAVE     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_grave        &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_HASH      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_ASTERISK  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans  &trans  &trans  &trans
@@ -594,7 +615,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans          &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans          &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_TILDE    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_tilde       &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_PERCENT  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_DOLLAR   &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans
