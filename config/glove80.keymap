@@ -398,8 +398,9 @@
         };
 
         equals {
-            bindings = <&kp DA_EQUAL>;
+            bindings = <&tap_and_mo DA_EQUAL 18>;
             key-positions = <59 42>;
+            slow-release;
         };
 
         at {
@@ -413,13 +414,15 @@
         };
 
         plus {
-            bindings = <&kp DA_PLUS>;
-            key-positions = <76 75>;
+            bindings = <&tap_and_mo DA_PLUS 18>;
+            key-positions = <76 59>;
+            slow-release;
         };
 
         dash {
-            bindings = <&kp DA_MINUS>;
+            bindings = <&tap_and_mo DA_MINUS 18>;
             key-positions = <59 60>;
+            slow-release;
         };
 
         excl_and_brackets {
@@ -473,8 +476,24 @@
         };
 
         excl {
-            bindings = <&kp DA_EXCL>;
+            bindings = <&tap_and_mo DA_EXCL 18>;
             key-positions = <30 41>;
+            slow-release;
+        };
+
+        ctrl_b {
+            bindings = <&kp LC(B)>;
+            key-positions = <49 51>;
+        };
+
+        ctrl_s {
+            bindings = <&kp LC(S)>;
+            key-positions = <36 38>;
+        };
+
+        ctrl_g {
+            bindings = <&tap_and_mo LC(G) 17>;
+            key-positions = <36 39>;
         };
     };
 
@@ -665,6 +684,28 @@
 &trans  &trans  &trans  &trans  &trans  &kp LC(D)                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        ctrl_g {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LC(G)                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        eq_mods {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp EXCL      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp DA_EQUAL  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_MINUS  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp DA_PLUS   &trans  &trans  &trans
             >;
         };
     };
