@@ -220,6 +220,20 @@
             bindings = <&kp ENTER &kp ENTER &kp UP_ARROW &kp TAB>;
             label = "BRACE_SPACE";
         };
+
+        vim_ten: vim_ten {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp NUMBER_1 &kp N0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "VIM_TEN";
+        };
+
+        vim_hundred: vim_hundred {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp NUMBER_1 &kp N0 &kp N0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "VIM_HUNDRED";
+        };
     };
 
     combos {
@@ -292,13 +306,15 @@
         };
 
         ctrl_a {
-            bindings = <&kp LC(A)>;
-            key-positions = <36 38>;
+            bindings = <&tap_and_mo LC(A) 15>;
+            key-positions = <38 48>;
+            slow-release;
         };
 
         ctrl_x {
-            bindings = <&kp LC(X)>;
+            bindings = <&tap_and_mo LC(X) 15>;
             key-positions = <50 48>;
+            slow-release;
         };
 
         ctrl_d {
@@ -341,11 +357,6 @@
             bindings = <&tap_and_mo TAB 6>;
             key-positions = <37 38>;
             slow-release;
-        };
-
-        backslash {
-            bindings = <&tap_or_mo 10 DA_BSLH>;
-            key-positions = <76 77>;
         };
 
         escape {
@@ -609,6 +620,17 @@
 &trans  &trans  &tap_and_mo DA_COLON 14  &kp W        &kp Q   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                   &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                   &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        vim_add_sub {
+            bindings = <
+&trans  &trans  &trans  &trans          &trans                                                                                 &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans     &trans                                                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans     &trans                                                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &vim_ten LC(A)  &kp LC(A)  &vim_hundred LC(A)                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &vim_ten LC(X)  &kp LC(X)  &vim_hundred LC(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans                         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
