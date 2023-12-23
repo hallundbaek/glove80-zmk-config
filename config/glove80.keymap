@@ -65,15 +65,6 @@
             flavor = "tap-preferred";
         };
 
-        stmhdes: sthmdes {
-            compatible = "zmk,behavior-mod-morph";
-            label = "sthmdes";
-            #binding-cells = <0>;
-            bindings = <&stmhk LEFT_SHIFT LEFT_SHIFT>, <&double_shift>;
-
-            mods = <(MOD_LSFT)>;
-        };
-
         stmhdec: stmhdec {
             compatible = "zmk,behavior-mod-morph";
             label = "STMHDEC";
@@ -95,26 +86,6 @@
         tap_or_mo: tap_or_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_OR_MO";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <300>;
-        };
-
-        hat_or_mo: hat_or_mo {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HAT_OR_MO";
-            bindings = <&mo>, <&da_hat>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-        };
-
-        tap_or_mo_hold: tap_or_mo_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_OR_MO_HOLD";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -169,7 +140,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_WORD_DA_UNDERSCORE";
             #binding-cells = <0>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SQT LEFT_BRACKET SEMICOLON SLASH>;
+            continue-list = <DA_UNDERSCORE DA_MINUS>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -208,15 +179,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
-        };
-
-        double_shift: double_shift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp RIGHT_SHIFT>;
-            label = "DOUBLE_SHIFT";
-            wait-ms = <50>;
-            tap-ms = <50>;
         };
 
         double_control: double_control {
@@ -263,39 +225,39 @@
     combos {
         compatible = "zmk,combos";
 
-        hrc-l-ctrl {
+        left_control {
             bindings = <&stmhdec>;
             key-positions = <35 47>;
             slow-release;
         };
 
-        hrc-l-shift {
+        left_shift {
             bindings = <&sl_or_mo_hold 1 1>;
             key-positions = <37 25>;
             slow-release;
             layers = <0>;
         };
 
-        hrc-l-alt {
+        left_alt {
             bindings = <&stmhdea>;
             key-positions = <38 26>;
             slow-release;
         };
 
-        hrc-r-ctrl {
+        right_control {
             bindings = <&stmhdec>;
             key-positions = <62 44>;
             slow-release;
         };
 
-        hrc-r-shift {
+        right_shift {
             bindings = <&sl_or_mo_hold 2 2>;
             key-positions = <42 30>;
             slow-release;
             layers = <0>;
         };
 
-        hrc-r-alt {
+        right_alt {
             bindings = <&stmhdea>;
             key-positions = <41 29>;
             slow-release;
@@ -375,7 +337,7 @@
             slow-release;
         };
 
-        d_f_tab {
+        tab_macro {
             bindings = <&tap_and_mo TAB 6>;
             key-positions = <37 38>;
             slow-release;
@@ -465,7 +427,7 @@
             layers = <2>;
         };
 
-        double_right_caps_lock {
+        double_right_caps_word {
             bindings = <&caps_word_da_underscore>;
             key-positions = <42 30>;
             layers = <1>;
@@ -633,7 +595,7 @@
 &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans                      &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans                      &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo 12 DA_AMPS       &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo_hold 11 DA_PIPE  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &tap_or_mo 11 DA_PIPE  &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 8 DA_BSLH        &kp DA_SLASH  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                      &trans        &trans  &trans
             >;
