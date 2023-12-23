@@ -435,7 +435,7 @@
         };
 
         backslash {
-            bindings = <&tap_or_mo 10 RA(NON_US_BSLH)>;
+            bindings = <&tap_or_mo 10 DA_BSLH>;
             key-positions = <76 77>;
         };
 
@@ -445,58 +445,58 @@
         };
 
         sqt_and_parens {
-            bindings = <&tap_or_mo 7 BACKSLASH>;
+            bindings = <&tap_or_mo 7 DA_SQT>;
             key-positions = <43 42>;
         };
 
         dqt_and_braces {
-            bindings = <&tap_or_mo 9 LS(NUMBER_2)>;
+            bindings = <&tap_or_mo 9 DA_DQT>;
             key-positions = <31 30>;
         };
 
         equals {
-            bindings = <&kp RS(N0)>;
+            bindings = <&kp DA_EQUAL>;
             key-positions = <59 42>;
         };
 
         at {
-            bindings = <&kp RA(NUMBER_2)>;
+            bindings = <&kp DA_AT>;
             key-positions = <29 30>;
         };
 
         qmark {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&kp DA_QMARK>;
             key-positions = <41 30>;
         };
 
         plus {
-            bindings = <&kp MINUS>;
+            bindings = <&kp DA_PLUS>;
             key-positions = <76 75>;
         };
 
-        k_comma_dash {
-            bindings = <&kp FSLH>;
+        dash {
+            bindings = <&kp DA_MINUS>;
             key-positions = <59 60>;
         };
 
         excl_and_brackets {
-            bindings = <&tap_or_mo 8 LS(NUMBER_1)>;
+            bindings = <&tap_or_mo 8 DA_EXCL>;
             key-positions = <61 60>;
         };
 
         m_dot_underscore {
-            bindings = <&kp RS(FSLH)>;
+            bindings = <&kp DA_UNDERSCORE>;
             key-positions = <59 61>;
         };
 
         hat {
-            bindings = <&da_hat>;
+            bindings = <&kp DA_CARET>;
             key-positions = <60 75>;
             slow-release;
         };
 
         colon {
-            bindings = <&kp RS(DOT)>;
+            bindings = <&kp DA_COLON>;
             key-positions = <37 50>;
         };
 
@@ -507,7 +507,7 @@
         };
 
         rshift_ctrl_dash {
-            bindings = <&kp LC(SLASH)>;
+            bindings = <&kp LC(DA_MINUS)>;
             key-positions = <30 42>;
             layers = <2>;
         };
@@ -530,7 +530,7 @@
         };
 
         excl {
-            bindings = <&kp LS(NUMBER_1)>;
+            bindings = <&kp DA_EXCL>;
             key-positions = <30 43>;
         };
     };
