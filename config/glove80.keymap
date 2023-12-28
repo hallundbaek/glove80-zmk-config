@@ -149,6 +149,8 @@
             label = "LEFT_SHIFT_TAP_DANCE";
             #binding-cells = <0>;
             bindings = <&stmhk LSHFT LSHFT>, <&kp LC(DA_MINUS)>;
+
+            tapping-term-ms = <400>;
         };
 
         left_shift_mod_morph: left_shift_mod_morph {
@@ -165,6 +167,8 @@
             label = "RIGHT_SHIFT_TAP_DANCE";
             #binding-cells = <0>;
             bindings = <&stmhk RSHFT RSHFT>, <&kp RC(DA_K)>;
+
+            tapping-term-ms = <400>;
         };
 
         right_shift_mod_morph: right_shift_mod_morph {
