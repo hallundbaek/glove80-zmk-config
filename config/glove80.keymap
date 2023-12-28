@@ -299,7 +299,7 @@
         };
 
         left_shift {
-            bindings = <&sl_or_mo_hold 1 1>;
+            bindings = <&left_shift_mod_morph>;
             key-positions = <37 25>;
             slow-release;
             layers = <0>;
@@ -312,7 +312,7 @@
         };
 
         right_shift {
-            bindings = <&sl_or_mo_hold 2 2>;
+            bindings = <&right_shift_mod_morph>;
             key-positions = <42 30>;
             slow-release;
             layers = <0>;
