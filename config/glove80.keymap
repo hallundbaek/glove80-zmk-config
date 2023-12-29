@@ -514,6 +514,11 @@
             bindings = <&kp DA_UNDERSCORE>;
             key-positions = <59 61>;
         };
+
+        escape {
+            bindings = <&kp ESC>;
+            key-positions = <41 42>;
+        };
     };
 
     keymap {
