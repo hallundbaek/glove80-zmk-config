@@ -663,6 +663,22 @@
             key-positions = <36 27>;
             slow-release;
         };
+
+        right_control {
+            bindings = <&right_ctrl_hold_tap RCTRL 0>;
+            key-positions = <31 43>;
+            slow-release;
+        };
+
+        left_gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <35 47>;
+        };
+
+        right_gui {
+            bindings = <&kp RGUI>;
+            key-positions = <62 44>;
+        };
     };
 
     keymap {
