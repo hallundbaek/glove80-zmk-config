@@ -461,6 +461,16 @@
             key-positions = <62 44>;
         };
 
+        caps_lock {
+            bindings = <&kp CLCK>;
+            key-positions = <25 37 30 42>;
+        };
+
+        underscore {
+            bindings = <&kp DA_UNDERSCORE>;
+            key-positions = <59 61>;
+        };
+
         sqt_and_parens {
             bindings = <&tap_or_mo 10 DA_SQT>;
             key-positions = <43 42>;
@@ -470,55 +480,53 @@
         dqt_and_braces {
             bindings = <&tap_or_mo 11 DA_DQT>;
             key-positions = <31 30>;
+            require-prior-idle-ms = <50>;
         };
 
         equals {
             bindings = <&tap_and_mo DA_EQUAL 9>;
             key-positions = <59 42>;
             slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         qmark {
             bindings = <&kp DA_QMARK>;
             key-positions = <30 43>;
+            require-prior-idle-ms = <50>;
         };
 
         dash {
             bindings = <&tap_and_mo DA_MINUS 9>;
             key-positions = <59 60>;
             slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         plus_and_brackets {
             bindings = <&tap_or_mo 9 DA_PLUS>;
             key-positions = <61 60>;
             slow-release;
+            require-prior-idle-ms = <50>;
         };
 
         colon {
             bindings = <&kp DA_COLON>;
             key-positions = <37 50>;
-        };
-
-        caps_lock {
-            bindings = <&kp CLCK>;
-            key-positions = <25 37 30 42>;
+            require-prior-idle-ms = <50>;
         };
 
         excl {
             bindings = <&tap_and_mo DA_EXCL 9>;
             key-positions = <30 41>;
             slow-release;
-        };
-
-        underscore {
-            bindings = <&kp DA_UNDERSCORE>;
-            key-positions = <59 61>;
+            require-prior-idle-ms = <50>;
         };
 
         escape {
             bindings = <&kp ESC>;
             key-positions = <41 42>;
+            require-prior-idle-ms = <50>;
         };
     };
 
