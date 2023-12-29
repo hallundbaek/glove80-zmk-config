@@ -308,6 +308,17 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <50 47 65 49 37 38 39>;
         };
+
+        s_vim_add_hold_tap: s_vim_add_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "S_VIM_ADD_HOLD_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <38 50 51 39 37 49>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -465,12 +476,6 @@
             slow-release;
         };
 
-        ctrl_z {
-            bindings = <&tap_and_mo LC(Z) 20>;
-            key-positions = <66 67>;
-            slow-release;
-        };
-
         ctrl_a {
             bindings = <&tap_and_mo LC(A) 16>;
             key-positions = <38 48>;
@@ -621,12 +626,12 @@
 
         layer_Base {
             bindings = <
-&kp F1           &kp F2                    &kp F3           &kp F4               &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9             &kp F10
-&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2     &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS       &kp DA_ACUTE
-&kp F11          &kp NUMBER_1              &kp W            &kp E                &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
-&kp ESCAPE       &kp Q                     &kp S            &d_tab_hold_tap 6 D  &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P              &kp DA_O_SLASH
-&kp TAB          &kp A                     &x_ctrl LCTRL X  &hold_tap_xcv 10 C   &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 15 COMMA  &hold_tap_comma_dot 14 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
-&magic 3 0       &kp Z                     &kp DA_COLON     &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT          &kp F12
+&kp F1           &kp F2                    &kp F3                    &kp F4               &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9             &kp F10
+&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2              &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS       &kp DA_ACUTE
+&kp F11          &kp NUMBER_1              &kp W                     &kp E                &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
+&kp ESCAPE       &kp Q                     &s_vim_add_hold_tap 16 S  &d_tab_hold_tap 6 D  &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P              &kp DA_O_SLASH
+&kp TAB          &kp A                     &x_ctrl LCTRL X           &hold_tap_xcv 10 C   &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 15 COMMA  &hold_tap_comma_dot 14 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
+&magic 3 0       &kp Z                     &kp DA_COLON              &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT          &kp F12
             >;
         };
 
@@ -836,17 +841,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp DA_EQUAL  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_MINUS  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp DA_PLUS   &trans  &trans  &trans
-            >;
-        };
-
-        ctrl_z {
-            bindings = <
-&trans  &trans  &trans  &trans     &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LC(Z)  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
