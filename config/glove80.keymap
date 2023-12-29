@@ -261,8 +261,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_CTRL_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&sk LCTRL>, <&kp LEFT_CTRL>;
-
+            bindings = <&sk LCTRL>;
             tapping-term-ms = <400>;
         };
 
@@ -430,8 +429,8 @@
         compatible = "zmk,combos";
 
         left_control {
-            bindings = <&stmhdec>;
-            key-positions = <35 47>;
+            bindings = <&left_ctrl_hold_tap LEFT_CONTROL 0>;
+            key-positions = <24 36>;
             slow-release;
         };
 
