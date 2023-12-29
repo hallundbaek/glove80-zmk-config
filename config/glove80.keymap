@@ -379,20 +379,6 @@
             label = "BRACE_SPACE";
         };
 
-        vim_ten: vim_ten {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&kp NUMBER_1 &kp N0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "VIM_TEN";
-        };
-
-        vim_hundred: vim_hundred {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&kp NUMBER_1 &kp N0 &kp N0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "VIM_HUNDRED";
-        };
-
         da_tilde: da_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -780,12 +766,12 @@
 
         dot_symbs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans                      &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 12 DA_AMPS  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 11 DA_PIPE  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 5 DA_UNDERSCORE  &tap_or_mo 8 DA_BSLH   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                      &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans                       &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 12 DA_AMPS  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 11 DA_PIPE  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 13 DA_UNDERSCORE  &tap_or_mo 8 DA_BSLH   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                       &trans                 &trans  &trans  &trans
             >;
         };
 
@@ -802,12 +788,12 @@
 
         vim_add_sub {
             bindings = <
-&trans  &trans  &trans  &trans          &trans                                                                                 &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans     &trans                                                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans     &trans                                                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &vim_ten LC(A)  &kp LC(A)  &vim_hundred LC(A)                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &vim_ten LC(X)  &kp LC(X)  &vim_hundred LC(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans                         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LC(A)  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LC(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
