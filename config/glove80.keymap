@@ -319,6 +319,17 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        e_ctrl: e_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "E_CTRL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <26 27 24>;
+        };
     };
 
     macros {
@@ -517,7 +528,7 @@
         };
 
         equals {
-            bindings = <&tap_and_mo DA_EQUAL 19>;
+            bindings = <&tap_and_mo DA_EQUAL 18>;
             key-positions = <59 42>;
             slow-release;
         };
@@ -528,13 +539,13 @@
         };
 
         plus {
-            bindings = <&tap_and_mo DA_PLUS 19>;
+            bindings = <&tap_and_mo DA_PLUS 18>;
             key-positions = <76 59>;
             slow-release;
         };
 
         dash {
-            bindings = <&tap_and_mo DA_MINUS 19>;
+            bindings = <&tap_and_mo DA_MINUS 18>;
             key-positions = <59 60>;
             slow-release;
         };
@@ -579,7 +590,7 @@
         };
 
         excl {
-            bindings = <&tap_and_mo DA_EXCL 19>;
+            bindings = <&tap_and_mo DA_EXCL 18>;
             key-positions = <30 41>;
             slow-release;
         };
@@ -595,13 +606,13 @@
         };
 
         ctrl_g {
-            bindings = <&tap_and_mo LC(G) 18>;
+            bindings = <&tap_and_mo LC(G) 0>;
             key-positions = <36 39>;
             slow-release;
         };
 
         shift_control_g {
-            bindings = <&tap_and_mo LC(LS(G)) 18>;
+            bindings = <&tap_and_mo LC(LS(G)) 0>;
             key-positions = <36 27>;
             slow-release;
         };
@@ -614,7 +625,7 @@
             bindings = <
 &kp F1           &kp F2                    &kp F3            &kp F4               &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9             &kp F10
 &kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2      &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS       &kp DA_ACUTE
-&kp F11          &kp NUMBER_1              &kp W             &kp E                &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
+&kp F11          &kp NUMBER_1              &kp W             &e_ctrl LCTRL E      &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
 &kp ESCAPE       &kp Q                     &s_ctrl_a_x 16 S  &d_tab_hold_tap 6 D  &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P              &kp DA_O_SLASH
 &kp TAB          &kp A                     &x_ctrl LCTRL X   &hold_tap_xcv 9 C    &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 16 COMMA  &hold_tap_comma_dot 11 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
 &magic 3 0       &kp Z                     &kp DA_COLON      &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT          &kp F12
@@ -786,14 +797,14 @@
             >;
         };
 
-        vim_add_sub {
+        s_commands {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LC(A)  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LC(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &kp LS(LC(G))                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LC(A)  &kp LC(G)                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LC(X)  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -805,17 +816,6 @@
 &trans  &trans  &trans  &trans  &trans  &kp LC(D)                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        ctrl_g {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LS(LC(G))                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LC(G)                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
