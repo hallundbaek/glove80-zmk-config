@@ -491,6 +491,7 @@
         plus_and_brackets {
             bindings = <&tap_or_mo 9 DA_PLUS>;
             key-positions = <61 60>;
+            slow-release;
         };
 
         colon {
