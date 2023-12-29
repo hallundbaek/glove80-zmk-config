@@ -512,7 +512,7 @@
         };
 
         dqt_and_braces {
-            bindings = <&tap_or_mo 9 DA_DQT>;
+            bindings = <&tap_or_mo 8 DA_DQT>;
             key-positions = <31 30>;
         };
 
@@ -540,7 +540,7 @@
         };
 
         excl_and_brackets {
-            bindings = <&tap_or_mo 8 DA_EXCL>;
+            bindings = <&tap_or_mo 15 DA_EXCL>;
             key-positions = <61 60>;
         };
 
@@ -616,7 +616,7 @@
 &kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2              &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS       &kp DA_ACUTE
 &kp F11          &kp NUMBER_1              &kp W                     &kp E                &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
 &kp ESCAPE       &kp Q                     &s_vim_add_hold_tap 16 S  &d_tab_hold_tap 6 D  &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P              &kp DA_O_SLASH
-&kp TAB          &kp A                     &x_ctrl LCTRL X           &hold_tap_xcv 10 C   &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 15 COMMA  &hold_tap_comma_dot 14 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
+&kp TAB          &kp A                     &x_ctrl LCTRL X           &hold_tap_xcv 9 C    &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 16 COMMA  &hold_tap_comma_dot 11 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
 &magic 3 0       &kp Z                     &kp DA_COLON              &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT          &kp F12
             >;
         };
@@ -698,17 +698,6 @@
             >;
         };
 
-        brackets {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space         &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_LEFT_BRACKET  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_RBKT          &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT             &trans  &trans  &trans  &trans
-            >;
-        };
-
         braces {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans             &trans  &trans  &trans  &trans
@@ -731,6 +720,28 @@
             >;
         };
 
+        comma_symbs {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_MINUS  &trans  &kp DA_FSLH  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans       &trans  &trans
+            >;
+        };
+
+        dot_symbs {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans                       &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 10 DA_AMPS  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 16 DA_PIPE  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 16 DA_UNDERSCORE  &tap_or_mo 15 DA_BSLH  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                       &trans                 &trans  &trans  &trans
+            >;
+        };
+
         pipe_symbs {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans           &trans  &trans  &trans  &trans
@@ -739,17 +750,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_HASH      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_ASTERISK  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans  &trans  &trans  &trans
-            >;
-        };
-
-        amp_symbs {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans          &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans          &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_tilde       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_PERCENT  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_DOLLAR   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans
             >;
         };
 
@@ -764,25 +764,25 @@
             >;
         };
 
-        dot_symbs {
+        brackets {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans                       &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 12 DA_AMPS  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 11 DA_PIPE  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 13 DA_UNDERSCORE  &tap_or_mo 8 DA_BSLH   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                       &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_LEFT_BRACKET  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_RBKT          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT             &trans  &trans  &trans  &trans
             >;
         };
 
-        comma_symbs {
+        amp_symbs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans        &trans  &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_MINUS  &trans  &kp DA_FSLH  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &da_tilde       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_PERCENT  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_DOLLAR   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans
             >;
         };
 
