@@ -388,7 +388,7 @@
         };
 
         left_alt {
-            bindings = <&stmhdea>;
+            bindings = <&left_alt_hold_tap LALT 0>;
             key-positions = <38 26>;
             slow-release;
         };
@@ -400,7 +400,7 @@
         };
 
         right_alt {
-            bindings = <&stmhdea>;
+            bindings = <&right_alt_hold_tap RALT 0>;
             key-positions = <41 29>;
             slow-release;
         };
