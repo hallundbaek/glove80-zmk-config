@@ -306,7 +306,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <50 47 65 49 37 38 39>;
+            hold-trigger-key-positions = <50 47 65 49 37 38 39 51>;
         };
 
         s_ctrl_a_x: s_ctrl_a_x {
@@ -461,74 +461,18 @@
             key-positions = <62 44>;
         };
 
-        numbers_left {
-            bindings = <&stmhl 5 5>;
-            key-positions = <49 37>;
-            slow-release;
-        };
-
-        number_right {
-            bindings = <&stmhl 5 5>;
-            key-positions = <60 42>;
-            slow-release;
-        };
-
-        ctrl_a {
-            bindings = <&tap_and_mo LC(A) 16>;
-            key-positions = <38 48>;
-            slow-release;
-        };
-
-        ctrl_x {
-            bindings = <&tap_and_mo LC(X) 16>;
-            key-positions = <50 48>;
-            slow-release;
-        };
-
-        ctrl_d {
-            bindings = <&tap_and_mo LC(D) 17>;
-            key-positions = <39 25>;
-            slow-release;
-        };
-
-        ctrl_w {
-            bindings = <&kp LC(W)>;
-            key-positions = <25 24>;
-        };
-
-        ctrl_r {
-            bindings = <&kp LC(R)>;
-            key-positions = <25 26>;
-        };
-
-        ctrl_t {
-            bindings = <&tap_and_mo LC(T) 17>;
-            key-positions = <25 27>;
-            slow-release;
-        };
-
-        ctrl_o {
-            bindings = <&kp LC(O)>;
-            key-positions = <39 37>;
-        };
-
-        ctrl_f {
-            bindings = <&kp LC(F)>;
-            key-positions = <25 38>;
-        };
-
         sqt_and_parens {
-            bindings = <&tap_or_mo 7 DA_SQT>;
+            bindings = <&tap_or_mo 4 DA_SQT>;
             key-positions = <43 42>;
         };
 
         dqt_and_braces {
-            bindings = <&tap_or_mo 8 DA_DQT>;
+            bindings = <&tap_or_mo 5 DA_DQT>;
             key-positions = <31 30>;
         };
 
         equals {
-            bindings = <&tap_and_mo DA_EQUAL 18>;
+            bindings = <&tap_and_mo DA_EQUAL 15>;
             key-positions = <59 42>;
             slow-release;
         };
@@ -539,19 +483,19 @@
         };
 
         plus {
-            bindings = <&tap_and_mo DA_PLUS 18>;
+            bindings = <&tap_and_mo DA_PLUS 15>;
             key-positions = <76 59>;
             slow-release;
         };
 
         dash {
-            bindings = <&tap_and_mo DA_MINUS 18>;
+            bindings = <&tap_and_mo DA_MINUS 15>;
             key-positions = <59 60>;
             slow-release;
         };
 
         excl_and_brackets {
-            bindings = <&tap_or_mo 15 DA_EXCL>;
+            bindings = <&tap_or_mo 12 DA_EXCL>;
             key-positions = <61 60>;
         };
 
@@ -560,60 +504,14 @@
             key-positions = <37 50>;
         };
 
-        lshift_ctrl_k {
-            bindings = <&kp LC(K)>;
-            key-positions = <25 37>;
-            layers = <1>;
-        };
-
-        rshift_ctrl_dash {
-            bindings = <&kp LC(DA_MINUS)>;
-            key-positions = <30 42>;
-            layers = <2>;
-        };
-
-        double_left_caps_word {
-            bindings = <&caps_word_da_underscore>;
-            key-positions = <25 37>;
-            layers = <2>;
-        };
-
-        double_right_caps_word {
-            bindings = <&caps_word_da_underscore>;
-            key-positions = <42 30>;
-            layers = <1>;
-        };
-
         caps_lock {
             bindings = <&kp CLCK>;
             key-positions = <25 37 30 42>;
         };
 
         excl {
-            bindings = <&tap_and_mo DA_EXCL 18>;
+            bindings = <&tap_and_mo DA_EXCL 15>;
             key-positions = <30 41>;
-            slow-release;
-        };
-
-        ctrl_b {
-            bindings = <&kp LC(B)>;
-            key-positions = <49 51>;
-        };
-
-        ctrl_s {
-            bindings = <&kp LC(S)>;
-            key-positions = <36 38>;
-        };
-
-        ctrl_g {
-            bindings = <&tap_and_mo LC(G) 0>;
-            key-positions = <36 39>;
-            slow-release;
-        };
-
-        shift_control_g {
-            bindings = <&tap_and_mo LC(LS(G)) 0>;
-            key-positions = <36 27>;
             slow-release;
         };
     };
@@ -623,34 +521,12 @@
 
         layer_Base {
             bindings = <
-&kp F1           &kp F2                    &kp F3            &kp F4               &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                      &kp F9             &kp F10
-&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2      &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS       &kp DA_ACUTE
-&kp F11          &kp NUMBER_1              &kp W             &e_ctrl LCTRL E      &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
-&kp ESCAPE       &kp Q                     &s_ctrl_a_x 16 S  &d_tab_hold_tap 6 D  &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P              &kp DA_O_SLASH
-&kp TAB          &kp A                     &x_ctrl LCTRL X   &hold_tap_xcv 9 C    &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 16 COMMA  &hold_tap_comma_dot 11 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
-&magic 3 0       &kp Z                     &kp DA_COLON      &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT          &kp F12
-            >;
-        };
-
-        left_shift {
-            bindings = <
-&kp LS(F1)           &kp LS(F2)  &kp LS(F3)  &kp LS(F4)    &kp LS(F5)                                                                                                                         &kp LS(F6)    &kp LS(F7)     &kp LS(F8)   &kp LS(F9)        &kp LS(F10)
-&kp LS(DA_ONE_HALF)  &trans      &kp LS(N2)  &kp LS(N3)    &kp LS(N4)   &kp LS(N5)                                                                                                &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)   &kp LS(DA_MINUS)  &kp LS(DA_ACUTE)
-&kp LS(F11)          &kp LS(N1)  &kp LS(W)   &kp LS(E)     &kp LS(R)    &kp LS(T)                                                                                                 &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)    &kp LS(N0)        &kp LS(DA_A_RING)
-&kp LS(ESCAPE)       &kp LS(Q)   &kp LS(S)   &kp LS(D)     &kp LS(F)    &kp LS(G)                                                                                                 &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)    &kp LS(P)         &kp LS(DA_O_SLASH)
-&kp LS(TAB)          &kp LS(A)   &kp LS(X)   &kp LS(C)     &kp LS(V)    &kp LS(B)   &kp LS(LEFT_ALT)  &kp LS(DEL)    &trans  &kp LS(RALT)       &kp LS(RCTRL)  &trans             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)  &kp DA_COMMA      &kp LS(DA_AE)
-&trans               &kp LS(Z)   &kp DOT     &kp LS(HOME)  &kp LS(END)              &kp LS(SPACE)     &kp LS(ENTER)  &trans  &kp LS(RIGHT_WIN)  &kp LS(DEL)    &kp LS(BACKSPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP)   &kp LS(RIGHT)     &kp LS(F12)
-            >;
-        };
-
-        right_shift {
-            bindings = <
-&kp RS(F1)           &kp RS(F2)  &kp RS(F3)  &kp RS(F4)    &kp RS(F5)                                                                                                                         &kp RS(F6)    &kp RS(F7)     &kp RS(F8)   &kp RS(F9)        &kp RS(F10)
-&kp RS(DA_ONE_HALF)  &trans      &kp RS(N2)  &kp RS(N3)    &kp RS(N4)   &kp RS(N5)                                                                                                &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)   &kp RS(DA_MINUS)  &kp RS(DA_ACUTE)
-&kp RS(F11)          &kp RS(N1)  &kp RS(W)   &kp RS(E)     &kp RS(R)    &kp RS(T)                                                                                                 &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)    &kp RS(N0)        &kp RS(DA_A_RING)
-&kp RS(ESCAPE)       &kp RS(Q)   &kp RS(S)   &kp RS(D)     &kp RS(F)    &kp RS(G)                                                                                                 &kp RS(H)   &kp RS(J)     &kp RS(K)      &kp RS(L)    &kp RS(P)         &kp RS(DA_O_SLASH)
-&kp RS(TAB)          &kp RS(A)   &kp RS(X)   &kp RS(C)     &kp RS(V)    &kp RS(B)   &kp RS(LEFT_ALT)  &kp RS(DEL)    &trans  &kp RS(RALT)       &kp RS(RCTRL)  &trans             &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)  &kp COMMA         &kp RS(DA_AE)
-&trans               &kp RS(Z)   &kp DOT     &kp RS(HOME)  &kp RS(END)              &kp RS(SPACE)     &kp RS(ENTER)  &trans  &kp RS(RIGHT_WIN)  &kp RS(DEL)    &kp RS(BACKSPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP)   &kp RS(RIGHT)     &kp RS(F12)
+&kp F1           &kp F2                    &kp F3            &kp F4               &kp F5                                                                                                        &kp F6    &kp F7                        &kp F8                     &kp F9             &kp F10
+&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2      &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                     &kp DA_MINUS       &kp DA_ACUTE
+&kp F11          &kp NUMBER_1              &kp W             &e_ctrl LCTRL E      &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                      &kp N0             &kp DA_A_RING
+&kp ESCAPE       &kp Q                     &s_ctrl_a_x 13 S  &d_tab_hold_tap 3 D  &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                      &kp P              &kp DA_O_SLASH
+&kp TAB          &kp A                     &x_ctrl LCTRL X   &hold_tap_xcv 6 C    &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 2          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 13 COMMA  &hold_tap_comma_dot 8 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
+&magic 1 0       &kp Z                     &kp DA_COLON      &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                     &kp RIGHT          &kp F12
             >;
         };
 
@@ -676,25 +552,14 @@
             >;
         };
 
-        layer_numbers {
-            bindings = <
-&trans  &trans  &trans          &trans  &trans                                                                                    &trans        &trans  &trans         &trans  &trans
-&trans  &trans  &trans          &trans  &trans        &trans                                                        &trans        &trans        &trans  &trans         &trans  &trans
-&trans  &trans  &trans          &trans  &trans        &trans                                                        &trans        &trans        &trans  &trans         &trans  &trans
-&trans  &trans  &kp LEFT_SHIFT  &trans  &kp N3        &kp NUMBER_4                                                  &kp NUMBER_9  &kp N8        &trans  &kp RSHIFT     &trans  &trans
-&trans  &trans  &kp LEFT_ALT    &trans  &kp NUMBER_1  &kp NUMBER_2  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp NUMBER_6  &trans  &kp RIGHT_ALT  &trans  &trans
-&trans  &trans  &trans          &trans  &kp N0                      &trans  &trans  &trans  &trans  &trans  &trans                &kp N5        &trans  &trans         &trans  &trans
-            >;
-        };
-
         tabs {
             bindings = <
-&trans  &trans  &trans       &trans  &trans                                                                   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(TAB)  &trans  &kp TAB  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans                                                                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans   &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans   &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(TAB)  &trans  &kp TAB  &kp LC(O)                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -746,9 +611,9 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans                       &trans                 &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 10 DA_AMPS  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 16 DA_PIPE  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 16 DA_UNDERSCORE  &tap_or_mo 15 DA_BSLH  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 7 DA_AMPS   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                       &tap_or_mo 13 DA_PIPE  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 13 DA_UNDERSCORE  &tap_or_mo 12 DA_BSLH  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                       &trans                 &trans  &trans  &trans
             >;
         };
