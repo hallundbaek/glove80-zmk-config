@@ -472,7 +472,7 @@
         };
 
         equals {
-            bindings = <&tap_and_mo DA_EQUAL 15>;
+            bindings = <&tap_and_mo DA_EQUAL 9>;
             key-positions = <59 42>;
             slow-release;
         };
@@ -483,7 +483,7 @@
         };
 
         dash {
-            bindings = <&tap_and_mo DA_MINUS 15>;
+            bindings = <&tap_and_mo DA_MINUS 9>;
             key-positions = <59 60>;
             slow-release;
         };
@@ -504,7 +504,7 @@
         };
 
         excl {
-            bindings = <&tap_and_mo DA_EXCL 15>;
+            bindings = <&tap_and_mo DA_EXCL 9>;
             key-positions = <30 41>;
             slow-release;
         };
@@ -619,12 +619,12 @@
 
         brackets {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space         &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_LEFT_BRACKET  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_RBKT          &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans               &trans        &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans               &trans        &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &brace_space         &kp DA_EXCL   &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DA_LEFT_BRACKET  &kp DA_EQUAL  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_RBKT          &kp DA_MINUS  &kp DA_PLUS  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT             &trans        &trans       &trans  &trans
             >;
         };
 
@@ -680,17 +680,6 @@
 &trans  &trans  &trans  &trans  &trans  &kp LC(D)                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        eq_mods {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans        &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans        &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp EXCL      &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp DA_EQUAL  &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_MINUS  &kp DA_PLUS  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans        &trans       &trans  &trans
             >;
         };
     };
