@@ -464,6 +464,7 @@
         sqt_and_parens {
             bindings = <&tap_or_mo 10 DA_SQT>;
             key-positions = <43 42>;
+            require-prior-idle-ms = <50>;
         };
 
         dqt_and_braces {
