@@ -256,6 +256,62 @@
             tapping-term-ms = <400>;
             quick-tap-ms = <400>;
         };
+
+        left_ctrl_tap_dance: left_ctrl_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LEFT_CTRL_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL>, <&kp LEFT_CTRL>;
+
+            tapping-term-ms = <400>;
+        };
+
+        left_ctrl_mod_morph: left_ctrl_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_CTRL_MOD_MORPH";
+            bindings = <&left_ctrl_tap_dance>, <&kp LA(LS(ENTER))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTRL)>;
+        };
+
+        left_ctrl_hold_tap: left_ctrl_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_CTRL_HOLD_TAP";
+            bindings = <&kp>, <&left_ctrl_mod_morph>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+        };
+
+        right_ctrl_tap_dance: right_ctrl_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_CTRL_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&sk RCTRL>, <&kp LA(P)>;
+
+            tapping-term-ms = <400>;
+        };
+
+        right_ctrl_mod_morph: right_ctrl_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_CTRL_MOD_MORPH";
+            bindings = <&right_ctrl_tap_dance>, <&kp LA(LS(ENTER))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTRL)>;
+        };
+
+        right_ctrl_hold_tap: right_ctrl_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_CTRL_HOLD_TAP";
+            bindings = <&kp>, <&right_ctrl_mod_morph>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+        };
     };
 
     macros {
