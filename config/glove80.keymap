@@ -186,7 +186,7 @@
         left_shift_hold_tap: left_shift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_SHIFT_HOLD_TAP";
-            bindings = <&kp>, <&left_shift_mod_morph>;
+            bindings = <&kp>, <&left_shift_tap_dance>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -195,7 +195,7 @@
         right_shift_hold_tap: right_shift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_SHIFT_HOLD_TAP";
-            bindings = <&kp>, <&right_shift_mod_morph>;
+            bindings = <&kp>, <&right_shift_tap_dance>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -324,7 +324,7 @@
         };
 
         left_shift {
-            bindings = <&left_shift_hold_tap LSHFT 0>;
+            bindings = <&left_shift_mod_morph>;
             key-positions = <37 25>;
             slow-release;
             layers = <0>;
@@ -337,7 +337,7 @@
         };
 
         right_shift {
-            bindings = <&right_shift_hold_tap RSHIFT 0>;
+            bindings = <&right_shift_mod_morph>;
             key-positions = <42 30>;
             slow-release;
             layers = <0>;
