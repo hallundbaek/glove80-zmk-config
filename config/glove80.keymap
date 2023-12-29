@@ -213,7 +213,7 @@
         left_alt_mod_morph: left_alt_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_ALT_MOD_MORPH";
-            bindings = <&left_alt_tap_dance>, <&caps_word_da_underscore>;
+            bindings = <&left_alt_tap_dance>, <&kp LA(LS(ENTER))>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -233,7 +233,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_ALT_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&sk RALT>, <&kp RC(DA_K)>;
+            bindings = <&sk RALT>, <&kp LA(P)>;
 
             tapping-term-ms = <400>;
         };
@@ -241,7 +241,7 @@
         right_alt_mod_morph: right_alt_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT_ALT_MOD_MORPH";
-            bindings = <&right_alt_tap_dance>, <&caps_word_da_underscore>;
+            bindings = <&right_alt_tap_dance>, <&kp LA(LS(ENTER))>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
