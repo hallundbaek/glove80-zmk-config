@@ -16,7 +16,9 @@
 /* Include behaviour includes needed by key binds - automatically generated */
 
 #include "keys_da.h"
+
 /* #include <dt-bindings/zmk/mouse.h> */
+
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -149,7 +151,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_SHIFT_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&kp LC(DA_UNDERSCORE)>;
+            bindings = <&sk LSHFT>, <&kp LC(DA_H)>;
 
             tapping-term-ms = <400>;
         };
