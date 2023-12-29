@@ -207,7 +207,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_ALT_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp LALT>, <&kp LC(DA_H)>;
+            bindings = <&sk LALT>, <&kp LC(DA_H)>;
 
             tapping-term-ms = <400>;
         };
@@ -388,7 +388,7 @@
         };
 
         left_alt {
-            bindings = <&left_alt_tap_dance>;
+            bindings = <&left_alt_hold_tap LEFT_ALT 0>;
             key-positions = <38 26>;
             slow-release;
         };
