@@ -165,6 +165,15 @@
             mods = <(MOD_RSFT)>;
         };
 
+        left_shift_hold_tap: left_shift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_SHIFT_HOLD_TAP";
+            bindings = <&kp>, <&left_shift_mod_morph>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
         right_shift_tap_dance: right_shift_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_SHIFT_TAP_DANCE";
@@ -181,15 +190,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };
-
-        left_shift_hold_tap: left_shift_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_SHIFT_HOLD_TAP";
-            bindings = <&kp>, <&left_shift_mod_morph>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
         };
 
         right_shift_hold_tap: right_shift_hold_tap {
@@ -327,7 +327,6 @@
             bindings = <&left_shift_hold_tap LSHFT 0>;
             key-positions = <37 25>;
             slow-release;
-            layers = <0>;
         };
 
         left_alt {
@@ -340,7 +339,6 @@
             bindings = <&right_shift_hold_tap RSHIFT 0>;
             key-positions = <42 30>;
             slow-release;
-            layers = <0>;
         };
 
         right_alt {
