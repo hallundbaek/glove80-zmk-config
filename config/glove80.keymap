@@ -38,14 +38,6 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        lower: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 0>, <&to 0>;
-        };
-
         stmhl: sticky_tap_momentary_hold_LAYER {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_TAP_MOMENTARY_HOLD_LAYER";
@@ -64,24 +56,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             flavor = "hold-preferred";
-        };
-
-        stmhdec: stmhdec {
-            compatible = "zmk,behavior-mod-morph";
-            label = "STMHDEC";
-            #binding-cells = <0>;
-            bindings = <&stmhk LEFT_CONTROL LEFT_CONTROL>, <&double_control>;
-
-            mods = <(MOD_LCTL)>;
-        };
-
-        stmhdea: stmhdea {
-            compatible = "zmk,behavior-mod-morph";
-            label = "STMHDEA";
-            #binding-cells = <0>;
-            bindings = <&stmhk LEFT_ALT LEFT_ALT>, <&double_alt>;
-
-            mods = <(MOD_LALT)>;
         };
 
         tap_or_mo: tap_or_mo {
@@ -349,24 +323,6 @@
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
 
-        double_control: double_control {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp RIGHT_CONTROL>;
-            label = "DOUBLE_CONTROL";
-            wait-ms = <50>;
-            tap-ms = <50>;
-        };
-
-        double_alt: double_alt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp RIGHT_ALT>;
-            label = "DOUBLE_ALT";
-            wait-ms = <50>;
-            tap-ms = <50>;
-        };
-
         tap_and_mo: tap_and_mo {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
@@ -429,8 +385,14 @@
         compatible = "zmk,combos";
 
         left_control {
-            bindings = <&left_ctrl_hold_tap LEFT_CONTROL 0>;
+            bindings = <&left_ctrl_hold_tap LCTRL 0>;
             key-positions = <24 36>;
+            slow-release;
+        };
+
+        right_control {
+            bindings = <&right_ctrl_hold_tap RCTRL 0>;
+            key-positions = <31 43>;
             slow-release;
         };
 
@@ -440,15 +402,15 @@
             slow-release;
         };
 
-        left_alt {
-            bindings = <&left_alt_hold_tap LEFT_ALT 0>;
-            key-positions = <38 26>;
-            slow-release;
-        };
-
         right_shift {
             bindings = <&right_shift_hold_tap RSHIFT 0>;
             key-positions = <42 30>;
+            slow-release;
+        };
+
+        left_alt {
+            bindings = <&left_alt_hold_tap LALT 0>;
+            key-positions = <38 26>;
             slow-release;
         };
 
@@ -456,6 +418,16 @@
             bindings = <&right_alt_hold_tap RALT 0>;
             key-positions = <41 29>;
             slow-release;
+        };
+
+        left_gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <35 47>;
+        };
+
+        right_gui {
+            bindings = <&kp RGUI>;
+            key-positions = <62 44>;
         };
 
         numbers_left {
@@ -662,22 +634,6 @@
             bindings = <&tap_and_mo LC(LS(G)) 17>;
             key-positions = <36 27>;
             slow-release;
-        };
-
-        right_control {
-            bindings = <&right_ctrl_hold_tap RCTRL 0>;
-            key-positions = <31 43>;
-            slow-release;
-        };
-
-        left_gui {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <35 47>;
-        };
-
-        right_gui {
-            bindings = <&kp RGUI>;
-            key-positions = <62 44>;
         };
     };
 
