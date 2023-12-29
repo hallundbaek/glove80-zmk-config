@@ -172,6 +172,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
         };
 
         right_shift_tap_dance: right_shift_tap_dance {
@@ -199,6 +200,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
         };
     };
 
