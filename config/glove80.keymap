@@ -245,7 +245,7 @@
             bindings = <&left_ctrl_tap_dance>, <&kp LA(LS(ENTER))>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTRL)>;
+            mods = <(MOD_RCTL)>;
         };
 
         left_ctrl_hold_tap: left_ctrl_hold_tap {
@@ -273,7 +273,7 @@
             bindings = <&right_ctrl_tap_dance>, <&kp LA(LS(ENTER))>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
         };
 
         right_ctrl_hold_tap: right_ctrl_hold_tap {
