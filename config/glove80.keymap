@@ -466,25 +466,25 @@
         };
 
         ctrl_z {
-            bindings = <&tap_and_mo LC(Z) 19>;
+            bindings = <&tap_and_mo LC(Z) 20>;
             key-positions = <66 67>;
             slow-release;
         };
 
         ctrl_a {
-            bindings = <&tap_and_mo LC(A) 15>;
+            bindings = <&tap_and_mo LC(A) 16>;
             key-positions = <38 48>;
             slow-release;
         };
 
         ctrl_x {
-            bindings = <&tap_and_mo LC(X) 15>;
+            bindings = <&tap_and_mo LC(X) 16>;
             key-positions = <50 48>;
             slow-release;
         };
 
         ctrl_d {
-            bindings = <&tap_and_mo LC(D) 16>;
+            bindings = <&tap_and_mo LC(D) 17>;
             key-positions = <39 25>;
             slow-release;
         };
@@ -500,7 +500,7 @@
         };
 
         ctrl_t {
-            bindings = <&tap_and_mo LC(T) 16>;
+            bindings = <&tap_and_mo LC(T) 17>;
             key-positions = <25 27>;
             slow-release;
         };
@@ -526,7 +526,7 @@
         };
 
         equals {
-            bindings = <&tap_and_mo DA_EQUAL 18>;
+            bindings = <&tap_and_mo DA_EQUAL 19>;
             key-positions = <59 42>;
             slow-release;
         };
@@ -537,13 +537,13 @@
         };
 
         plus {
-            bindings = <&tap_and_mo DA_PLUS 18>;
+            bindings = <&tap_and_mo DA_PLUS 19>;
             key-positions = <76 59>;
             slow-release;
         };
 
         dash {
-            bindings = <&tap_and_mo DA_MINUS 18>;
+            bindings = <&tap_and_mo DA_MINUS 19>;
             key-positions = <59 60>;
             slow-release;
         };
@@ -588,7 +588,7 @@
         };
 
         excl {
-            bindings = <&tap_and_mo DA_EXCL 18>;
+            bindings = <&tap_and_mo DA_EXCL 19>;
             key-positions = <30 41>;
             slow-release;
         };
@@ -604,13 +604,13 @@
         };
 
         ctrl_g {
-            bindings = <&tap_and_mo LC(G) 17>;
+            bindings = <&tap_and_mo LC(G) 18>;
             key-positions = <36 39>;
             slow-release;
         };
 
         shift_control_g {
-            bindings = <&tap_and_mo LC(LS(G)) 17>;
+            bindings = <&tap_and_mo LC(LS(G)) 18>;
             key-positions = <36 27>;
             slow-release;
         };
@@ -625,7 +625,7 @@
 &kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2     &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7    &kp N8                        &kp N9                      &kp DA_MINUS       &kp DA_ACUTE
 &kp F11          &kp NUMBER_1              &kp W            &kp E                &kp R    &kp T                                                                                        &kp Y   &kp U     &kp I                         &kp O                       &kp N0             &kp DA_A_RING
 &kp ESCAPE       &kp Q                     &kp S            &d_tab_hold_tap 6 D  &kp F    &kp G                                                                                        &kp H   &kp J     &kp K                         &kp L                       &kp P              &kp DA_O_SLASH
-&kp TAB          &kp A                     &x_ctrl LCTRL X  &hold_tap_xcv 10 C   &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 14 COMMA  &hold_tap_comma_dot 14 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
+&kp TAB          &kp A                     &x_ctrl LCTRL X  &hold_tap_xcv 10 C   &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 4          &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &kp M     &hold_tap_comma_dot 15 COMMA  &hold_tap_comma_dot 14 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
 &magic 3 0       &kp Z                     &kp DA_COLON     &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT  &kp DOWN                      &kp UP                      &kp RIGHT          &kp F12
             >;
         };
@@ -773,14 +773,25 @@
             >;
         };
 
-        slashes {
+        dot_symbs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans                      &trans                 &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &trans                 &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 12 DA_AMPS  &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 11 DA_PIPE  &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 5 DA_UNDERSCORE  &tap_or_mo 8 DA_BSLH   &kp DA_SLASH  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                      &trans                 &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans                      &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 12 DA_AMPS  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 11 DA_PIPE  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 5 DA_UNDERSCORE  &tap_or_mo 8 DA_BSLH   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                      &trans                 &trans  &trans  &trans
+            >;
+        };
+
+        comma_symbs {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans        &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DA_MINUS  &trans  &kp DA_FSLH  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans       &trans  &trans
             >;
         };
 
