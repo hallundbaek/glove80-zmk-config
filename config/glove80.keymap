@@ -202,6 +202,62 @@
             tapping-term-ms = <400>;
             quick-tap-ms = <400>;
         };
+
+        left_alt_tap_dance: left_alt_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LEFT_ALT_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&sk LALT>, <&kp LC(DA_H)>;
+
+            tapping-term-ms = <400>;
+        };
+
+        left_alt_mod_morph: left_alt_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_ALT_MOD_MORPH";
+            bindings = <&left_alt_tap_dance>, <&caps_word_da_underscore>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        left_alt_hold_tap: left_alt_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_ALT_HOLD_TAP";
+            bindings = <&kp>, <&left_alt_mod_morph>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+        };
+
+        right_alt_tap_dance: right_alt_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_ALT_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&sk RALT>, <&kp RC(DA_K)>;
+
+            tapping-term-ms = <400>;
+        };
+
+        right_alt_mod_morph: right_alt_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_ALT_MOD_MORPH";
+            bindings = <&right_alt_tap_dance>, <&caps_word_da_underscore>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        right_alt_hold_tap: right_alt_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_ALT_HOLD_TAP";
+            bindings = <&kp>, <&right_alt_mod_morph>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+        };
     };
 
     macros {
