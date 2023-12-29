@@ -171,8 +171,8 @@
             bindings = <&kp>, <&left_shift_mod_morph>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
         };
 
         right_shift_tap_dance: right_shift_tap_dance {
@@ -199,8 +199,8 @@
             bindings = <&kp>, <&right_shift_mod_morph>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
         };
     };
 
