@@ -295,7 +295,7 @@
             #binding-cells = <2>;
             hold-trigger-key-positions = <38 36>;
             tapping-term-ms = <200>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
             flavor = "tap-unless-interrupted";
         };
     };
