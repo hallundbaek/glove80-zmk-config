@@ -340,14 +340,15 @@
             hold-trigger-key-positions = <61 60 42 30 59>;
         };
 
-        tap_or_hold_tap_pref: tap_or_hold_tap_pref {
+        tap_or_hold_parens: tap_or_hold_parens {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_OR_HOLD_TAP_PREF";
+            label = "TAP_OR_HOLD_PARENS";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             tapping-term-ms = <300>;
+            hold-trigger-key-positions = <29 41 59 75>;
         };
     };
 
@@ -491,13 +492,13 @@
         };
 
         sqt_and_parens {
-            bindings = <&tap_or_hold_tap_pref 10 DA_SQT>;
+            bindings = <&tap_or_hold_parens 10 DA_SQT>;
             key-positions = <43 42>;
             require-prior-idle-ms = <50>;
         };
 
         dqt_and_braces {
-            bindings = <&tap_or_hold_tap_pref 11 DA_DQT>;
+            bindings = <&tap_or_hold_parens 11 DA_DQT>;
             key-positions = <31 30>;
             require-prior-idle-ms = <50>;
         };
@@ -523,7 +524,7 @@
         };
 
         plus_and_brackets {
-            bindings = <&tap_or_mo 9 DA_PLUS>;
+            bindings = <&tap_or_hold_parens 9 DA_PLUS>;
             key-positions = <61 60>;
             slow-release;
             require-prior-idle-ms = <50>;
@@ -551,21 +552,25 @@
         left_alt_shift {
             bindings = <&stmhk LS(LEFT_ALT) LS(LEFT_ALT)>;
             key-positions = <25 26>;
+            slow-release;
         };
 
         left_ctrl_alt {
             bindings = <&stmhk LC(LEFT_ALT) LC(LEFT_ALT)>;
             key-positions = <26 24>;
+            slow-release;
         };
 
         left_ctrl_shift_alt {
             bindings = <&stmhk LC(LS(LEFT_ALT)) LC(LS(LEFT_ALT))>;
             key-positions = <26 24 25>;
+            slow-release;
         };
 
         left_ctrl_shift {
             bindings = <&stmhk LC(LSHFT) LC(LSHFT)>;
             key-positions = <24 25>;
+            slow-release;
         };
     };
 
