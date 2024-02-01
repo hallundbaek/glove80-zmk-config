@@ -547,6 +547,26 @@
             key-positions = <41 42>;
             require-prior-idle-ms = <50>;
         };
+
+        left_alt_shift {
+            bindings = <&stmhk LS(LEFT_ALT) LS(LEFT_ALT)>;
+            key-positions = <25 26>;
+        };
+
+        left_ctrl_alt {
+            bindings = <&stmhk LC(LEFT_ALT) LC(LEFT_ALT)>;
+            key-positions = <26 24>;
+        };
+
+        left_ctrl_shift_alt {
+            bindings = <&stmhk LC(LS(LEFT_ALT)) LC(LS(LEFT_ALT))>;
+            key-positions = <26 24 25>;
+        };
+
+        left_ctrl_shift {
+            bindings = <&stmhk LC(LSHFT) LC(LSHFT)>;
+            key-positions = <24 25>;
+        };
     };
 
     keymap {
