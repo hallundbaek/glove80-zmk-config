@@ -350,6 +350,13 @@
             tapping-term-ms = <300>;
             hold-trigger-key-positions = <29 41 59 75>;
         };
+
+        geo_tap: geo_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GEO_TAP";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&geo_click>;
+        };
     };
 
     macros {
@@ -429,6 +436,14 @@
             #binding-cells = <0>;
             bindings = <&kp DA_CARET &kp SPACE>;
             label = "DA_HAT";
+        };
+
+        geo_click: geo_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&macro_wait_time 300>;
+
+            label = "GEO_CLICK";
         };
     };
 
@@ -742,14 +757,14 @@
             >;
         };
 
-        layer_15 {
+        geoguessr {
             bindings = <
-&trans  &trans  &trans  &trans     &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mkp LCLK  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp X   &trans     &kp V   &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &geo_tap  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp X   &trans    &kp V   &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
