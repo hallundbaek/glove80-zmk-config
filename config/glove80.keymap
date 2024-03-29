@@ -763,8 +763,19 @@
 &trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp D      &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp X   &mkp LCLK  &kp V   &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp X   &mkp LCLK  &kp V   &trans  &trans  &trans  &to 16  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        plate_up {
+            bindings = <
+&trans  &trans  &trans          &trans    &trans                                                                     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans    &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &kp UP    &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &trans                                                  &trans  &kp P   &kp O   &trans  &trans  &trans
+&trans  &trans  &trans          &trans    &trans     &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans    &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
