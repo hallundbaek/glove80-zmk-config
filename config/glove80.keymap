@@ -537,19 +537,19 @@
         };
 
         sqt_and_parens {
-            bindings = <&tap_or_hold_parens 10 DA_SQT>;
+            bindings = <&tap_or_hold_parens 9 DA_SQT>;
             key-positions = <43 42>;
             require-prior-idle-ms = <50>;
         };
 
         dqt_and_braces {
-            bindings = <&tap_or_hold_parens 11 DA_DQT>;
+            bindings = <&tap_or_hold_parens 10 DA_DQT>;
             key-positions = <31 30>;
             require-prior-idle-ms = <50>;
         };
 
         equals {
-            bindings = <&tap_and_mo DA_EQUAL 9>;
+            bindings = <&tap_and_mo DA_EQUAL 8>;
             key-positions = <59 42>;
             slow-release;
             require-prior-idle-ms = <50>;
@@ -562,14 +562,14 @@
         };
 
         dash {
-            bindings = <&tap_and_mo DA_MINUS 9>;
+            bindings = <&tap_and_mo DA_MINUS 8>;
             key-positions = <59 60>;
             slow-release;
             require-prior-idle-ms = <50>;
         };
 
         plus_and_brackets {
-            bindings = <&tap_or_hold_parens 9 DA_PLUS>;
+            bindings = <&tap_or_hold_parens 8 DA_PLUS>;
             key-positions = <61 60>;
             slow-release;
             require-prior-idle-ms = <50>;
@@ -582,7 +582,7 @@
         };
 
         excl {
-            bindings = <&tap_and_mo DA_EXCL 9>;
+            bindings = <&tap_and_mo DA_EXCL 8>;
             key-positions = <30 41>;
             slow-release;
             require-prior-idle-ms = <50>;
@@ -637,8 +637,8 @@
 &kp F1           &kp F2                    &kp F3            &kp F4               &kp F5                                                                                                        &kp F6           &kp F7                       &kp F8                     &kp F9             &kp F10
 &kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2      &kp N3               &kp N4   &kp N5                                                                                       &kp N6  &kp N7           &kp N8                       &kp N9                     &kp DA_MINUS       &kp DA_ACUTE
 &kp F11          &kp NUMBER_1              &kp W             &kp E                &kp R    &kp T                                                                                        &kp Y   &kp U            &kp I                        &kp O                      &kp N0             &kp DA_A_RING
-&kp ESCAPE       &q_ctrl LCTRL DA_Q        &s_ctrl_a_x 13 S  &d_tab_hold_tap 3 D  &kp F    &kp G                                                                                        &kp H   &kp J            &kp K                        &kp L                      &kp P              &kp DA_O_SLASH
-&kp TAB          &kp A                     &x_ctrl LCTRL X   &hold_tap_xcv 4 C    &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 15         &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &hold_tap_m 9 M  &hold_tap_comma_dot 5 COMMA  &hold_tap_comma_dot 6 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
+&kp ESCAPE       &q_ctrl LCTRL DA_Q        &s_ctrl_a_x 12 S  &d_tab_hold_tap 2 D  &kp F    &kp G                                                                                        &kp H   &kp J            &kp K                        &kp L                      &kp P              &kp DA_O_SLASH
+&kp TAB          &kp A                     &x_ctrl LCTRL X   &hold_tap_xcv 3 C    &kp V    &kp B   &kp LEFT_ALT  &kp DELETE  &to 15         &kp RIGHT_ALT  &kp RCTRL   &kp RIGHT_SHIFT  &kp N   &hold_tap_m 8 M  &hold_tap_comma_dot 4 COMMA  &hold_tap_comma_dot 5 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
 &magic 1 0       &kp Z                     &kp DA_COLON      &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &kp BSPC                 &kp LEFT         &kp DOWN                     &kp UP                     &kp RIGHT          &kp F12
             >;
         };
@@ -651,17 +651,6 @@
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        layer_Game {
-            bindings = <
-&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                                                  &trans  &trans  &trans  &trans  &trans
-&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
-&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP  &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &kp K_SCROLL_DOWN     &kp K_SCROLL_UP             &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -702,9 +691,9 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans                      &trans                 &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 12 DA_AMPS  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 8 DA_PIPE   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 7 DA_UNDERSCORE  &tap_or_mo 9 DA_BSLH   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 11 DA_AMPS  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans                      &tap_or_mo 7 DA_PIPE   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tap_or_mo 6 DA_UNDERSCORE  &tap_or_mo 8 DA_BSLH   &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                      &trans                 &trans  &trans  &trans
             >;
         };
@@ -803,7 +792,7 @@
 &trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp D      &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp X   &mkp LCLK  &kp V   &trans  &trans  &trans  &to 16  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp X   &mkp LCLK  &kp V   &trans  &trans  &trans  &to 15  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -814,8 +803,19 @@
 &trans  &trans  &trans          &trans    &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &kp UP    &trans     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &trans                                                  &trans  &kp P   &kp O   &trans  &trans  &trans
-&trans  &trans  &trans          &trans    &trans     &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans    &trans     &trans  &trans  &trans  &to 16  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans    &trans             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_Game {
+            bindings = <
+&kp F1        &kp F2     &kp F3  &kp F4  &kp F5                                                                                                  &trans  &trans  &trans  &trans  &trans
+&kp N8        &kp N5     &kp N1  &kp N2  &kp N3  &kp N4                                                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp N7        &kp ESC    &kp Q   &kp W   &kp E   &kp R                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
+&kp N6        &kp TAB    &kp A   &kp S   &kp D   &kp F                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_PLUS   &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp Y      &kp H     &to 0    &trans  &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP  &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_SLASH  &kp LCTRL  &kp T   &kp G   &kp B           &kp SPACE  &kp LALT  &kp RET  &trans  &kp K_SCROLL_DOWN     &kp K_SCROLL_UP             &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
