@@ -366,6 +366,16 @@
 
             tapping-term-ms = <75>;
         };
+
+        sk_mod: sk_mod {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_MOD";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <500>;
+            quick-release;
+            ignore-modifiers;
+        };
     };
 
     macros {
@@ -643,12 +653,12 @@
 
         layer_Base {
             bindings = <
-&kp F1           &kp F2                    &kp F3            &kp F4               &kp F5                                                                                                              &kp F6           &kp F7                       &kp F8                     &kp F9             &kp F10
-&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2      &kp N3               &kp N4   &kp N5                                                                                             &kp N6  &kp N7           &kp N8                       &kp N9                     &kp DA_MINUS       &kp DA_ACUTE
-&kp F11          &kp NUMBER_1              &kp W             &kp E                &kp R    &kp T                                                                                              &kp Y   &kp U            &kp I                        &kp O                      &kp N0             &kp DA_A_RING
-&kp ESCAPE       &q_ctrl LCTRL DA_Q        &s_ctrl_a_x 12 S  &d_tab_hold_tap 2 D  &kp F    &kp G                                                                                              &kp H   &kp J            &kp K                        &kp L                      &kp P              &kp DA_O_SLASH
-&kp TAB          &kp A                     &x_ctrl LCTRL X   &hold_tap_xcv 3 C    &kp V    &kp B   &sk LEFT_ALT  &kp DELETE  &to 14         &kp RIGHT_ALT  &sk RCTRL   &sk RIGHT_SHIFT        &kp N   &hold_tap_m 8 M  &hold_tap_comma_dot 4 COMMA  &hold_tap_comma_dot 5 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
-&magic 1 0       &kp Z                     &kp DA_COLON      &kp HOME             &kp END          &kp SPACE     &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE  &fix_double_backspace          &kp LEFT         &kp DOWN                     &kp UP                     &kp RIGHT          &kp F12
+&kp F1           &kp F2                    &kp F3            &kp F4               &kp F5                                                                                                                     &kp F6           &kp F7                       &kp F8                     &kp F9             &kp F10
+&kp DA_ONE_HALF  &caps_word_da_underscore  &kp NUMBER_2      &kp N3               &kp N4   &kp N5                                                                                                    &kp N6  &kp N7           &kp N8                       &kp N9                     &kp DA_MINUS       &kp DA_ACUTE
+&kp F11          &kp NUMBER_1              &kp W             &kp E                &kp R    &kp T                                                                                                     &kp Y   &kp U            &kp I                        &kp O                      &kp N0             &kp DA_A_RING
+&kp ESCAPE       &q_ctrl LCTRL DA_Q        &s_ctrl_a_x 12 S  &d_tab_hold_tap 2 D  &kp F    &kp G                                                                                                     &kp H   &kp J            &kp K                        &kp L                      &kp P              &kp DA_O_SLASH
+&kp TAB          &kp A                     &x_ctrl LCTRL X   &hold_tap_xcv 3 C    &kp V    &kp B   &sk_mod LEFT_ALT  &kp DELETE  &to 14         &kp RIGHT_ALT  &sk_mod RCTRL  &sk_mod RIGHT_SHIFT    &kp N   &hold_tap_m 8 M  &hold_tap_comma_dot 4 COMMA  &hold_tap_comma_dot 5 DOT  &mt RCTRL DA_SEMI  &kp DA_AE
+&magic 1 0       &kp Z                     &kp DA_COLON      &kp HOME             &kp END          &kp SPACE         &kp ENTER   &kp LG(SPACE)  &kp LGUI       &kp DELETE     &fix_double_backspace          &kp LEFT         &kp DOWN                     &kp UP                     &kp RIGHT          &kp F12
             >;
         };
 
